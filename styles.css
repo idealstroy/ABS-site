@@ -13,12 +13,12 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--abs-white);
   color: var(--abs-text);
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
 
-h1, h2, h3 { font-family: Manrope, Arial, sans-serif; font-weight: 700; letter-spacing: -0.035em; }
+h1, h2, h3 { font-family: "Open Sans", sans-serif; font-weight: 700; letter-spacing: -0.035em; }
 h2 { font-size: clamp(2rem, 3vw, 3.15rem); line-height: 1.1; }
 h3 { font-size: 1.1rem; line-height: 1.3; }
 a { color: inherit; }
@@ -69,7 +69,7 @@ a { color: inherit; }
 .specialist-card.is-disabled { cursor: pointer; pointer-events: auto; }
 .internal-navigation-link { display: none; }
 .specialist-card strong, .specialist-card small { display: block; }
-.specialist-card strong { font-family: Manrope, Arial, sans-serif; font-size: .95rem; line-height: 1.25; margin-bottom: .45rem; }
+.specialist-card strong { font-family: "Open Sans", sans-serif; font-size: .95rem; line-height: 1.25; margin-bottom: .45rem; }
 .specialist-card small { color: var(--abs-secondary); font-size: .78rem; line-height: 1.4; }
 
 .object-card { background: var(--abs-surface); border-left: 3px solid var(--abs-primary); height: 100%; padding: 1.5rem; }
@@ -80,7 +80,7 @@ a { color: inherit; }
 
 .section-dark { background: var(--abs-text); }
 .process-card { border-left: 1px solid rgba(246, 247, 248, .28); height: 100%; padding: 1.3rem 0 1.3rem 1.25rem; }
-.process-card span { color: var(--abs-success); display: block; font-family: Manrope, Arial, sans-serif; font-size: .85rem; font-weight: 700; letter-spacing: .1em; margin-bottom: 2.2rem; }
+.process-card span { color: var(--abs-success); display: block; font-family: "Open Sans", sans-serif; font-size: .85rem; font-weight: 700; letter-spacing: .1em; margin-bottom: 2.2rem; }
 .process-card h3 { color: var(--abs-white); }
 .process-card p { color: rgba(246, 247, 248, .78); font-size: .9rem; margin-bottom: 0; }
 
@@ -105,7 +105,7 @@ textarea.form-control { min-height: 112px; }
 .request-error { background: var(--abs-white); border-left: 3px solid var(--abs-primary); margin-top: 1.5rem; padding: 1rem; }
 
 .accordion-item { border: 0; border-bottom: 1px solid rgba(61, 74, 97, .18); }
-.accordion-button { color: var(--abs-text); font-family: Manrope, Arial, sans-serif; font-weight: 700; padding: 1.4rem 0; }
+.accordion-button { color: var(--abs-text); font-family: "Open Sans", sans-serif; font-weight: 700; padding: 1.4rem 0; }
 .accordion-button:not(.collapsed) { background: var(--abs-white); box-shadow: none; color: var(--abs-primary); }
 .accordion-button:focus { box-shadow: 0 0 0 .2rem rgba(224, 59, 50, .18); }
 .accordion-body { color: var(--abs-secondary); max-width: 900px; padding: 0 3rem 1.4rem 0; }
