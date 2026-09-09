@@ -1,0 +1,49 @@
+<section class="hero-section hero-section--split overflow-hidden" id="top" aria-labelledby="page-title">
+  <img class="hero-media" src="{{categoryHeroImage}}" width="{{categoryHeroWidth}}" height="{{categoryHeroHeight}}" alt="{{categoryHeroAlt}}" fetchpriority="high" />
+  <div class="container position-relative"><div class="hero-breadcrumbs"><div class="row"><div class="col-12 col-lg-8">{{breadcrumbs}}</div></div></div><div class="row align-items-center hero-content-row">
+    <div class="col-12 col-lg-8">
+      <h1 id="page-title" class="hero-title text-white mb-4">{{h1}}</h1>
+      <p class="hero-lead lead text-white mb-3">{{categoryHeroLead}}</p>
+      <a class="btn btn-abs-primary mt-4" href="#request" data-request-popup-trigger>Оставить заявку</a>
+    </div>
+  </div></div></div>
+</section>
+
+<section class="section-space driver-category-overview" aria-labelledby="category-intro-title">
+  <div class="container"><div class="driver-category-overview__panel"><div class="row gy-0 align-items-stretch">
+    <div class="col-12 col-lg-5"><figure class="driver-category-overview__media mb-0"><img src="{{categoryOverviewImage}}" width="{{categoryOverviewWidth}}" height="{{categoryOverviewHeight}}" alt="{{categoryOverviewAlt}}" loading="lazy" /></figure></div>
+    <div class="col-12 col-lg-7"><div class="driver-category-overview__copy"><span class="driver-category-overview__emblem"><img src="/assets/icons/clipboard-check.svg" width="24" height="24" alt="" aria-hidden="true" /></span><h2 id="category-intro-title" class="mb-4">{{categoryIntroTitle}}</h2><p class="large-copy mb-0">{{categoryIntro}}</p><aside class="driver-category-requirements"><p class="driver-category-requirements__label">{{categoryRequirementsTitle}}</p><ul class="row row-cols-1 row-cols-md-2 g-4 list-unstyled mb-0">{{categoryRequirements}}</ul></aside></div></div>
+  </div></div></div>
+</section>
+
+<section class="section-space section-surface driver-category-specialists" id="specialists" aria-labelledby="category-list-title">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 col-lg-8"><h2 id="category-list-title">{{categoryListTitle}}</h2></div>
+    </div>
+    {{cards}}
+  </div>
+</section>
+
+<section class="section-dark section-space driver-category-process" aria-labelledby="category-process-title" data-bs-theme="dark">
+  <div class="container"><div class="row mb-5"><div class="col-12 col-lg-8"><h2 class="text-white mb-0" id="category-process-title">{{categoryProcessTitle}}</h2></div></div>
+    <ol class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 list-unstyled driver-category-process__steps mb-0">{{categoryProcess}}</ol>
+  </div>
+</section>
+
+<section class="section-space driver-category-checks" aria-labelledby="category-checks-title">
+  <div class="container"><article class="driver-category-checks__shell"><div class="row g-0 align-items-stretch"><div class="col-12 col-lg-7"><div class="driver-category-checks__intro"><span class="driver-category-checks__emblem"><img src="/assets/icons/shield-check.svg" width="28" height="28" alt="" aria-hidden="true" /></span><h2 id="category-checks-title" class="mb-0">{{categoryChecksTitle}}</h2><figure class="driver-category-checks__media mb-0"><img src="{{categoryChecksImage}}" width="{{categoryChecksWidth}}" height="{{categoryChecksHeight}}" alt="{{categoryChecksAlt}}" loading="lazy" /></figure></div></div>
+    <div class="col-12 col-lg-5"><div class="driver-category-checks__panel"><ul class="check-list row g-4 list-unstyled mb-0">{{categoryChecks}}</ul></div></div>
+  </div></article></div>
+</section>
+
+{{categoryForm}}
+
+<section class="section-space" id="faq" aria-labelledby="category-faq-title">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 col-lg-8"><h2 id="category-faq-title">Частые вопросы</h2></div>
+    </div>
+    {{faq}}
+  </div>
+</section>

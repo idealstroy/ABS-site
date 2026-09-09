@@ -1,0 +1,82 @@
+{
+  "output": "index.html",
+  "path": "/",
+  "status": "ready",
+  "template": "home",
+  "pageType": "home",
+  "bodyClass": "page-template page-template--home",
+  "seo": {
+    "title": "Подбор строительного персонала по всей России | АБС",
+    "description": "Подбор строительного персонала для компаний: водители, машинисты и операторы спецтехники. Учитываем регион, график, технику и документы. Оставьте заявку.",
+    "robots": "index, follow",
+    "canonical": "https://abs-engineer.ru/",
+    "openGraph": true
+  },
+  "eyebrow": "АБС - подбор персонала для объектов",
+  "h1": "Подбор строительного персонала по всей России",
+  "lead": "",
+  "breadcrumbs": [],
+  "cards": [],
+  "specialistGroups": [
+    {
+      "title": "Водители",
+      "columnClass": "col-12 col-sm-6 col-lg-3",
+      "items": [
+        { "title": "Водители грузового автомобиля", "description": "Для строительных и производственных перевозок.", "href": "/voditel-spetstehnika/voditel-gruzovogo-avtomobilya/", "icon": "truck.svg" },
+        { "title": "Водители погрузчика", "description": "Для вилочных и фронтальных погрузчиков с учетом техники и сменности.", "href": "/voditel-spetstehnika/voditel-pogruzchika/", "icon": "minecart-loaded.svg" },
+        { "title": "Водители самосвала", "description": "Для перевозки грунта, инертных материалов и работ на площадке.", "href": "/voditel-spetstehnika/voditel-samosvala/", "icon": "truck-front.svg" },
+        { "title": "Водители тягача", "description": "Для работы с тягачами и специализированных перевозок.", "href": "/voditel-spetstehnika/voditel-tyagacha/", "icon": "truck-front.svg" },
+        { "title": "Водители топливозаправщика", "description": "Для топливозаправочной техники с учетом требуемых документов.", "href": "/voditel-spetstehnika/voditel-toplivozapravshchika/", "icon": "fuel-pump.svg" },
+        { "title": "Водители трала", "description": "Для перевозки крупногабаритной строительной и специальной техники.", "href": "/voditel-spetstehnika/voditel-trala/", "icon": "truck-flatbed.svg" },
+        { "title": "Водители вездехода", "description": "Для удаленных объектов и сложных маршрутов.", "href": "/voditel-spetstehnika/voditel-vezdehoda/", "icon": "car-front.svg" },
+        { "title": "Водители ломовоза", "description": "Для ломовозной техники и перевозки металлолома.", "href": "/voditel-spetstehnika/voditel-lomovoza/", "icon": "truck.svg" }
+      ]
+    },
+    {
+      "title": "Машинисты и операторы",
+      "columnClass": "col-12 col-sm-6 col-lg-4",
+      "items": [
+        { "title": "Машинисты бульдозера", "description": "Для планировки, перемещения грунта и подготовки строительной площадки.", "href": "/mashinisty-spetstehniki/buldozeristy/", "icon": "cone-striped.svg" },
+        { "title": "Машинисты трубоукладчика", "description": "Для линейного строительства и укладки трубопроводов.", "href": "/mashinisty-spetstehniki/mashinist-truboukladchika/", "icon": "diagram-2.svg" },
+        { "title": "Машинисты экскаватора", "description": "Для работ на экскаваторах и экскаваторах-погрузчиках.", "href": "/mashinisty-spetstehniki/ekskavatorschik/", "icon": "tools.svg" },
+        { "title": "Машинисты автокрана", "description": "Для грузоподъемных работ с учетом типа техники и условий объекта.", "href": "/mashinisty-spetstehniki/mashinisty-avtokrana/", "icon": "arrow-up-right-square.svg" },
+        { "title": "Машинисты автовышки и автогидроподъемников", "description": "Для работ на высоте с учетом необходимых допусков.", "href": "/mashinisty-spetstehniki/mashinist-avtovyshki/", "icon": "arrow-up-right-square.svg" }
+      ]
+    }
+  ],
+  "cta": null,
+  "faq": [
+    { "question": "В каких регионах вы подбираете строительный персонал?", "answer": "Подбор ведется для объектов по всей России. В заявке сразу укажите регион и условия работы: это поможет оценить требования к кандидатам и правильно запустить поиск." },
+    { "question": "Можно ли подобрать персонал для вахты?", "answer": "Да. Подбор вахтового персонала строится с учетом графика, региона, срока проекта, проживания и требований объекта. Эти условия уточняются до начала поиска и учитываются при первичном отборе кандидатов." },
+    { "question": "Каких специалистов вы подбираете?", "answer": "Основное направление - водители, машинисты и операторы специальной техники. Подбираем специалистов для самосвалов, погрузчиков, тягачей, тралов, экскаваторов, бульдозеров, автокранов, автовышек и автогидроподъемников." },
+    { "question": "Можно ли передать срочную заявку?", "answer": "Да, опишите задачу и срок, к которому нужен персонал. Возможность и порядок срочного подбора зависят от количества специалистов, региона, техники, графика и требований к документам." },
+    { "question": "Какие данные нужны для запуска подбора?", "answer": "Минимально нужны профессия, количество специалистов, регион объекта и график. Если известны тип техники, опыт, категории, удостоверения и допуски, укажите их в заявке - это позволит точнее сформировать профиль кандидата." },
+    { "question": "Работаете ли вы с юридическими лицами?", "answer": "Да. Услуга подбора персонала рассчитана на строительные компании, подрядчиков, генподрядчиков, промышленные предприятия и другие организации, которым нужно укомплектовать объект специалистами." }
+  ],
+  "showForm": true,
+  "plannedRoutes": [
+    "/mashinisty-spetstehniki/"
+  ],
+  "blocks": [],
+  "links": [],
+  "images": [],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Подбор строительного персонала",
+      "url": "https://abs-engineer.ru/",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Россия"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "АБС",
+        "email": "info@abs-engineer.ru",
+        "telephone": "+7 917 400-10-59"
+      }
+    }
+  ],
+  "region": {}
+}

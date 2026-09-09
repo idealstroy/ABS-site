@@ -1,0 +1,58 @@
+<form class="row g-3 needs-validation" action="/actions/send-request.php" method="post" novalidate data-request-form>
+  <div class="col-12 d-none" data-form-error role="alert">
+    <div class="form-error">Не удалось отправить заявку. Попробуйте еще раз или свяжитесь с нами по почте info@abs-engineer.ru.</div>
+  </div>
+  <input type="hidden" name="source" value="{{source}}" />
+  <input type="hidden" name="source_url" value="{{sourceUrl}}" data-source-url />
+  <input type="hidden" name="page_type" value="{{pageType}}" />
+  <input type="hidden" name="city" value="{{city}}" />
+  <input type="hidden" name="region_slug" value="{{regionSlug}}" />
+  <input type="hidden" name="submitted_at" value="" data-submitted-at />
+  <div hidden aria-hidden="true">
+    <label for="company-site">Сайт компании</label>
+    <input id="company-site" name="company_site" type="text" tabindex="-1" autocomplete="off" />
+  </div>
+  <div class="col-12 col-md-6">
+    <label class="form-label" for="request-name">Имя <span class="form-label__required" aria-hidden="true">*</span></label>
+    <input class="form-control" id="request-name" name="name" type="text" autocomplete="name" maxlength="120" required />
+    <div class="invalid-feedback">Укажите имя.</div>
+  </div>
+  <div class="col-12 col-md-6">
+    <label class="form-label" for="request-phone">Телефон <span class="form-label__required" aria-hidden="true">*</span></label>
+    <input class="form-control" id="request-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="40" required />
+    <div class="invalid-feedback">Укажите телефон.</div>
+  </div>
+  <div class="col-12">
+    <label class="form-label" for="request-region">Регион</label>
+    <input class="form-control" id="request-region" name="region" type="text" maxlength="200" />
+  </div>
+  <div class="col-12">
+    <label class="form-label" for="request-comment">Комментарий</label>
+    <textarea class="form-control" id="request-comment" name="comment" rows="4" maxlength="2000" placeholder="Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."></textarea>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-abs-primary" type="submit" data-submit-button>
+      <span data-submit-label>Оставить заявку</span>
+      <span class="spinner-border spinner-border-sm d-none" aria-hidden="true" data-submit-spinner></span>
+    </button>
+  </div>
+  <div class="col-12">
+    <div class="form-check form-consent">
+      <input class="form-check-input" id="request-consent" name="consent" type="checkbox" value="yes" required />
+      <label class="form-check-label form-note" for="request-consent">Отправляя форму, вы соглашаетесь на обработку персональных данных.</label>
+      <div class="invalid-feedback">Подтвердите согласие на обработку персональных данных.</div>
+    </div>
+    <!-- TODO: Add the approved personal-data processing policy URL. -->
+  </div>
+</form>
+
+<div class="modal fade request-validation-modal" id="requestValidationModal" tabindex="-1" aria-labelledby="requestValidationModalLabel" aria-hidden="true" data-validation-modal>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="mb-4" id="requestValidationModalLabel" data-validation-message>Заполните имя и телефон.</p>
+        <button class="btn btn-abs-primary" type="button" data-bs-dismiss="modal">Понятно</button>
+      </div>
+    </div>
+  </div>
+</div>

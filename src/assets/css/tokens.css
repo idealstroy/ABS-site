@@ -1,0 +1,30 @@
+:root {
+  --abs-primary: #e03b32;
+  --abs-secondary: #777777;
+  --abs-surface: #f6f7f8;
+  --abs-white: #ffffff;
+  --abs-text: #3d4a61;
+  --abs-success: #27ae37;
+  --abs-black: #333333;
+  --abs-space-1: 0.5rem;
+  --abs-space-2: 1rem;
+  --abs-space-3: 1.5rem;
+  --abs-space-4: 2rem;
+  --abs-space-5: 3rem;
+  --abs-space-6: 4rem;
+  --abs-radius-sm: 0.75rem;
+  --abs-radius-lg: 1rem;
+  --abs-radius-button: 0.625rem;
+  --abs-border: color-mix(in srgb, var(--abs-text) 18%, transparent);
+  --abs-shadow: 0 1.125rem 2.5rem color-mix(in srgb, var(--abs-text) 14%, transparent);
+  --bs-body-font-family: "Open Sans", sans-serif;
+  --bs-body-font-size: 1rem;
+  --bs-body-color: var(--abs-text);
+  --bs-body-bg: var(--abs-surface);
+  --bs-primary: var(--abs-primary);
+  --bs-secondary: var(--abs-secondary);
+  --bs-success: var(--abs-success);
+  --bs-link-color: var(--abs-primary);
+  --bs-link-hover-color: var(--abs-text);
+  --bs-border-color: var(--abs-border);
+}

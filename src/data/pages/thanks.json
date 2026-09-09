@@ -1,0 +1,26 @@
+{
+  "output": "thanks/index.html",
+  "path": "/thanks/",
+  "template": "thanks",
+  "pageType": "service-thanks",
+  "bodyClass": "service-page service-page--thanks",
+  "seo": {
+    "title": "Спасибо за заявку | АБС",
+    "description": "Заявка принята.",
+    "robots": "noindex, nofollow",
+    "canonical": "",
+    "openGraph": false
+  },
+  "h1": "Спасибо за заявку",
+  "lead": "Ожидайте звонок специалиста.",
+  "breadcrumbs": [],
+  "blocks": [],
+  "cards": [],
+  "cta": {},
+  "faq": [],
+  "links": [],
+  "images": [],
+  "schema": [],
+  "region": {}
+}
+

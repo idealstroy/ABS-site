@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /_prototype/
+Disallow: /request/
+Disallow: /thanks/
+Disallow: /404.html
+
+Sitemap: https://abs-engineer.ru/sitemap.xml

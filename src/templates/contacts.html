@@ -1,0 +1,30 @@
+<section class="hero-section hero-section--split contacts-hero overflow-hidden" id="top" aria-labelledby="page-title">
+  <img class="hero-media" src="{{contactsHeroImage}}" width="{{contactsHeroWidth}}" height="{{contactsHeroHeight}}" alt="{{contactsHeroAlt}}" fetchpriority="high" />
+  <div class="container position-relative">
+    <div class="hero-breadcrumbs"><div class="row"><div class="col-12 col-lg-8">{{breadcrumbs}}</div></div></div>
+    <div class="row align-items-center hero-content-row">
+      <div class="col-12 col-lg-7">
+        <span class="contacts-hero__eyebrow">АБС - инженеринг</span>
+        <h1 id="page-title" class="hero-title text-white mb-4">{{h1}}</h1>
+        <p class="hero-lead lead text-white mb-0">{{contactsHeroLead}}</p>
+        <div class="contacts-hero__actions">
+          <a class="btn btn-abs-primary contacts-hero__cta" href="#request" data-request-popup-trigger>
+            <span class="contacts-hero__cta-label contacts-hero__cta-label--desktop">Заказать звонок</span>
+            <span class="contacts-hero__cta-label contacts-hero__cta-label--mobile">Позвонить</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts-channels section-surface section-space" aria-labelledby="contacts-channels-title">
+  <div class="container"><div class="row mb-4"><div class="col-12 col-lg-8"><h2 id="contacts-channels-title">Выберите удобный способ связи</h2></div></div><ul class="row g-4 list-unstyled mb-0">{{contactsChannels}}</ul></div>
+</section>
+
+<section class="contacts-request section-space" id="request" aria-labelledby="contacts-request-title">
+  <div class="container"><div class="contacts-request__shell"><div class="row g-0 align-items-stretch">
+    <div class="col-12 col-lg-4"><div class="contacts-request__brief"><span class="contacts-request__emblem"><img src="/assets/icons/clipboard-check.svg" width="25" height="25" alt="" aria-hidden="true" /></span><h2 id="contacts-request-title">{{contactsFormTitle}}</h2><p class="contacts-request__hint">{{contactsChecklistTitle}}</p><ul class="row g-3 list-unstyled mb-0">{{contactsChecklist}}</ul></div></div>
+    <div class="col-12 col-lg-8"><div class="contacts-request__form">{{form}}</div></div>
+  </div></div></div>
+</section>

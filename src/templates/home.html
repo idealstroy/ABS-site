@@ -1,0 +1,121 @@
+<section class="hero-section hero-section--split overflow-hidden" id="top" aria-labelledby="page-title">
+  <img class="hero-media" src="/assets/images/hero-construction-specialist.png" width="1915" height="821" alt="Специалист на строительном объекте" fetchpriority="high" />
+  <div class="container position-relative">
+    <div class="row align-items-center hero-content-row">
+      <div class="col-12 col-lg-8">
+        <h1 class="hero-title text-white mb-4" id="page-title">{{h1}}</h1>
+        <p class="hero-lead lead text-white mb-3">Подбираем водителей, машинистов и операторов спецтехники для строительных, промышленных, дорожных и вахтовых объектов.</p>
+        <a class="btn btn-abs-primary mt-4" href="#request" data-request-popup-trigger>Подобрать персонал</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space intro-section" aria-labelledby="intro-title">
+  <div class="container">
+    <div class="row gy-5 align-items-stretch">
+      <div class="col-12 col-lg-5">
+        <div class="intro-media">
+          <img src="/assets/images/hero-construction-v2.png" width="1536" height="1024" alt="Руководитель строительного объекта на строительной площадке" loading="lazy" />
+          <span class="intro-media__frame" aria-hidden="true"></span>
+          <p class="intro-media__badge mb-0">Заявки из любого региона России</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 offset-lg-1">
+        <p class="intro-section__eyebrow mb-2">АБС - подбор персонала для объектов</p>
+        <h2 id="intro-title" class="mb-4">Подбор персонала для строительных объектов</h2>
+        <p class="large-copy mb-4">Когда на объекте не хватает специалистов, важно найти не просто человека с нужной профессией, а кандидата, который сможет работать на нужной технике, в заданном графике и в условиях конкретной площадки. Услуга подбора строительного персонала помогает передать эту задачу внешней команде и получить кандидатов, уже отобранных по согласованным требованиям.</p>
+        <p class="large-copy text-secondary mb-4">Работаем с групповыми запросами на подбор персонала с возможностью комплектования нескольких позиций на объекте. На старте достаточно сообщить, кого нужно подобрать, в каком регионе находится объект и какие условия работы нужно учитывать.</p>
+        <ul class="intro-points row row-cols-1 row-cols-sm-2 g-2 list-unstyled mb-4">
+          <li class="col">Подбор под требования конкретного объекта</li>
+          <li class="col">Водители, машинисты и операторы спецтехники</li>
+          <li class="col">Проверка опыта и документов</li>
+          <li class="col">Заявки из любого региона России</li>
+        </ul>
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-sm-6"><div class="intro-stat h-100"><strong>Групповые запросы</strong><span>С возможностью комплектования нескольких позиций на объекте.</span></div></div>
+          <div class="col-12 col-sm-6"><div class="intro-stat h-100"><strong>По всей России</strong><span>Работаем с заявками из разных регионов России.</span></div></div>
+        </div>
+        <a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>Оставить заявку на подбор</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space section-surface specialists-section" id="specialists" aria-labelledby="specialists-title">
+  <div class="container">
+    <div class="row mb-5"><div class="col-12"><h2 id="specialists-title" class="mb-3">Кого подбираем</h2><div class="row"><div class="col-12 col-lg-8"><p class="lead mb-0">Подбираем строительный персонал для работ с грузовой, специальной, погрузочной, землеройной и подъемной техникой.</p></div></div></div></div>
+    <div class="row g-4 mb-5">
+      <div class="col-12 col-lg-6"><a class="category-panel text-decoration-none h-100" href="/voditel-spetstehnika/"><img src="/assets/icons/truck.svg" width="48" height="48" alt="" aria-hidden="true" /><span><h3>Водители спецтехники</h3><span>Водители грузового автомобиля, самосвала, погрузчика, тягача, трала, топливозаправщика, вездехода и ломовоза.</span></span></a></div>
+      <div class="col-12 col-lg-6"><a class="category-panel text-decoration-none h-100" href="/mashinisty-spetstehniki/"><img src="/assets/icons/gear.svg" width="48" height="48" alt="" aria-hidden="true" /><span><h3>Машинисты спецтехники</h3><span>Машинисты бульдозера, экскаватора, трубоукладчика, автокрана, автовышки и автогидроподъемника.</span></span></a></div>
+    </div>
+    {{specialistCards}}
+  </div>
+</section>
+
+<section class="request-section section-space" id="request" aria-labelledby="request-title"><div class="container"><div class="row justify-content-center"><div class="col-12 col-xl-10"><div class="request-shell"><div class="row justify-content-center"><div class="col-12 col-lg-10"><h2 id="request-title" class="mb-4 text-center">Оставьте заявку на подбор персонала</h2><div data-request-popup-source>{{form}}</div></div></div></div></div></div>
+</section>
+
+<div class="modal fade request-form-modal" id="requestFormModal" tabindex="-1" aria-labelledby="requestFormModalTitle" aria-hidden="true" data-request-popup>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content request-shell p-0">
+      <div class="modal-header border-0 px-4 pt-4 pb-0">
+        <h2 class="h3 mb-0" id="requestFormModalTitle">Оставьте заявку на подбор персонала</h2>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть форму"></button>
+      </div>
+      <div class="modal-body px-4 pb-4 pt-3" data-request-popup-form></div>
+    </div>
+  </div>
+</div>
+
+<section class="section-space objects-section" id="objects" aria-labelledby="objects-title">
+  <div class="container">
+    <div class="objects-showcase__heading">
+      <h2 id="objects-title" class="mb-3">Для каких объектов подбираем персонал</h2>
+      <div class="row"><div class="col-12"><p class="large-copy mb-0">Подбор персонала в строительстве начинается с задачи объекта. Одному заказчику нужен водитель самосвала на дорожный участок, другому - машинист экскаватора на промышленную площадку, третьему - несколько специалистов для вахтового проекта. Поэтому до запуска поиска уточняем условия, которые влияют на подбор.</p></div></div>
+    </div>
+    <div class="objects-showcase">
+      <div class="row g-4 g-xl-5 align-items-stretch">
+        <div class="col-12 col-lg-7 order-2 order-lg-1">
+          <div class="row row-cols-1 row-cols-md-2 g-3 objects-showcase__tiles h-100">
+            <div class="col"><article class="object-card h-100"><img src="/assets/icons/building-gear.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>Промышленное строительство</h3><p>Персонал для строительства, реконструкции и обслуживания производственных площадок.</p></div></article></div>
+            <div class="col-12 col-md-6"><article class="object-card h-100"><img src="/assets/icons/building.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>Гражданское строительство</h3><p>Специалисты для жилых, коммерческих и инфраструктурных объектов.</p></div></article></div>
+            <div class="col-12 col-md-6"><article class="object-card h-100"><img src="/assets/icons/signpost-2.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>Дорожное строительство</h3><p>Водители и машинисты для транспортных, погрузочных, землеройных и подъемных работ.</p></div></article></div>
+            <div class="col"><article class="object-card h-100"><img src="/assets/icons/geo-alt.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>Удаленные и вахтовые объекты</h3><p>Подбор вахтового персонала с учетом региона, графика, сроков проекта, проживания и условий на площадке.</p></div></article></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5 order-1 order-lg-2">
+          <figure class="objects-showcase__media mb-0"><img src="/assets/images/objects-excavator.png" width="1536" height="1024" alt="Экскаватор на гусеничном ходу" loading="lazy" /><figcaption class="objects-coverage"><span class="objects-coverage__icon"><img src="/assets/icons/map.svg" width="28" height="28" alt="" aria-hidden="true" /></span><div><h3>Строительные площадки по всей России</h3><p>Работаем с заявками из разных регионов России и учитываем место выполнения работ уже на этапе первичного отбора.</p></div></figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark section-space" id="process" aria-labelledby="process-title" data-bs-theme="dark">
+  <div class="container">
+    <div class="row mb-5"><div class="col-12 col-lg-7"><h2 class="text-white mb-0" id="process-title">Как проходит подбор персонала</h2></div></div>
+    <ol class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 list-unstyled mb-0">
+      <li class="col"><article class="process-card"><span>01</span><h3>Принимаем заявку</h3><p>Вы сообщаете, каких специалистов нужно подобрать, сколько человек требуется, где находится объект и в каком графике предстоит работать.</p></article></li>
+      <li class="col"><article class="process-card"><span>02</span><h3>Согласовываем профиль кандидата</h3><p>Уточняем тип техники, опыт, категории, удостоверения, допуски, разряд и другие требования, которые важны для выхода на объект.</p></article></li>
+      <li class="col"><article class="process-card"><span>03</span><h3>Проводим поиск и первичный отбор</h3><p>Ищем кандидатов по согласованному профилю, связываемся с ними и отсеиваем тех, кто не соответствует условиям заявки.</p></article></li>
+      <li class="col"><article class="process-card"><span>04</span><h3>Проверяем опыт и документы</h3><p>Сверяем заявленный опыт, наличие необходимых документов и готовность работать в вашем регионе и графике.</p></article></li>
+      <li class="col"><article class="process-card"><span>05</span><h3>Передаем подходящих кандидатов</h3><p>Направляем заказчику кандидатов, соответствующих согласованным требованиям, для интервью и финального решения.</p></article></li>
+      <li class="col"><article class="process-card"><span>06</span><h3>Сопровождаем выход на объект</h3><p>Помогаем согласовать дату выхода и организационные детали, необходимые для начала работы.</p></article></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section-space" aria-labelledby="checks-title">
+  <div class="container"><div class="row gx-lg-5 gy-5"><div class="col-12 col-lg-5"><h2 id="checks-title" class="mb-4">Что проверяем до передачи кандидатов</h2><p class="large-copy mb-0">Подбор рабочего персонала для техники требует предварительной проверки.</p></div><div class="col-12 col-lg-7"><h3 class="check-list__title mb-4">До передачи кандидата заказчику уточняем</h3><ul class="check-list list-unstyled mb-5"><li>Опыт работы на нужном типе техники;</li><li>Водительские категории, удостоверения машиниста и квалификационный разряд;</li><li>Допуски, если они требуются для объекта и вида работ;</li><li>Комплект документов, необходимый для рассмотрения;</li><li>Готовность к региону, графику, вахте и условиям проживания;</li><li>Соответствие дополнительным требованиям по технике, сменности и сроку проекта.</li></ul><p class="mb-0">Такой порядок позволяет сократить количество нерелевантных интервью и быстрее перейти к рассмотрению кандидатов, которые подходят под вашу заявку.</p></div></div></div>
+</section>
+
+<section class="section-space section-surface benefits-section" aria-labelledby="benefits-title">
+  <div class="container"><div class="row mb-5"><div class="col-12 col-lg-10"><h2 id="benefits-title">Почему компании передают нам подбор</h2></div></div><div class="row g-4"><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/sliders.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Требования учитываем до поиска</h3><p>В подборе важна не только должность. Мы фиксируем технику, регион, график, документы и условия выхода, чтобы искать по конкретному профилю</p></article></div><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/people.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Подбор нескольких специалистов</h3><p>Берем в работу заявки на несколько специалистов для одного или нескольких объектов</p></article></div><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/calendar-check.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Учитываем вахтовый формат</h3><p>Если объект работает вахтой, уточняем график, место работы, условия размещения и готовность кандидата к такому формату</p></article></div><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/file-earmark-check.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Предварительно отобранные кандидаты</h3><p>До передачи кандидата проверяем ключевые требования заявки: опыт, документы и готовность к условиям объекта</p></article></div><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/geo-alt.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Работаем с объектами по России</h3><p>География объекта учитывается в заявке с самого начала, поэтому условия региона и логистика не остаются на финальном этапе</p></article></div></div></div>
+</section>
+
+<section class="section-space" id="faq" aria-labelledby="faq-title"><div class="container"><div class="row gy-4 mb-5"><div class="col-12 col-lg-7"><h2 id="faq-title">Частые вопросы</h2></div><div class="col-12 col-lg-5"><p class="lead mb-0 text-lg-nowrap">Частые вопросы о подборе строительного персонала</p></div></div>{{faq}}</div>
+</section>
+
+<section class="final-cta section-space" aria-labelledby="final-title"><div class="container"><div class="request-shell"><div class="row align-items-center gy-4"><div class="col-12 col-lg-8"><h2 class="mb-3" id="final-title">Нужны водители или машинисты на объект?</h2><p class="lead mb-0">Передайте заявку на подбор строительного персонала. Укажите, какие специалисты требуются и где находится объект - мы уточним детали и предложим следующий шаг.</p></div><div class="col-12 col-lg-4 text-lg-end"><a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>Оставить заявку на подбор</a></div></div></div></div>
+</section>

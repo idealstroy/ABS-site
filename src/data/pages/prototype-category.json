@@ -1,0 +1,40 @@
+{
+  "output": "_prototype/category/index.html",
+  "path": "/_prototype/category/",
+  "template": "category",
+  "pageType": "category",
+  "bodyClass": "page-template page-template--category",
+  "seo": {
+    "title": "Технический шаблон страницы категории | АБС",
+    "description": "Технический предпросмотр DOM-каркаса страницы категории АБС.",
+    "robots": "noindex, nofollow",
+    "canonical": "",
+    "openGraph": false
+  },
+  "eyebrow": "Технический шаблон",
+  "h1": "Страница категории",
+  "lead": "",
+  "breadcrumbs": [
+    { "label": "Главная", "href": "/" },
+    { "label": "Категория", "href": "" }
+  ],
+  "cards": [
+    { "icon": "person-badge.svg", "title": "Карточка специалиста", "description": "", "href": "" },
+    { "icon": "person-check.svg", "title": "Карточка специалиста", "description": "", "href": "" },
+    { "icon": "person-workspace.svg", "title": "Карточка специалиста", "description": "", "href": "" }
+  ],
+  "cta": {
+    "title": "CTA-блок категории",
+    "text": "",
+    "label": "Оставить заявку",
+    "href": "/request/"
+  },
+  "faq": [
+    { "question": "Вопрос FAQ категории", "answer": "" }
+  ],
+  "blocks": [],
+  "links": [],
+  "images": [],
+  "schema": [],
+  "region": {}
+}

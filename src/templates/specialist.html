@@ -1,0 +1,58 @@
+<section class="hero-section hero-section--split overflow-hidden" id="top" aria-labelledby="page-title">
+  <img class="hero-media" src="{{specialistHeroImage}}" width="{{specialistHeroWidth}}" height="{{specialistHeroHeight}}" alt="{{specialistHeroAlt}}" fetchpriority="high" />
+  <div class="container position-relative"><div class="hero-breadcrumbs"><div class="row"><div class="col-12 col-lg-8">{{breadcrumbs}}</div></div></div><div class="row align-items-center hero-content-row">
+    <div class="col-12 col-lg-8">
+      <h1 id="page-title" class="hero-title text-white mb-4">{{h1}}</h1>
+      <p class="hero-lead lead text-white mb-3">{{specialistHeroLead}}</p>
+      <a class="btn btn-abs-primary mt-4" href="#request" data-request-popup-trigger>Оставить заявку</a>
+    </div>
+  </div></div></div>
+</section>
+
+<div class="specialist-flow specialist-flow--light">
+  {{specialistObjections}}
+
+  <section class="section-space specialist-checks" aria-labelledby="specialist-checks-title">
+    <div class="container"><div class="specialist-checks__shell"><div class="row align-items-stretch g-0">
+      <div class="col-12 col-lg-5"><div class="specialist-checks__lead h-100"><span class="specialist-checks__emblem"><img src="/assets/icons/shield-check.svg" width="25" height="25" alt="" aria-hidden="true" /></span><h2 id="specialist-checks-title">{{specialistChecksTitle}}</h2><p>{{specialistChecksText}}</p><figure class="specialist-checks__media mb-0"><img src="{{specialistChecksImage}}" width="{{specialistChecksImageWidth}}" height="{{specialistChecksImageHeight}}" alt="{{specialistChecksImageAlt}}" loading="lazy" /></figure></div></div>
+      <div class="col-12 col-lg-7"><div class="specialist-checks__list h-100"><ul class="row g-4 mx-0 list-unstyled mb-0">{{specialistChecks}}</ul></div></div>
+    </div></div></div>
+  </section>
+
+  <section class="section-space specialist-process" aria-labelledby="specialist-process-title">
+    <div class="container"><div class="row g-4 align-items-stretch"><div class="col-12 col-lg-8"><div class="specialist-process__content h-100"><h2 class="mb-5" id="specialist-process-title">{{specialistProcessTitle}}</h2><ol class="row row-cols-1 row-cols-md-2 g-4 mx-0 list-unstyled mb-0">{{specialistProcess}}</ol></div></div>
+      <div class="col-12 col-lg-4"><figure class="specialist-process__media mb-0"><img src="{{specialistProcessImage}}" width="{{specialistProcessImageWidth}}" height="{{specialistProcessImageHeight}}" alt="{{specialistProcessImageAlt}}" loading="lazy" /></figure></div></div>
+    </div>
+  </section>
+</div>
+
+  <section class="specialist-deliverable" aria-labelledby="specialist-result-title">
+    <div class="container"><div class="specialist-deliverable__shell"><div class="row g-4 g-lg-5 align-items-center">
+      <div class="col-12 col-lg-5"><div class="specialist-deliverable__lead"><span class="specialist-deliverable__icon"><img src="/assets/icons/person-check.svg" width="26" height="26" alt="" aria-hidden="true" /></span><h2 id="specialist-result-title">{{specialistResultTitle}}</h2><p class="specialist-deliverable__text">{{specialistResultText}}</p><p class="specialist-deliverable__note mb-0">{{specialistResultNote}}</p></div></div>
+      <div class="col-12 col-lg-7"><ul class="row row-cols-1 row-cols-md-2 g-3 mx-0 list-unstyled specialist-deliverable__items mb-0">{{specialistResultItems}}</ul></div>
+    </div></div></div>
+  </section>
+
+<div class="specialist-flow specialist-flow--light">
+  <section class="request-section specialist-request section-space" id="request" aria-labelledby="request-title">
+    <div class="container"><div class="row justify-content-center"><div class="col-12 col-xl-10"><div class="request-shell"><div class="row justify-content-center"><div class="col-12 col-lg-10"><h2 id="request-title" class="mb-3 text-center">{{specialistFormTitle}}</h2><p class="specialist-request__intro">{{specialistFormText}}</p>{{form}}</div></div></div></div></div></div>
+  </section>
+
+  {{specialistTeam}}
+
+  <section class="section-space specialist-tasks" aria-labelledby="specialist-tasks-title">
+    <div class="container">
+      <div class="row g-4 align-items-stretch"><div class="col-12 col-lg-4 position-relative"><figure class="specialist-tasks__media mb-0"><img src="{{specialistTasksImage}}" width="{{specialistTasksImageWidth}}" height="{{specialistTasksImageHeight}}" alt="{{specialistTasksImageAlt}}" loading="lazy" /></figure></div>
+        <div class="col-12 col-lg-8"><div class="specialist-tasks__content h-100"><div class="specialist-tasks__heading mb-5"><h2 id="specialist-tasks-title" class="mb-4">{{specialistTasksTitle}}</h2><p class="specialist-tasks__intro mb-0">{{specialistTasksIntro}}</p></div><div class="row g-4 mx-0">{{specialistTasks}}</div></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="section-space" id="faq" aria-labelledby="specialist-faq-title">
+  <div class="container"><div class="row gy-4 mb-5"><div class="col-12 col-lg-7"><h2 id="specialist-faq-title">Частые вопросы</h2></div></div>{{faq}}</div>
+</section>
+
+<section class="request-section specialist-request section-space pt-0" id="request-final" aria-labelledby="request-final-title">
+  <div class="container"><div class="row justify-content-center"><div class="col-12 col-xl-10"><div class="request-shell"><div class="row justify-content-center"><div class="col-12 col-lg-10"><h2 id="request-final-title" class="mb-4 text-center">Оставьте заявку на подбор</h2>{{specialistFinalForm}}</div></div></div></div></div></div>
+</section>

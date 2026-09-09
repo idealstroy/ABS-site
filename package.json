@@ -1,0 +1,17 @@
+{
+  "name": "abs-site",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/start.mjs",
+    "check": "node scripts/check.mjs",
+    "test:form": "node scripts/test-form.mjs",
+    "test": "node scripts/test.mjs",
+    "deploy": "powershell -ExecutionPolicy Bypass -File scripts/deploy-ssh.ps1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

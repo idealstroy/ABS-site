@@ -1,0 +1,39 @@
+{
+  "brand": "АБС",
+  "domain": "https://abs-engineer.ru",
+  "email": "info@abs-engineer.ru",
+  "phone": "+7 917 400-10-59",
+  "phoneHref": "+79174001059",
+  "logo": "/assets/images/logo-full.svg",
+  "plannedRoutes": [
+    "/o-kompanii/",
+    "/kontakty/"
+  ],
+  "navigation": [
+    {
+      "label": "Водители",
+      "href": "/voditel-spetstehnika/",
+      "group": "drivers",
+      "homeGroup": "Водители",
+      "categoryLabel": "Водители спецтехники"
+    },
+    {
+      "label": "Машинисты",
+      "href": "/mashinisty-spetstehniki/",
+      "group": "operators",
+      "homeGroup": "Машинисты и операторы",
+      "categoryLabel": "Машинисты спецтехники"
+    },
+    { "label": "О компании", "href": "/o-kompanii/" },
+    { "label": "Вопросы", "href": "/#faq" },
+    { "label": "Контакты", "href": "/kontakty/" }
+  ],
+  "defaultRegion": {
+    "city": "",
+    "city_genitive": "",
+    "region": "Россия",
+    "region_slug": "",
+    "phone": "+7 917 400-10-59",
+    "email": "info@abs-engineer.ru"
+  }
+}

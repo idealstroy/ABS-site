@@ -1,0 +1,26 @@
+{
+  "output": "request/index.html",
+  "path": "/request/",
+  "template": "request",
+  "pageType": "service-request",
+  "bodyClass": "service-page service-page--request",
+  "seo": {
+    "title": "Оставить заявку | АБС",
+    "description": "Оставьте заявку на подбор строительного персонала.",
+    "robots": "noindex, nofollow",
+    "canonical": "",
+    "openGraph": false
+  },
+  "h1": "Оставьте заявку на подбор персонала",
+  "lead": "Расскажите, кого нужно подобрать. Укажите профессию, количество специалистов и регион объекта - этого достаточно, чтобы начать обсуждение задачи.",
+  "breadcrumbs": [],
+  "blocks": [],
+  "cards": [],
+  "cta": {},
+  "faq": [],
+  "links": [],
+  "images": [],
+  "schema": [],
+  "region": {}
+}
+

@@ -1,0 +1,41 @@
+{
+  "output": "_prototype/specialist/index.html",
+  "path": "/_prototype/specialist/",
+  "template": "specialist",
+  "pageType": "specialist",
+  "bodyClass": "page-template page-template--specialist",
+  "seo": {
+    "title": "Технический шаблон страницы специалиста | АБС",
+    "description": "Технический предпросмотр DOM-каркаса страницы специалиста АБС.",
+    "robots": "noindex, nofollow",
+    "canonical": "",
+    "openGraph": false
+  },
+  "eyebrow": "Технический шаблон",
+  "h1": "Страница специалиста",
+  "lead": "",
+  "breadcrumbs": [
+    { "label": "Главная", "href": "/" },
+    { "label": "Категория", "href": "/_prototype/category/" },
+    { "label": "Специалист", "href": "" }
+  ],
+  "cards": [
+    { "icon": "clipboard-check.svg", "title": "Карточка проверки", "description": "", "href": "" },
+    { "icon": "calendar-check.svg", "title": "Карточка процесса", "description": "", "href": "" },
+    { "icon": "geo-alt.svg", "title": "Карточка условия", "description": "", "href": "" }
+  ],
+  "cta": {
+    "title": "CTA-блок специалиста",
+    "text": "",
+    "label": "Оставить заявку",
+    "href": "/request/"
+  },
+  "faq": [
+    { "question": "Вопрос FAQ специалиста", "answer": "" }
+  ],
+  "blocks": [],
+  "links": [],
+  "images": [],
+  "schema": [],
+  "region": {}
+}

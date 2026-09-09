@@ -1,0 +1,26 @@
+{
+  "output": "404.html",
+  "path": "/404.html",
+  "template": "404",
+  "pageType": "service-404",
+  "bodyClass": "service-page service-page--404",
+  "seo": {
+    "title": "Страница не найдена | АБС",
+    "description": "Запрошенная страница не найдена.",
+    "robots": "noindex, nofollow",
+    "canonical": "",
+    "openGraph": false
+  },
+  "h1": "Страница не найдена",
+  "lead": "Проверьте адрес или вернитесь к техническому шаблону главной страницы.",
+  "breadcrumbs": [],
+  "blocks": [],
+  "cards": [],
+  "cta": {},
+  "faq": [],
+  "links": [],
+  "images": [],
+  "schema": [],
+  "region": {}
+}
+

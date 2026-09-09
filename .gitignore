@@ -1,0 +1,19 @@
+# Generated deployment build
+dist/
+
+# Local previews, document renders, and exported review artifacts
+tmp/
+output/
+outputs/
+.tmp-*/
+
+# Local agent and dependency folders
+.agents/
+node_modules/
+.deploy-config.json
+
+# Local operating-system and application artifacts
+*.log
+~$*.docx
+.DS_Store
+Thumbs.db
