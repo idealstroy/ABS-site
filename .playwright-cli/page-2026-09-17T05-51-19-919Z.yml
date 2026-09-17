@@ -1,0 +1,155 @@
+- generic [active] [ref=f7e1]:
+  - link "Перейти к содержанию" [ref=f7e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f7e3]:
+    - navigation "Главная навигация" [ref=f7e4]:
+      - generic [ref=f7e7]:
+        - link "АБС, главная" [ref=f7e8] [cursor=pointer]:
+          - /url: /
+          - img "АБС" [ref=f7e9]
+        - button "Открыть меню" [ref=f7e10] [cursor=pointer]
+  - main [ref=f7e12]:
+    - region [ref=f7e13]:
+      - img "Руководитель строительного объекта изучает план работ рядом с экскаватором" [ref=f7e14]
+      - generic [ref=f7e15]:
+        - navigation "Хлебные крошки" [ref=f7e19]:
+          - list [ref=f7e21]:
+            - listitem [ref=f7e22]:
+              - link "Главная" [ref=f7e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f7e24]: / О компании
+        - generic [ref=f7e26]:
+          - generic [ref=f7e27]: АБС - инженеринг
+          - heading "О компании" [level=1] [ref=f7e28]
+          - paragraph [ref=f7e29]: "Берем на себя кадровые задачи для строительных и производственных объектов: от подбора и проверки специалистов до сопровождения после выхода на работу"
+    - region [ref=f7e30]:
+      - generic [ref=f7e32]:
+        - figure [ref=f7e34]:
+          - img "Координатор и специалист строительного объекта сверяют рабочий план" [ref=f7e35]
+        - generic [ref=f7e37]:
+          - generic [ref=f7e38]: Наша миссия
+          - heading "Кадровый вопрос — управляемый процесс" [level=2] [ref=f7e39]
+          - paragraph [ref=f7e40]: АБС помогает компаниям обеспечивать объекты квалифицированным персоналом и сохранять непрерывность производственных процессов.
+          - paragraph [ref=f7e41]: Подбираем и проверяем специалистов, помогаем с подготовкой, оформлением и доставкой на объект, а затем сопровождаем сотрудника в период работы. Так кадровая задача становится понятной последовательностью действий, а не постоянным источником риска для команды на объекте.
+          - complementary [ref=f7e42]: Мы не закрываем вакансии ради отчета. Сопоставляем человека с задачей, условиями и сроком выхода, чтобы заказчик мог планировать работу спокойно.
+    - region [ref=f7e43]:
+      - generic [ref=f7e44]:
+        - generic [ref=f7e45]:
+          - generic [ref=f7e46]:
+            - text: Наша философия
+            - heading "Ответственность за результат — основа нашей работы" [level=2] [ref=f7e47]
+          - paragraph [ref=f7e49]: За каждой потребностью в персонале стоят сроки, техника и репутация заказчика. Поэтому мы смотрим на подбор как на часть производственного процесса.
+        - list [ref=f7e50]:
+          - listitem [ref=f7e51]:
+            - article [ref=f7e52]:
+              - heading "Надежность" [level=3] [ref=f7e55]
+              - paragraph [ref=f7e56]: Согласованная потребность в сотрудниках должна быть обеспечена в установленный срок
+          - listitem [ref=f7e57]:
+            - article [ref=f7e58]:
+              - heading "Ответственность" [level=3] [ref=f7e61]
+              - paragraph [ref=f7e62]: Сопровождаем сотрудника на всех этапах и сверяем его соответствие требованиям объекта
+          - listitem [ref=f7e63]:
+            - article [ref=f7e64]:
+              - heading "Качество" [level=3] [ref=f7e67]
+              - paragraph [ref=f7e68]: Учитываем документы, реальные навыки, здоровье, охрану труда и конкретную производственную задачу
+          - listitem [ref=f7e69]:
+            - article [ref=f7e70]:
+              - heading "Гибкость" [level=3] [ref=f7e73]
+              - paragraph [ref=f7e74]: Быстро адаптируем подбор к региону, графику, объекту и изменению необходимой численности
+          - listitem [ref=f7e75]:
+            - article [ref=f7e76]:
+              - heading "Партнерство" [level=3] [ref=f7e79]
+              - paragraph [ref=f7e80]: Погружаемся в задачи заказчика, чтобы кадровые решения поддерживали основную работу бизнеса
+    - region [ref=f7e81]:
+      - generic [ref=f7e82]:
+        - generic [ref=f7e84]:
+          - generic [ref=f7e85]: Наш подход
+          - heading "Люди готовы. Процессы отлажены. Объект укомплектован" [level=2] [ref=f7e86]
+        - list [ref=f7e87]:
+          - listitem [ref=f7e88]:
+            - article [ref=f7e89]:
+              - generic [ref=f7e90]: "01"
+              - generic [ref=f7e91]:
+                - heading "Потребность" [level=3] [ref=f7e92]
+                - paragraph [ref=f7e93]: Разбираем задачу объекта, состав команды, сроки и условия выхода
+          - listitem [ref=f7e94]:
+            - article [ref=f7e95]:
+              - generic [ref=f7e96]: "02"
+              - generic [ref=f7e97]:
+                - heading "Подбор" [level=3] [ref=f7e98]
+                - paragraph [ref=f7e99]: Ищем и проводим первичный отбор по согласованному профилю
+          - listitem [ref=f7e100]:
+            - article [ref=f7e101]:
+              - generic [ref=f7e102]: "03"
+              - generic [ref=f7e103]:
+                - heading "Подготовка" [level=3] [ref=f7e104]
+                - paragraph [ref=f7e105]: Уточняем документы, готовность к условиям и детали выхода
+          - listitem [ref=f7e106]:
+            - article [ref=f7e107]:
+              - generic [ref=f7e108]: "04"
+              - generic [ref=f7e109]:
+                - heading "Сопровождение" [level=3] [ref=f7e110]
+                - paragraph [ref=f7e111]: Помогаем координировать сотрудника после выхода на объект
+    - region [ref=f7e112]:
+      - generic [ref=f7e115]:
+        - generic [ref=f7e117]:
+          - heading "Что получает партнер" [level=2] [ref=f7e120]
+          - paragraph [ref=f7e121]: Не просто список резюме, а управляемый процесс подбора, встроенный в задачи объекта.
+        - list [ref=f7e123]:
+          - listitem [ref=f7e124]:
+            - generic [ref=f7e126]: Подбор и первичную проверку специалистов под согласованные требования
+          - listitem [ref=f7e127]:
+            - generic [ref=f7e129]: Сведения, необходимые для рассмотрения кандидатов и организации собеседований
+          - listitem [ref=f7e130]:
+            - generic [ref=f7e132]: Подготовку, оформление и доставку сотрудников на объект, когда это предусмотрено задачей
+          - listitem [ref=f7e133]:
+            - generic [ref=f7e135]: Команду, готовую к работе в заявленных условиях, регионе и графике
+    - region [ref=f7e136]:
+      - generic [ref=f7e142]:
+        - heading "Обсудим кадровую задачу" [level=2] [ref=f7e143]
+        - generic [ref=f7e145]:
+          - generic [ref=f7e146]:
+            - generic [ref=f7e147]: Имя *
+            - textbox "Имя" [ref=f7e148]
+          - generic [ref=f7e149]:
+            - generic [ref=f7e150]: Телефон *
+            - textbox "Телефон" [ref=f7e151]
+          - generic [ref=f7e152]:
+            - generic [ref=f7e153]: Регион
+            - textbox "Регион" [ref=f7e154]
+          - generic [ref=f7e155]:
+            - generic [ref=f7e156]: Комментарий
+            - textbox "Комментарий" [ref=f7e157]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f7e159] [cursor=pointer]
+          - generic [ref=f7e161]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f7e162]
+            - generic [ref=f7e163]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+  - contentinfo [ref=f7e164]:
+    - generic [ref=f7e165]:
+      - generic [ref=f7e166]:
+        - img "АБС" [ref=f7e168]
+        - navigation "Навигация в подвале" [ref=f7e170]:
+          - list [ref=f7e171]:
+            - listitem [ref=f7e172]:
+              - link "Водители" [ref=f7e173] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f7e174]:
+              - link "Машинисты" [ref=f7e175] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f7e176]:
+              - link "О компании" [ref=f7e177] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f7e178]:
+              - link "Вопросы" [ref=f7e179] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f7e180]:
+              - link "Контакты" [ref=f7e181] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f7e182]:
+          - link "+7 917 400-10-59" [ref=f7e183] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f7e184] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f7e185]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f7e186]: © АБС, 2026.

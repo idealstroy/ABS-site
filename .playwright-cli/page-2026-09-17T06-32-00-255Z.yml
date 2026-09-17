@@ -1,0 +1,333 @@
+- generic [active] [ref=f2e1]:
+  - link "Перейти к содержанию" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f2e3]:
+    - navigation "Главная навигация" [ref=f2e4]:
+      - generic [ref=f2e6]:
+        - generic [ref=f2e7]:
+          - generic [ref=f2e8]:
+            - generic [ref=f2e9]: Начните подбор персонала
+            - link "Контакты" [ref=f2e10] [cursor=pointer]:
+              - /url: /kontakty/
+          - generic [ref=f2e11]:
+            - link "+7 917 400-10-59" [ref=f2e12] [cursor=pointer]:
+              - /url: tel:+79174001059
+            - link "info@abs-engineer.ru" [ref=f2e13] [cursor=pointer]:
+              - /url: mailto:info@abs-engineer.ru
+        - generic [ref=f2e14]:
+          - link "АБС, главная" [ref=f2e15] [cursor=pointer]:
+            - /url: /
+            - img "АБС" [ref=f2e16]
+          - generic [ref=f2e17]:
+            - list [ref=f2e18]:
+              - listitem [ref=f2e19]:
+                - button "Водители" [ref=f2e20] [cursor=pointer]
+              - listitem [ref=f2e21]:
+                - button "Машинисты" [ref=f2e22] [cursor=pointer]
+              - listitem [ref=f2e23]:
+                - link "О компании" [ref=f2e24] [cursor=pointer]:
+                  - /url: /o-kompanii/
+              - listitem [ref=f2e25]:
+                - link "Вопросы" [ref=f2e26] [cursor=pointer]:
+                  - /url: /#faq
+              - listitem [ref=f2e27]:
+                - link "Контакты" [ref=f2e28] [cursor=pointer]:
+                  - /url: /kontakty/
+            - link "Оставить заявку" [ref=f2e30] [cursor=pointer]:
+              - /url: /request/
+  - main [ref=f2e31]:
+    - region [ref=f2e32]:
+      - img "Специалист на строительном объекте" [ref=f2e33]
+      - generic [ref=f2e36]:
+        - heading "Подбор строительного персонала по всей России" [level=1] [ref=f2e37]
+        - paragraph [ref=f2e38]: Подбираем водителей, машинистов и операторов спецтехники для строительных, промышленных, дорожных и вахтовых объектов.
+        - link "Подобрать персонал" [ref=f2e39] [cursor=pointer]:
+          - /url: "#request"
+    - region [ref=f2e40]:
+      - generic [ref=f2e42]:
+        - generic [ref=f2e44]:
+          - img "Руководитель строительного объекта на строительной площадке" [ref=f2e45]
+          - paragraph [ref=f2e47]: Заявки из любого региона России
+        - generic [ref=f2e48]:
+          - paragraph [ref=f2e49]: АБС - подбор персонала для объектов
+          - heading "Подбор персонала для строительных объектов" [level=2] [ref=f2e50]
+          - paragraph [ref=f2e51]: Когда на объекте не хватает специалистов, важно найти не просто человека с нужной профессией, а кандидата, который сможет работать на нужной технике, в заданном графике и в условиях конкретной площадки. Услуга подбора строительного персонала помогает передать эту задачу внешней команде и получить кандидатов, уже отобранных по согласованным требованиям.
+          - paragraph [ref=f2e52]: Работаем с групповыми запросами на подбор персонала с возможностью комплектования нескольких позиций на объекте. На старте достаточно сообщить, кого нужно подобрать, в каком регионе находится объект и какие условия работы нужно учитывать.
+          - list [ref=f2e53]:
+            - listitem [ref=f2e54]: Подбор под требования конкретного объекта
+            - listitem [ref=f2e55]: Водители, машинисты и операторы спецтехники
+            - listitem [ref=f2e56]: Проверка опыта и документов
+            - listitem [ref=f2e57]: Заявки из любого региона России
+          - generic [ref=f2e58]:
+            - generic [ref=f2e60]:
+              - strong [ref=f2e61]: Групповые запросы
+              - generic [ref=f2e62]: С возможностью комплектования нескольких позиций на объекте.
+            - generic [ref=f2e64]:
+              - strong [ref=f2e65]: По всей России
+              - generic [ref=f2e66]: Работаем с заявками из разных регионов России.
+          - link "Оставить заявку на подбор" [ref=f2e67] [cursor=pointer]:
+            - /url: "#request"
+    - region [ref=f2e68]:
+      - generic [ref=f2e69]:
+        - generic [ref=f2e71]:
+          - heading "Кого подбираем" [level=2] [ref=f2e72]
+          - paragraph [ref=f2e75]: Подбираем строительный персонал для работ с грузовой, специальной, погрузочной, землеройной и подъемной техникой.
+        - generic [ref=f2e76]:
+          - link "Водители спецтехники Водители грузового автомобиля, самосвала, погрузчика, тягача, трала, топливозаправщика, вездехода и ломовоза." [ref=f2e78] [cursor=pointer]:
+            - /url: /voditel-spetstehnika/
+            - generic [ref=f2e80]:
+              - heading "Водители спецтехники" [level=3] [ref=f2e81]
+              - generic [ref=f2e82]: Водители грузового автомобиля, самосвала, погрузчика, тягача, трала, топливозаправщика, вездехода и ломовоза.
+          - link "Машинисты спецтехники Машинисты бульдозера, экскаватора, трубоукладчика, автокрана, автовышки и автогидроподъемника." [ref=f2e84] [cursor=pointer]:
+            - /url: /mashinisty-spetstehniki/
+            - generic [ref=f2e86]:
+              - heading "Машинисты спецтехники" [level=3] [ref=f2e87]
+              - generic [ref=f2e88]: Машинисты бульдозера, экскаватора, трубоукладчика, автокрана, автовышки и автогидроподъемника.
+        - region [ref=f2e89]:
+          - heading "Водители" [level=3] [ref=f2e90]
+          - generic [ref=f2e91]:
+            - article [ref=f2e93]:
+              - generic [ref=f2e95]:
+                - strong [ref=f2e96]: Водители грузового автомобиля
+                - generic [ref=f2e97]: Для строительных и производственных перевозок.
+              - link "Водители грузового автомобиля":
+                - /url: /voditel-spetstehnika/voditel-gruzovogo-avtomobilya/
+            - article [ref=f2e100]:
+              - generic [ref=f2e102]:
+                - strong [ref=f2e103]: Водители погрузчика
+                - generic [ref=f2e104]: Для вилочных и фронтальных погрузчиков с учетом техники и сменности.
+              - link "Водители погрузчика":
+                - /url: /voditel-spetstehnika/voditel-pogruzchika/
+            - article [ref=f2e107]:
+              - generic [ref=f2e109]:
+                - strong [ref=f2e110]: Водители самосвала
+                - generic [ref=f2e111]: Для перевозки грунта, инертных материалов и работ на площадке.
+              - link "Водители самосвала":
+                - /url: /voditel-spetstehnika/voditel-samosvala/
+            - article [ref=f2e114]:
+              - generic [ref=f2e116]:
+                - strong [ref=f2e117]: Водители тягача
+                - generic [ref=f2e118]: Для работы с тягачами и специализированных перевозок.
+              - link "Водители тягача":
+                - /url: /voditel-spetstehnika/voditel-tyagacha/
+            - article [ref=f2e121]:
+              - generic [ref=f2e123]:
+                - strong [ref=f2e124]: Водители топливозаправщика
+                - generic [ref=f2e125]: Для топливозаправочной техники с учетом требуемых документов.
+              - link "Водители топливозаправщика":
+                - /url: /voditel-spetstehnika/voditel-toplivozapravshchika/
+            - article [ref=f2e128]:
+              - generic [ref=f2e130]:
+                - strong [ref=f2e131]: Водители трала
+                - generic [ref=f2e132]: Для перевозки крупногабаритной строительной и специальной техники.
+              - link "Водители трала":
+                - /url: /voditel-spetstehnika/voditel-trala/
+            - article [ref=f2e135]:
+              - generic [ref=f2e137]:
+                - strong [ref=f2e138]: Водители вездехода
+                - generic [ref=f2e139]: Для удаленных объектов и сложных маршрутов.
+              - link "Водители вездехода":
+                - /url: /voditel-spetstehnika/voditel-vezdehoda/
+            - article [ref=f2e142]:
+              - generic [ref=f2e144]:
+                - strong [ref=f2e145]: Водители ломовоза
+                - generic [ref=f2e146]: Для ломовозной техники и перевозки металлолома.
+              - link "Водители ломовоза":
+                - /url: /voditel-spetstehnika/voditel-lomovoza/
+        - region [ref=f2e148]:
+          - heading "Машинисты и операторы" [level=3] [ref=f2e149]
+          - generic [ref=f2e150]:
+            - article [ref=f2e152]:
+              - generic [ref=f2e154]:
+                - strong [ref=f2e155]: Машинисты бульдозера
+                - generic [ref=f2e156]: Для планировки, перемещения грунта и подготовки строительной площадки.
+            - article [ref=f2e158]:
+              - generic [ref=f2e160]:
+                - strong [ref=f2e161]: Машинисты трубоукладчика
+                - generic [ref=f2e162]: Для линейного строительства и укладки трубопроводов.
+            - article [ref=f2e164]:
+              - generic [ref=f2e166]:
+                - strong [ref=f2e167]: Машинисты экскаватора
+                - generic [ref=f2e168]: Для работ на экскаваторах и экскаваторах-погрузчиках.
+              - link "Машинисты экскаватора":
+                - /url: /mashinisty-spetstehniki/ekskavatorschik/
+            - article [ref=f2e171]:
+              - generic [ref=f2e173]:
+                - strong [ref=f2e174]: Машинисты автокрана
+                - generic [ref=f2e175]: Для грузоподъемных работ с учетом типа техники и условий объекта.
+            - article [ref=f2e177]:
+              - generic [ref=f2e179]:
+                - strong [ref=f2e180]: Машинисты автовышки и автогидроподъемников
+                - generic [ref=f2e181]: Для работ на высоте с учетом необходимых допусков.
+    - region [ref=f2e182]:
+      - generic [ref=f2e188]:
+        - heading "Оставьте заявку на подбор персонала" [level=2] [ref=f2e189]
+        - generic [ref=f2e191]:
+          - generic [ref=f2e192]:
+            - generic [ref=f2e193]: Имя *
+            - textbox "Имя" [ref=f2e194]
+          - generic [ref=f2e195]:
+            - generic [ref=f2e196]: Телефон *
+            - textbox "Телефон" [ref=f2e197]
+          - generic [ref=f2e198]:
+            - generic [ref=f2e199]: Регион
+            - textbox "Регион" [ref=f2e200]
+          - generic [ref=f2e201]:
+            - generic [ref=f2e202]: Комментарий
+            - textbox "Комментарий" [ref=f2e203]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f2e205] [cursor=pointer]
+          - generic [ref=f2e207]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f2e208]
+            - generic [ref=f2e209]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+    - region [ref=f2e210]:
+      - generic [ref=f2e211]:
+        - generic [ref=f2e212]:
+          - heading "Для каких объектов подбираем персонал" [level=2] [ref=f2e213]
+          - paragraph [ref=f2e216]: Подбор персонала в строительстве начинается с задачи объекта. Одному заказчику нужен водитель самосвала на дорожный участок, другому - машинист экскаватора на промышленную площадку, третьему - несколько специалистов для вахтового проекта. Поэтому до запуска поиска уточняем условия, которые влияют на подбор.
+        - generic [ref=f2e218]:
+          - generic [ref=f2e220]:
+            - article [ref=f2e222]:
+              - generic [ref=f2e224]:
+                - heading "Промышленное строительство" [level=3] [ref=f2e225]
+                - paragraph [ref=f2e226]: Персонал для строительства, реконструкции и обслуживания производственных площадок.
+            - article [ref=f2e228]:
+              - generic [ref=f2e230]:
+                - heading "Гражданское строительство" [level=3] [ref=f2e231]
+                - paragraph [ref=f2e232]: Специалисты для жилых, коммерческих и инфраструктурных объектов.
+            - article [ref=f2e234]:
+              - generic [ref=f2e236]:
+                - heading "Дорожное строительство" [level=3] [ref=f2e237]
+                - paragraph [ref=f2e238]: Водители и машинисты для транспортных, погрузочных, землеройных и подъемных работ.
+            - article [ref=f2e240]:
+              - generic [ref=f2e242]:
+                - heading "Удаленные и вахтовые объекты" [level=3] [ref=f2e243]
+                - paragraph [ref=f2e244]: Подбор вахтового персонала с учетом региона, графика, сроков проекта, проживания и условий на площадке.
+          - figure [ref=f2e246]:
+            - img "Экскаватор на гусеничном ходу" [ref=f2e247]
+            - generic [ref=f2e251]:
+              - heading "Строительные площадки по всей России" [level=3] [ref=f2e252]
+              - paragraph [ref=f2e253]: Работаем с заявками из разных регионов России и учитываем место выполнения работ уже на этапе первичного отбора.
+    - region [ref=f2e254]:
+      - generic [ref=f2e255]:
+        - heading "Как проходит подбор персонала" [level=2] [ref=f2e258]
+        - list [ref=f2e259]:
+          - listitem [ref=f2e260]:
+            - article [ref=f2e261]:
+              - generic [ref=f2e262]: "01"
+              - heading "Принимаем заявку" [level=3] [ref=f2e263]
+              - paragraph [ref=f2e264]: Вы сообщаете, каких специалистов нужно подобрать, сколько человек требуется, где находится объект и в каком графике предстоит работать.
+          - listitem [ref=f2e265]:
+            - article [ref=f2e266]:
+              - generic [ref=f2e267]: "02"
+              - heading "Согласовываем профиль кандидата" [level=3] [ref=f2e268]
+              - paragraph [ref=f2e269]: Уточняем тип техники, опыт, категории, удостоверения, допуски, разряд и другие требования, которые важны для выхода на объект.
+          - listitem [ref=f2e270]:
+            - article [ref=f2e271]:
+              - generic [ref=f2e272]: "03"
+              - heading "Проводим поиск и первичный отбор" [level=3] [ref=f2e273]
+              - paragraph [ref=f2e274]: Ищем кандидатов по согласованному профилю, связываемся с ними и отсеиваем тех, кто не соответствует условиям заявки.
+          - listitem [ref=f2e275]:
+            - article [ref=f2e276]:
+              - generic [ref=f2e277]: "04"
+              - heading "Проверяем опыт и документы" [level=3] [ref=f2e278]
+              - paragraph [ref=f2e279]: Сверяем заявленный опыт, наличие необходимых документов и готовность работать в вашем регионе и графике.
+          - listitem [ref=f2e280]:
+            - article [ref=f2e281]:
+              - generic [ref=f2e282]: "05"
+              - heading "Передаем подходящих кандидатов" [level=3] [ref=f2e283]
+              - paragraph [ref=f2e284]: Направляем заказчику кандидатов, соответствующих согласованным требованиям, для интервью и финального решения.
+          - listitem [ref=f2e285]:
+            - article [ref=f2e286]:
+              - generic [ref=f2e287]: "06"
+              - heading "Сопровождаем выход на объект" [level=3] [ref=f2e288]
+              - paragraph [ref=f2e289]: Помогаем согласовать дату выхода и организационные детали, необходимые для начала работы.
+    - region [ref=f2e290]:
+      - generic [ref=f2e292]:
+        - generic [ref=f2e293]:
+          - heading "Что проверяем до передачи кандидатов" [level=2] [ref=f2e294]
+          - paragraph [ref=f2e295]: Подбор рабочего персонала для техники требует предварительной проверки.
+        - generic [ref=f2e296]:
+          - heading "До передачи кандидата заказчику уточняем" [level=3] [ref=f2e297]
+          - list [ref=f2e298]:
+            - listitem [ref=f2e299]: Опыт работы на нужном типе техники;
+            - listitem [ref=f2e300]: Водительские категории, удостоверения машиниста и квалификационный разряд;
+            - listitem [ref=f2e301]: Допуски, если они требуются для объекта и вида работ;
+            - listitem [ref=f2e302]: Комплект документов, необходимый для рассмотрения;
+            - listitem [ref=f2e303]: Готовность к региону, графику, вахте и условиям проживания;
+            - listitem [ref=f2e304]: Соответствие дополнительным требованиям по технике, сменности и сроку проекта.
+          - paragraph [ref=f2e305]: Такой порядок позволяет сократить количество нерелевантных интервью и быстрее перейти к рассмотрению кандидатов, которые подходят под вашу заявку.
+    - region [ref=f2e306]:
+      - generic [ref=f2e307]:
+        - heading "Почему компании передают нам подбор" [level=2] [ref=f2e310]
+        - generic [ref=f2e311]:
+          - article [ref=f2e313]:
+            - heading "Требования учитываем до поиска" [level=3] [ref=f2e316]
+            - paragraph [ref=f2e317]: В подборе важна не только должность. Мы фиксируем технику, регион, график, документы и условия выхода, чтобы искать по конкретному профилю
+          - article [ref=f2e319]:
+            - heading "Подбор нескольких специалистов" [level=3] [ref=f2e322]
+            - paragraph [ref=f2e323]: Берем в работу заявки на несколько специалистов для одного или нескольких объектов
+          - article [ref=f2e325]:
+            - heading "Учитываем вахтовый формат" [level=3] [ref=f2e328]
+            - paragraph [ref=f2e329]: Если объект работает вахтой, уточняем график, место работы, условия размещения и готовность кандидата к такому формату
+          - article [ref=f2e331]:
+            - heading "Предварительно отобранные кандидаты" [level=3] [ref=f2e334]
+            - paragraph [ref=f2e335]: "До передачи кандидата проверяем ключевые требования заявки: опыт, документы и готовность к условиям объекта"
+          - article [ref=f2e337]:
+            - heading "Работаем с объектами по России" [level=3] [ref=f2e340]
+            - paragraph [ref=f2e341]: География объекта учитывается в заявке с самого начала, поэтому условия региона и логистика не остаются на финальном этапе
+    - region [ref=f2e342]:
+      - generic [ref=f2e343]:
+        - generic [ref=f2e344]:
+          - heading "Частые вопросы" [level=2] [ref=f2e346]
+          - paragraph [ref=f2e348]: Частые вопросы о подборе строительного персонала
+        - generic [ref=f2e349]:
+          - generic [ref=f2e350]:
+            - heading [level=3] [ref=f2e351]:
+              - button "В каких регионах вы подбираете строительный персонал?" [expanded] [ref=f2e352] [cursor=pointer]
+            - generic [ref=f2e353]: "Подбор ведется для объектов по всей России. В заявке сразу укажите регион и условия работы: это поможет оценить требования к кандидатам и правильно запустить поиск."
+          - heading [level=3] [ref=f2e356]:
+            - button "Можно ли подобрать персонал для вахты?" [ref=f2e357] [cursor=pointer]
+          - heading [level=3] [ref=f2e359]:
+            - button "Каких специалистов вы подбираете?" [ref=f2e360] [cursor=pointer]
+          - heading [level=3] [ref=f2e362]:
+            - button "Можно ли передать срочную заявку?" [ref=f2e363] [cursor=pointer]
+          - heading [level=3] [ref=f2e365]:
+            - button "Какие данные нужны для запуска подбора?" [ref=f2e366] [cursor=pointer]
+          - heading [level=3] [ref=f2e368]:
+            - button "Работаете ли вы с юридическими лицами?" [ref=f2e369] [cursor=pointer]
+    - region [ref=f2e370]:
+      - generic [ref=f2e373]:
+        - generic [ref=f2e374]:
+          - heading "Нужны водители или машинисты на объект?" [level=2] [ref=f2e375]
+          - paragraph [ref=f2e376]: Передайте заявку на подбор строительного персонала. Укажите, какие специалисты требуются и где находится объект - мы уточним детали и предложим следующий шаг.
+        - link "Оставить заявку на подбор" [ref=f2e378] [cursor=pointer]:
+          - /url: "#request"
+  - contentinfo [ref=f2e379]:
+    - generic [ref=f2e380]:
+      - generic [ref=f2e381]:
+        - img "АБС" [ref=f2e383]
+        - navigation "Навигация в подвале" [ref=f2e385]:
+          - list [ref=f2e386]:
+            - listitem [ref=f2e387]:
+              - link "Водители" [ref=f2e388] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f2e389]:
+              - link "Машинисты" [ref=f2e390] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f2e391]:
+              - link "О компании" [ref=f2e392] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f2e393]:
+              - link "Вопросы" [ref=f2e394] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f2e395]:
+              - link "Контакты" [ref=f2e396] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f2e397]:
+          - link "+7 917 400-10-59" [ref=f2e398] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f2e399] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f2e400]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f2e401]: © АБС, 2026.

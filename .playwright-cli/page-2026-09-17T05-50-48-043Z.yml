@@ -1,0 +1,125 @@
+- generic [active] [ref=f4e1]:
+  - link "Перейти к содержанию" [ref=f4e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f4e3]:
+    - navigation "Главная навигация" [ref=f4e4]:
+      - generic [ref=f4e7]:
+        - link "АБС, главная" [ref=f4e8] [cursor=pointer]:
+          - /url: /
+          - img "АБС" [ref=f4e9]
+        - button "Открыть меню" [ref=f4e10] [cursor=pointer]
+  - main [ref=f4e12]:
+    - region [ref=f4e13]:
+      - img "Специалист по подбору персонала на рабочем месте" [ref=f4e14]
+      - generic [ref=f4e15]:
+        - navigation "Хлебные крошки" [ref=f4e19]:
+          - list [ref=f4e21]:
+            - listitem [ref=f4e22]:
+              - link "Главная" [ref=f4e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f4e24]: / Контакты
+        - generic [ref=f4e26]:
+          - generic [ref=f4e27]: АБС - инженеринг
+          - heading "Контакты" [level=1] [ref=f4e28]
+          - paragraph [ref=f4e29]: Обсудим подбор водителей или машинистов для строительного объекта. Позвоните, напишите или оставьте заявку - уточним задачу и согласуем следующие шаги
+          - link "Позвонить" [ref=f4e31] [cursor=pointer]:
+            - /url: "#request"
+    - region [ref=f4e32]:
+      - generic [ref=f4e33]:
+        - heading "Выберите удобный способ связи" [level=2] [ref=f4e36]
+        - list [ref=f4e37]:
+          - listitem [ref=f4e38]:
+            - article [ref=f4e39]:
+              - paragraph [ref=f4e42]: По телефону
+              - link "+7 917 400-10-59" [ref=f4e43] [cursor=pointer]:
+                - /url: tel:+79174001059
+              - paragraph [ref=f4e44]: Обсудим задачу и договоримся о следующих шагах.
+          - listitem [ref=f4e45]:
+            - article [ref=f4e46]:
+              - img "MAX" [ref=f4e48]
+              - paragraph [ref=f4e49]: В мессенджере MAX
+              - link "Открыть MAX" [ref=f4e50] [cursor=pointer]:
+                - /url: https://web.max.ru/
+              - paragraph [ref=f4e51]: Откройте MAX и найдите нас по номеру +7 917 400-10-59.
+          - listitem [ref=f4e52]:
+            - article [ref=f4e53]:
+              - paragraph [ref=f4e56]: По электронной почте
+              - link "info@abs-engineer.ru" [ref=f4e57] [cursor=pointer]:
+                - /url: mailto:info@abs-engineer.ru?subject=Запрос%20на%20подбор%20персонала
+              - paragraph [ref=f4e58]: Подходит, если нужно приложить описание вакансии или объекта.
+    - region [ref=f4e59]:
+      - generic [ref=f4e62]:
+        - generic [ref=f4e64]:
+          - heading "Передайте заявку" [level=2] [ref=f4e67]
+          - paragraph [ref=f4e68]: Что поможет начать подбор быстрее
+          - list [ref=f4e69]:
+            - listitem [ref=f4e70]:
+              - article [ref=f4e71]:
+                - generic [ref=f4e72]: "01"
+                - generic [ref=f4e73]:
+                  - paragraph [ref=f4e74]: Кого ищете
+                  - paragraph [ref=f4e75]: Профессия, тип техники или работ.
+            - listitem [ref=f4e76]:
+              - article [ref=f4e77]:
+                - generic [ref=f4e78]: "02"
+                - generic [ref=f4e79]:
+                  - paragraph [ref=f4e80]: Сколько специалистов нужно
+                  - paragraph [ref=f4e81]: Количество позиций и желаемая дата выхода.
+            - listitem [ref=f4e82]:
+              - article [ref=f4e83]:
+                - generic [ref=f4e84]: "03"
+                - generic [ref=f4e85]:
+                  - paragraph [ref=f4e86]: Где находится объект
+                  - paragraph [ref=f4e87]: Регион, формат работы и график.
+            - listitem [ref=f4e88]:
+              - article [ref=f4e89]:
+                - generic [ref=f4e90]: "04"
+                - generic [ref=f4e91]:
+                  - paragraph [ref=f4e92]: Какие условия важны
+                  - paragraph [ref=f4e93]: Опыт, категории, документы и другие требования.
+        - generic [ref=f4e96]:
+          - generic [ref=f4e97]:
+            - generic [ref=f4e98]: Имя *
+            - textbox "Имя" [ref=f4e99]
+          - generic [ref=f4e100]:
+            - generic [ref=f4e101]: Телефон *
+            - textbox "Телефон" [ref=f4e102]
+          - generic [ref=f4e103]:
+            - generic [ref=f4e104]: Регион
+            - textbox "Регион" [ref=f4e105]
+          - generic [ref=f4e106]:
+            - generic [ref=f4e107]: Комментарий
+            - textbox "Комментарий" [ref=f4e108]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f4e110] [cursor=pointer]
+          - generic [ref=f4e112]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f4e113]
+            - generic [ref=f4e114]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+  - contentinfo [ref=f4e115]:
+    - generic [ref=f4e116]:
+      - generic [ref=f4e117]:
+        - img "АБС" [ref=f4e119]
+        - navigation "Навигация в подвале" [ref=f4e121]:
+          - list [ref=f4e122]:
+            - listitem [ref=f4e123]:
+              - link "Водители" [ref=f4e124] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f4e125]:
+              - link "Машинисты" [ref=f4e126] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f4e127]:
+              - link "О компании" [ref=f4e128] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f4e129]:
+              - link "Вопросы" [ref=f4e130] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f4e131]:
+              - link "Контакты" [ref=f4e132] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f4e133]:
+          - link "+7 917 400-10-59" [ref=f4e134] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f4e135] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f4e136]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f4e137]: © АБС, 2026.

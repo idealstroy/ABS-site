@@ -37,6 +37,15 @@ const hideProjectModal = (modal) => {
 
 const navigation = document.getElementById("siteNavigation");
 if (navigation && window.bootstrap) {
+  const navigationHeader = navigation.closest(".site-header");
+  const navigationToggler = navigationHeader?.querySelector(".navbar-toggler");
+
+  document.addEventListener("click", (event) => {
+    if (!navigation.classList.contains("show")) return;
+    if (navigation.contains(event.target) || navigationToggler?.contains(event.target)) return;
+    window.bootstrap.Collapse.getOrCreateInstance(navigation).hide();
+  });
+
   navigation.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       if (navigation.classList.contains("show")) {

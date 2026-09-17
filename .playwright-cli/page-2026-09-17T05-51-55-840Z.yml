@@ -1,0 +1,277 @@
+- generic [active] [ref=f10e1]:
+  - link "Перейти к содержанию" [ref=f10e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f10e3]:
+    - navigation "Главная навигация" [ref=f10e4]:
+      - generic [ref=f10e7]:
+        - link "АБС, главная" [ref=f10e8] [cursor=pointer]:
+          - /url: /
+          - img "АБС" [ref=f10e9]
+        - button "Открыть меню" [ref=f10e10] [cursor=pointer]
+  - main [ref=f10e12]:
+    - region [ref=f10e13]:
+      - img "Водитель ломовоза на промышленном объекте" [ref=f10e14]
+      - generic [ref=f10e15]:
+        - navigation "Хлебные крошки" [ref=f10e19]:
+          - list [ref=f10e21]:
+            - listitem [ref=f10e22]:
+              - link "Главная" [ref=f10e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f10e24]:
+              - text: /
+              - link "Водители спецтехники" [ref=f10e25] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f10e26]: / Водители ломовоза
+        - generic [ref=f10e28]:
+          - heading "Подбор водителей ломовоза для строительных и промышленных объектов" [level=1] [ref=f10e29]
+          - paragraph [ref=f10e30]: Подбираем водителей ломовоза для перевозки металлолома, строительного лома и металлоконструкций на промышленных, строительных и перерабатывающих объектах. Учитываем тип техники, наличие манипулятора, задачи, маршрут, регион и график.
+          - link "Оставить заявку" [ref=f10e31] [cursor=pointer]:
+            - /url: "#request"
+    - generic [ref=f10e32]:
+      - region [ref=f10e33]:
+        - generic [ref=f10e34]:
+          - generic [ref=f10e36]:
+            - heading "Подбор без потери времени" [level=2] [ref=f10e37]
+            - paragraph [ref=f10e38]: Для вывоза металлолома, отходов и металлоконструкций важно совместить опыт водителя с условиями объекта.
+          - list [ref=f10e39]:
+            - listitem [ref=f10e40]:
+              - article [ref=f10e41]:
+                - generic [ref=f10e47]:
+                  - heading "Нужно быстро вывести водителя на объект" [level=3] [ref=f10e49]
+                  - paragraph [ref=f10e51]: Ищем по типу ломовоза, характеру груза и маршруту.
+            - listitem [ref=f10e52]:
+              - article [ref=f10e53]:
+                - generic [ref=f10e59]:
+                  - heading "Собственный поиск затягивается" [level=3] [ref=f10e61]
+                  - paragraph [ref=f10e63]: Проверяем базу и подключаем более 35 источников поиска.
+            - listitem [ref=f10e64]:
+              - article [ref=f10e65]:
+                - generic [ref=f10e71]:
+                  - heading "Важно не допустить простоя ломовоза" [level=3] [ref=f10e73]
+                  - paragraph [ref=f10e75]: Фиксируем технику, груз, маршрут и дату выхода до поиска.
+            - listitem [ref=f10e76]:
+              - list [ref=f10e79]:
+                - listitem [ref=f10e80]:
+                  - generic [ref=f10e81]:
+                    - generic [ref=f10e82]: "1"
+                    - generic [ref=f10e83]: 3 дня
+                    - generic [ref=f10e84]: первые подходящие сотрудники
+                - listitem [ref=f10e85]:
+                  - generic [ref=f10e86]:
+                    - generic [ref=f10e87]: "2"
+                    - generic [ref=f10e88]: 35+
+                    - generic [ref=f10e89]: источников поиска
+                - listitem [ref=f10e90]:
+                  - generic [ref=f10e91]:
+                    - generic [ref=f10e92]: "3"
+                    - generic [ref=f10e93]: Маршрут
+                    - generic [ref=f10e94]: фиксируем до поиска
+                - listitem [ref=f10e95]:
+                  - generic [ref=f10e96]:
+                    - generic [ref=f10e97]: "4"
+                    - generic [ref=f10e98]: Документы
+                    - generic [ref=f10e99]: учитываем в профиле
+      - region [ref=f10e102]:
+        - generic [ref=f10e105]:
+          - generic [ref=f10e107]:
+            - heading "Проверяем кандидата по 7 пунктам" [level=2] [ref=f10e110]
+            - paragraph [ref=f10e111]: Для вывоза металлолома, отходов и металлоконструкций проверяем опыт под тип ломовоза, характер груза, маршрут, документы, регион и график.
+            - figure [ref=f10e112]:
+              - img "Водитель ломовоза проводит проверку техники" [ref=f10e113]
+          - list [ref=f10e116]:
+            - listitem [ref=f10e117]:
+              - generic [ref=f10e118]: Тип ломовоза и назначение на объекте
+            - listitem [ref=f10e122]:
+              - generic [ref=f10e123]: Наличие манипулятора по заявке
+            - listitem [ref=f10e127]:
+              - generic [ref=f10e128]: Вид груза и характер работ на площадке
+            - listitem [ref=f10e132]:
+              - generic [ref=f10e133]: Маршрут, количество водителей и срок выхода
+            - listitem [ref=f10e137]:
+              - generic [ref=f10e138]: Опыт работы на заявленном типе техники
+            - listitem [ref=f10e142]:
+              - generic [ref=f10e143]: Категории, удостоверения и документы
+            - listitem [ref=f10e147]:
+              - generic [ref=f10e148]: Регион, график и дополнительные условия работ
+      - region [ref=f10e152]:
+        - generic [ref=f10e154]:
+          - generic [ref=f10e156]:
+            - heading "Как проходит подбор водителя ломовоза" [level=2] [ref=f10e157]
+            - list [ref=f10e158]:
+              - listitem [ref=f10e159]:
+                - article [ref=f10e160]:
+                  - generic [ref=f10e161]: "01"
+                  - heading "Получаем заявку" [level=3] [ref=f10e162]
+                  - paragraph [ref=f10e163]: Уточняем технику, задачи, потребность и условия объекта.
+              - listitem [ref=f10e164]:
+                - article [ref=f10e165]:
+                  - generic [ref=f10e166]: "02"
+                  - heading "Согласовываем профиль" [level=3] [ref=f10e167]
+                  - paragraph [ref=f10e168]: Фиксируем ломовоз, груз, маршрут, график и документы.
+              - listitem [ref=f10e169]:
+                - article [ref=f10e170]:
+                  - generic [ref=f10e171]: "03"
+                  - heading "Проводим первичный отбор" [level=3] [ref=f10e172]
+                  - paragraph [ref=f10e173]: Сверяем опыт сотрудников с параметрами заявки.
+              - listitem [ref=f10e174]:
+                - article [ref=f10e175]:
+                  - generic [ref=f10e176]: "04"
+                  - heading "Передаем на рассмотрение" [level=3] [ref=f10e177]
+                  - paragraph [ref=f10e178]: Направляем сведения о сотрудниках и документы.
+          - figure [ref=f10e180]:
+            - img "Согласование задачи водителя ломовоза" [ref=f10e181]
+    - region [ref=f10e182]:
+      - generic [ref=f10e185]:
+        - generic [ref=f10e187]:
+          - heading "По итогам отбора предоставим" [level=2] [ref=f10e190]
+          - paragraph [ref=f10e191]: Сведения о сотрудниках с опытом вывоза металлолома, отходов и металлоконструкций, чтобы заказчик мог провести финальное собеседование и принять решение.
+          - paragraph [ref=f10e192]: Финальное собеседование и решение по водителю ломовоза остаются на стороне заказчика.
+        - list [ref=f10e194]:
+          - listitem [ref=f10e195]:
+            - article [ref=f10e196]:
+              - figure [ref=f10e197]
+              - generic [ref=f10e199]: Краткое описание опыта работы по ломовозу
+          - listitem [ref=f10e200]:
+            - article [ref=f10e201]:
+              - figure [ref=f10e202]
+              - generic [ref=f10e204]: Сведения о категориях, удостоверениях и документах
+          - listitem [ref=f10e205]:
+            - article [ref=f10e206]:
+              - figure [ref=f10e207]
+              - generic [ref=f10e209]: Готовность к маршруту и графику
+          - listitem [ref=f10e210]:
+            - article [ref=f10e211]:
+              - figure [ref=f10e212]
+              - generic [ref=f10e214]: Контактные данные для финального общения
+    - generic [ref=f10e215]:
+      - region [ref=f10e216]:
+        - generic [ref=f10e222]:
+          - heading "Оставьте заявку на подбор сотрудника" [level=2] [ref=f10e223]
+          - paragraph [ref=f10e224]: Укажите тип ломовоза, характер груза, маршрут, количество сотрудников, регион и дату выхода.
+          - generic [ref=f10e225]:
+            - generic [ref=f10e226]:
+              - generic [ref=f10e227]: Имя *
+              - textbox "Имя" [ref=f10e228]
+            - generic [ref=f10e229]:
+              - generic [ref=f10e230]: Телефон *
+              - textbox "Телефон" [ref=f10e231]
+            - generic [ref=f10e232]:
+              - generic [ref=f10e233]: Регион
+              - textbox "Регион" [ref=f10e234]
+            - generic [ref=f10e235]:
+              - generic [ref=f10e236]: Комментарий
+              - textbox "Комментарий" [ref=f10e237]:
+                - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+            - button "Оставить заявку" [ref=f10e239] [cursor=pointer]
+            - generic [ref=f10e241]:
+              - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f10e242]
+              - generic [ref=f10e243]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+      - region [ref=f10e244]:
+        - generic [ref=f10e247]:
+          - generic [ref=f10e249]:
+            - generic [ref=f10e250]: Команда подбора
+            - heading "Отбор ведет персональный менеджер" [level=2] [ref=f10e251]
+            - paragraph [ref=f10e252]: Заявку по ломовозу ведет персональный менеджер. Он согласует профиль, организует первичный отбор и держит вашу команду в курсе.
+          - list [ref=f10e254]:
+            - listitem [ref=f10e255]:
+              - article [ref=f10e256]:
+                - generic [ref=f10e257]: 5+ лет
+                - paragraph [ref=f10e258]: опыт каждого менеджера с персоналом
+            - listitem [ref=f10e259]:
+              - article [ref=f10e260]:
+                - generic [ref=f10e261]: 24/7
+                - paragraph [ref=f10e262]: принимаем заявки компаний
+            - listitem [ref=f10e263]:
+              - article [ref=f10e264]:
+                - generic [ref=f10e265]: 35+
+                - paragraph [ref=f10e266]: источников поиска
+            - listitem [ref=f10e267]:
+              - article [ref=f10e268]:
+                - generic [ref=f10e269]: Персональный менеджер
+                - paragraph [ref=f10e270]: ведет отбор и коммуникацию
+      - region [ref=f10e271]:
+        - generic [ref=f10e273]:
+          - figure [ref=f10e275]:
+            - img "Водитель ломовоза на площадке" [ref=f10e276]
+          - generic [ref=f10e278]:
+            - generic [ref=f10e279]:
+              - heading "Задачи водителя ломовоза на объекте" [level=2] [ref=f10e280]
+              - paragraph [ref=f10e281]: "Учитываем характер работ на объекте: вывоз металлолома и строительного лома, работу с металлоконструкциями, маршруты между площадками и условия загрузки."
+            - generic [ref=f10e282]:
+              - article [ref=f10e284]:
+                - heading "Вывоз металлолома" [level=3] [ref=f10e287]
+                - paragraph [ref=f10e288]: Перевозка лома и металлоконструкций по задачам объекта.
+              - article [ref=f10e290]:
+                - heading "Работа с манипулятором" [level=3] [ref=f10e293]
+                - paragraph [ref=f10e294]: Учет опыта с оборудованием по заявке.
+              - article [ref=f10e296]:
+                - heading "Маршруты между площадками" [level=3] [ref=f10e299]
+                - paragraph [ref=f10e300]: Перемещение груза по согласованной логистике.
+              - article [ref=f10e302]:
+                - heading "Промышленные и региональные объекты" [level=3] [ref=f10e305]
+                - paragraph [ref=f10e306]: Работа по согласованному региону и графику.
+    - region [ref=f10e307]:
+      - generic [ref=f10e308]:
+        - heading "Частые вопросы" [level=2] [ref=f10e311]
+        - generic [ref=f10e312]:
+          - generic [ref=f10e313]:
+            - heading [level=3] [ref=f10e314]:
+              - button "Каких водителей ломовоза вы подбираете?" [expanded] [ref=f10e315] [cursor=pointer]
+            - generic [ref=f10e316]: Подбираем водителей для перевозки металлолома, строительных отходов и металлоконструкций.
+          - heading [level=3] [ref=f10e319]:
+            - button "Что указать в заявке?" [ref=f10e320] [cursor=pointer]
+          - heading [level=3] [ref=f10e322]:
+            - button "Можно ли заявить несколько водителей?" [ref=f10e323] [cursor=pointer]
+          - heading [level=3] [ref=f10e325]:
+            - button "Подбираете для вахтового объекта?" [ref=f10e326] [cursor=pointer]
+          - heading [level=3] [ref=f10e328]:
+            - button "Для каких регионов работаете?" [ref=f10e329] [cursor=pointer]
+    - region [ref=f10e330]:
+      - generic [ref=f10e336]:
+        - heading "Оставьте заявку на подбор" [level=2] [ref=f10e337]
+        - generic [ref=f10e338]:
+          - generic [ref=f10e339]:
+            - generic [ref=f10e340]: Имя *
+            - textbox "Имя" [ref=f10e341]
+          - generic [ref=f10e342]:
+            - generic [ref=f10e343]: Телефон *
+            - textbox "Телефон" [ref=f10e344]
+          - generic [ref=f10e345]:
+            - generic [ref=f10e346]: Регион
+            - textbox "Регион" [ref=f10e347]
+          - generic [ref=f10e348]:
+            - generic [ref=f10e349]: Комментарий
+            - textbox "Комментарий" [ref=f10e350]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f10e352] [cursor=pointer]
+          - generic [ref=f10e354]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f10e355]
+            - generic [ref=f10e356]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+  - contentinfo [ref=f10e357]:
+    - generic [ref=f10e358]:
+      - generic [ref=f10e359]:
+        - img "АБС" [ref=f10e361]
+        - navigation "Навигация в подвале" [ref=f10e363]:
+          - list [ref=f10e364]:
+            - listitem [ref=f10e365]:
+              - link "Водители" [ref=f10e366] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f10e367]:
+              - link "Машинисты" [ref=f10e368] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f10e369]:
+              - link "О компании" [ref=f10e370] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f10e371]:
+              - link "Вопросы" [ref=f10e372] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f10e373]:
+              - link "Контакты" [ref=f10e374] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f10e375]:
+          - link "+7 917 400-10-59" [ref=f10e376] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f10e377] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f10e378]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f10e379]: © АБС, 2026.

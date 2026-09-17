@@ -1,0 +1,282 @@
+- generic [active] [ref=f15e1]:
+  - link "Перейти к содержанию" [ref=f15e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f15e3]:
+    - navigation "Главная навигация" [ref=f15e4]:
+      - generic [ref=f15e7]:
+        - link "АБС, главная" [ref=f15e8] [cursor=pointer]:
+          - /url: /
+          - img "АБС" [ref=f15e9]
+        - button "Открыть меню" [ref=f15e10] [cursor=pointer]
+  - main [ref=f15e12]:
+    - region [ref=f15e13]:
+      - img "Водитель тягача на строительном объекте рядом с полуприцепом" [ref=f15e14]
+      - generic [ref=f15e15]:
+        - navigation "Хлебные крошки" [ref=f15e19]:
+          - list [ref=f15e21]:
+            - listitem [ref=f15e22]:
+              - link "Главная" [ref=f15e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f15e24]:
+              - text: /
+              - link "Водители спецтехники" [ref=f15e25] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f15e26]: / Водители тягача
+        - generic [ref=f15e28]:
+          - heading "Подбор водителей тягача для строительных объектов" [level=1] [ref=f15e29]
+          - paragraph [ref=f15e30]: Подбираем водителей тягача для перевозок материалов, оборудования и техники между объектами, производственными площадками и логистическими узлами. Учитываем тип тягача и полуприцепа, маршрут, регион, график и требования объекта.
+          - link "Оставить заявку" [ref=f15e31] [cursor=pointer]:
+            - /url: "#request"
+    - generic [ref=f15e32]:
+      - region [ref=f15e33]:
+        - generic [ref=f15e34]:
+          - generic [ref=f15e36]:
+            - heading "Подбор без потери времени" [level=2] [ref=f15e37]
+            - paragraph [ref=f15e38]: Для перевозки грузов в составе с полуприцепом важно совместить опыт водителя с условиями конкретного объекта. Отбираем водителей тягача по согласованному профилю и передаем на рассмотрение сотрудников, готовых к заявленной задаче.
+          - list [ref=f15e39]:
+            - listitem [ref=f15e40]:
+              - article [ref=f15e41]:
+                - generic [ref=f15e47]:
+                  - heading "Нужно быстро вывести водителя тягача на объект" [level=3] [ref=f15e49]
+                  - paragraph [ref=f15e51]: "Сразу ищем по параметрам: тип тягача, полуприцеп и характер груза. Первых подходящих сотрудников для рассмотрения обычно представляем в течение трех дней."
+            - listitem [ref=f15e52]:
+              - article [ref=f15e53]:
+                - generic [ref=f15e59]:
+                  - heading "Собственный поиск водителя тягача затягивается" [level=3] [ref=f15e61]
+                  - paragraph [ref=f15e63]: Сначала проверяем собственную базу сотрудников, затем подключаем более 35 источников поиска и сопоставляем опыт с профилем до передачи заказчику.
+            - listitem [ref=f15e64]:
+              - article [ref=f15e65]:
+                - generic [ref=f15e71]:
+                  - heading "Важно не допустить простоя тягача" [level=3] [ref=f15e73]
+                  - paragraph [ref=f15e75]: До запуска отбора фиксируем тип тягача, полуприцеп, характер груза, дату выхода и условия объекта, чтобы искать сотрудника под реальную производственную задачу.
+            - listitem [ref=f15e76]:
+              - article [ref=f15e77]:
+                - generic [ref=f15e83]:
+                  - heading "Нужны водители для разных маршрутов" [level=3] [ref=f15e85]
+                  - paragraph [ref=f15e87]: Согласовываем задачи каждого рейса и режим перевозок до начала поиска.
+            - listitem [ref=f15e88]:
+              - list [ref=f15e91]:
+                - listitem [ref=f15e92]:
+                  - generic [ref=f15e93]:
+                    - generic [ref=f15e94]: "1"
+                    - generic [ref=f15e95]: 3 дня
+                    - generic [ref=f15e96]: первые подходящие сотрудники для рассмотрения
+                - listitem [ref=f15e97]:
+                  - generic [ref=f15e98]:
+                    - generic [ref=f15e99]: "2"
+                    - generic [ref=f15e100]: 35+
+                    - generic [ref=f15e101]: источников поиска при отсутствии сотрудника в базе
+                - listitem [ref=f15e102]:
+                  - generic [ref=f15e103]:
+                    - generic [ref=f15e104]: "3"
+                    - generic [ref=f15e105]: Состав техники
+                    - generic [ref=f15e106]: фиксируем до запуска поиска
+                - listitem [ref=f15e107]:
+                  - generic [ref=f15e108]:
+                    - generic [ref=f15e109]: "4"
+                    - generic [ref=f15e110]: Маршрут
+                    - generic [ref=f15e111]: учитываем в профиле сотрудника
+      - region [ref=f15e114]:
+        - generic [ref=f15e117]:
+          - generic [ref=f15e119]:
+            - heading "Проверяем кандидата по 7 пунктам" [level=2] [ref=f15e122]
+            - paragraph [ref=f15e123]: "Для перевозки грузов в составе с полуприцепом проверяем применимость опыта к условиям объекта: тип тягача, полуприцеп и характер груза, регион и график. После этого сопоставляем документы и готовность сотрудника с согласованной заявкой."
+            - figure [ref=f15e124]:
+              - img "Водитель тягача проверяет документы в кабине" [ref=f15e125]
+          - list [ref=f15e128]:
+            - listitem [ref=f15e129]:
+              - generic [ref=f15e130]: Тип тягача и полуприцепа
+            - listitem [ref=f15e134]:
+              - generic [ref=f15e135]: Характер груза и маршрут перевозок
+            - listitem [ref=f15e139]:
+              - generic [ref=f15e140]: Работа между объектами, площадками или логистическими узлами
+            - listitem [ref=f15e144]:
+              - generic [ref=f15e145]: Количество водителей и срок выхода
+            - listitem [ref=f15e149]:
+              - generic [ref=f15e150]: Опыт работы на заявленном составе
+            - listitem [ref=f15e154]:
+              - generic [ref=f15e155]: Категории, удостоверения и документы, включая допуски и медосмотр
+            - listitem [ref=f15e159]:
+              - generic [ref=f15e160]: Регион, график и дополнительные условия работ
+      - region [ref=f15e164]:
+        - generic [ref=f15e166]:
+          - generic [ref=f15e168]:
+            - heading "Как проходит подбор водителя тягача" [level=2] [ref=f15e169]
+            - list [ref=f15e170]:
+              - listitem [ref=f15e171]:
+                - article [ref=f15e172]:
+                  - generic [ref=f15e173]: "01"
+                  - heading "Получаем заявку" [level=3] [ref=f15e174]
+                  - paragraph [ref=f15e175]: Уточняем тип техники, задачи, потребность в водителях тягача и условия объекта.
+              - listitem [ref=f15e176]:
+                - article [ref=f15e177]:
+                  - generic [ref=f15e178]: "02"
+                  - heading "Согласовываем профиль" [level=3] [ref=f15e179]
+                  - paragraph [ref=f15e180]: Уточняем состав тягача, полуприцеп, груз, маршрут, регион, график и документы.
+              - listitem [ref=f15e181]:
+                - article [ref=f15e182]:
+                  - generic [ref=f15e183]: "03"
+                  - heading "Проводим первичный отбор" [level=3] [ref=f15e184]
+                  - paragraph [ref=f15e185]: Сверяем опыт сотрудников по тягачу с параметрами согласованной заявки.
+              - listitem [ref=f15e186]:
+                - article [ref=f15e187]:
+                  - generic [ref=f15e188]: "04"
+                  - heading "Передаем на рассмотрение" [level=3] [ref=f15e189]
+                  - paragraph [ref=f15e190]: Направляем сведения о сотрудниках по тягачу и документы, предусмотренные заявкой, для согласования.
+          - figure [ref=f15e192]:
+            - img "Диспетчер и водитель тягача согласовывают маршрут" [ref=f15e193]
+    - region [ref=f15e194]:
+      - generic [ref=f15e197]:
+        - generic [ref=f15e199]:
+          - heading "По итогам отбора предоставим" [level=2] [ref=f15e202]
+          - paragraph [ref=f15e203]: Сведения о сотрудниках с опытом перевозки грузов в составе с полуприцепом, чтобы заказчик мог провести финальное собеседование и принять решение.
+          - paragraph [ref=f15e204]: Финальное собеседование и решение по водителю тягача остаются на стороне заказчика.
+        - list [ref=f15e206]:
+          - listitem [ref=f15e207]:
+            - article [ref=f15e208]:
+              - figure [ref=f15e209]
+              - generic [ref=f15e211]: Краткое описание опыта работы по тягачу и на заявленном типе техники
+          - listitem [ref=f15e212]:
+            - article [ref=f15e213]:
+              - figure [ref=f15e214]
+              - generic [ref=f15e216]: Сведения о категориях, удостоверениях и документах, указанных для водителя тягача
+          - listitem [ref=f15e217]:
+            - article [ref=f15e218]:
+              - figure [ref=f15e219]
+              - generic [ref=f15e221]: Готовность к маршруту и графику, согласованным для водителя тягача
+          - listitem [ref=f15e222]:
+            - article [ref=f15e223]:
+              - figure [ref=f15e224]
+              - generic [ref=f15e226]: Контактные данные водителя тягача для финального общения заказчика
+    - generic [ref=f15e227]:
+      - region [ref=f15e228]:
+        - generic [ref=f15e234]:
+          - heading "Оставьте заявку на подбор сотрудника" [level=2] [ref=f15e235]
+          - paragraph [ref=f15e236]: "Опишите потребность в водителях тягача: тип тягача, полуприцеп и характер груза, количество сотрудников, регион и дату выхода. После этого подготовим профиль для отбора под условия вашего объекта."
+          - generic [ref=f15e237]:
+            - generic [ref=f15e238]:
+              - generic [ref=f15e239]: Имя *
+              - textbox "Имя" [ref=f15e240]
+            - generic [ref=f15e241]:
+              - generic [ref=f15e242]: Телефон *
+              - textbox "Телефон" [ref=f15e243]
+            - generic [ref=f15e244]:
+              - generic [ref=f15e245]: Регион
+              - textbox "Регион" [ref=f15e246]
+            - generic [ref=f15e247]:
+              - generic [ref=f15e248]: Комментарий
+              - textbox "Комментарий" [ref=f15e249]:
+                - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+            - button "Оставить заявку" [ref=f15e251] [cursor=pointer]
+            - generic [ref=f15e253]:
+              - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f15e254]
+              - generic [ref=f15e255]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+      - region [ref=f15e256]:
+        - generic [ref=f15e259]:
+          - generic [ref=f15e261]:
+            - generic [ref=f15e262]: Команда подбора
+            - heading "Отбор ведет персональный менеджер" [level=2] [ref=f15e263]
+            - paragraph [ref=f15e264]: Заявку по тягачу ведет персональный менеджер. Он согласует профиль, организует первичный отбор и держит вашу команду в курсе по каждому этапу.
+          - list [ref=f15e266]:
+            - listitem [ref=f15e267]:
+              - article [ref=f15e268]:
+                - generic [ref=f15e269]: 5+ лет
+                - paragraph [ref=f15e270]: опыт каждого менеджера с персоналом
+            - listitem [ref=f15e271]:
+              - article [ref=f15e272]:
+                - generic [ref=f15e273]: 24/7
+                - paragraph [ref=f15e274]: принимаем заявки компаний и подключаемся к задаче по тягачу
+            - listitem [ref=f15e275]:
+              - article [ref=f15e276]:
+                - generic [ref=f15e277]: 35+
+                - paragraph [ref=f15e278]: источников подключаем, если в базе нет сотрудника по тягачу
+            - listitem [ref=f15e279]:
+              - article [ref=f15e280]:
+                - generic [ref=f15e281]: Персональный менеджер
+                - paragraph [ref=f15e282]: ведет отбор водителей тягача и коммуникацию по заявке
+      - region [ref=f15e283]:
+        - generic [ref=f15e285]:
+          - figure [ref=f15e287]:
+            - img "Тягач перевозит строительную технику на полуприцепе" [ref=f15e288]
+          - generic [ref=f15e290]:
+            - generic [ref=f15e291]:
+              - heading "Задачи водителя тягача на объекте" [level=2] [ref=f15e292]
+              - paragraph [ref=f15e293]: "Учитываем назначение тягача и фактические задачи водителя: перевозку материалов и оборудования, работу с полуприцепом, межобъектовые маршруты или региональные рейсы."
+            - generic [ref=f15e294]:
+              - article [ref=f15e296]:
+                - heading "Перевозка материалов и оборудования" [level=3] [ref=f15e299]
+                - paragraph [ref=f15e300]: Доставка грузов для строительных и производственных задач.
+              - article [ref=f15e302]:
+                - heading "Работа с полуприцепом" [level=3] [ref=f15e305]
+                - paragraph [ref=f15e306]: Выполнение перевозок на заявленном составе техники.
+              - article [ref=f15e308]:
+                - heading "Межобъектовые маршруты" [level=3] [ref=f15e311]
+                - paragraph [ref=f15e312]: Перемещение грузов между площадками по согласованной логистике.
+              - article [ref=f15e314]:
+                - heading "Региональные и вахтовые рейсы" [level=3] [ref=f15e317]
+                - paragraph [ref=f15e318]: Работа по региону и графику, согласованным для водителя тягача.
+    - region [ref=f15e319]:
+      - generic [ref=f15e320]:
+        - heading "Частые вопросы" [level=2] [ref=f15e323]
+        - generic [ref=f15e324]:
+          - generic [ref=f15e325]:
+            - heading [level=3] [ref=f15e326]:
+              - button "Каких водителей тягача вы подбираете?" [expanded] [ref=f15e327] [cursor=pointer]
+            - generic [ref=f15e328]: Подбираем водителей тягача для объектов, где требуется опыт в межобъектовых перевозках материалов, техники и оборудования. Профиль формируем под тип техники, условия работ и график заказчика.
+          - heading [level=3] [ref=f15e331]:
+            - button "Что указать в заявке на водителей тягача?" [ref=f15e332] [cursor=pointer]
+          - heading [level=3] [ref=f15e334]:
+            - button "Можно ли заявить нескольких водителей тягача одновременно?" [ref=f15e335] [cursor=pointer]
+          - heading [level=3] [ref=f15e337]:
+            - button "Как проходит отбор водителей тягача для вахтового объекта?" [ref=f15e338] [cursor=pointer]
+          - heading [level=3] [ref=f15e340]:
+            - button "Для каких регионов подбираете водителей тягача?" [ref=f15e341] [cursor=pointer]
+    - region [ref=f15e342]:
+      - generic [ref=f15e348]:
+        - heading "Оставьте заявку на подбор" [level=2] [ref=f15e349]
+        - generic [ref=f15e350]:
+          - generic [ref=f15e351]:
+            - generic [ref=f15e352]: Имя *
+            - textbox "Имя" [ref=f15e353]
+          - generic [ref=f15e354]:
+            - generic [ref=f15e355]: Телефон *
+            - textbox "Телефон" [ref=f15e356]
+          - generic [ref=f15e357]:
+            - generic [ref=f15e358]: Регион
+            - textbox "Регион" [ref=f15e359]
+          - generic [ref=f15e360]:
+            - generic [ref=f15e361]: Комментарий
+            - textbox "Комментарий" [ref=f15e362]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f15e364] [cursor=pointer]
+          - generic [ref=f15e366]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f15e367]
+            - generic [ref=f15e368]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+  - contentinfo [ref=f15e369]:
+    - generic [ref=f15e370]:
+      - generic [ref=f15e371]:
+        - img "АБС" [ref=f15e373]
+        - navigation "Навигация в подвале" [ref=f15e375]:
+          - list [ref=f15e376]:
+            - listitem [ref=f15e377]:
+              - link "Водители" [ref=f15e378] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f15e379]:
+              - link "Машинисты" [ref=f15e380] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f15e381]:
+              - link "О компании" [ref=f15e382] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f15e383]:
+              - link "Вопросы" [ref=f15e384] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f15e385]:
+              - link "Контакты" [ref=f15e386] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f15e387]:
+          - link "+7 917 400-10-59" [ref=f15e388] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f15e389] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f15e390]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f15e391]: © АБС, 2026.

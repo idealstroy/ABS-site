@@ -1,0 +1,282 @@
+- generic [active] [ref=f9e1]:
+  - link "Перейти к содержанию" [ref=f9e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f9e3]:
+    - navigation "Главная навигация" [ref=f9e4]:
+      - generic [ref=f9e7]:
+        - link "АБС, главная" [ref=f9e8] [cursor=pointer]:
+          - /url: /
+          - img "АБС" [ref=f9e9]
+        - button "Открыть меню" [ref=f9e10] [cursor=pointer]
+  - main [ref=f9e12]:
+    - region [ref=f9e13]:
+      - img "Водитель грузового автомобиля на строительной площадке рядом с грузовиком" [ref=f9e14]
+      - generic [ref=f9e15]:
+        - navigation "Хлебные крошки" [ref=f9e19]:
+          - list [ref=f9e21]:
+            - listitem [ref=f9e22]:
+              - link "Главная" [ref=f9e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f9e24]:
+              - text: /
+              - link "Водители спецтехники" [ref=f9e25] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f9e26]: / Водители грузового автомобиля
+        - generic [ref=f9e28]:
+          - heading "Подбор водителей грузового автомобиля для строительных объектов" [level=1] [ref=f9e29]
+          - paragraph [ref=f9e30]: Подбираем водителей грузового автомобиля для перевозки материалов, оборудования и грузов на строительных и производственных площадках. Учитываем тип автомобиля, маршрут, регион, график и требования объекта.
+          - link "Оставить заявку" [ref=f9e31] [cursor=pointer]:
+            - /url: "#request"
+    - generic [ref=f9e32]:
+      - region [ref=f9e33]:
+        - generic [ref=f9e34]:
+          - generic [ref=f9e36]:
+            - heading "Подбор без потери времени" [level=2] [ref=f9e37]
+            - paragraph [ref=f9e38]: "Берем на себя поиск и первичный отбор: ищем водителей под требования объекта и передаем подходящих кандидатов на собеседования, когда задачу уже нельзя закрыть силами компании."
+          - list [ref=f9e39]:
+            - listitem [ref=f9e40]:
+              - article [ref=f9e41]:
+                - generic [ref=f9e47]:
+                  - heading "Срочно нужен водитель на объект" [level=3] [ref=f9e49]
+                  - paragraph [ref=f9e51]: После согласования профиля запускаем поиск. Первых подходящих кандидатов обычно представляем в течение двух дней.
+            - listitem [ref=f9e52]:
+              - article [ref=f9e53]:
+                - generic [ref=f9e59]:
+                  - heading "Нет своего HR или рекрутер перегружен" [level=3] [ref=f9e61]
+                  - paragraph [ref=f9e63]: "Закрепляем персонального рекрутера: он ведет поиск, первичные контакты, отбор и коммуникацию с вашей командой."
+            - listitem [ref=f9e64]:
+              - article [ref=f9e65]:
+                - generic [ref=f9e71]:
+                  - heading "Самостоятельный поиск не дает результата" [level=3] [ref=f9e73]
+                  - paragraph [ref=f9e75]: Подключаем более 35 источников поиска и проверяем соответствие профилю до передачи кандидатов заказчику.
+            - listitem [ref=f9e76]:
+              - article [ref=f9e77]:
+                - generic [ref=f9e83]:
+                  - heading "Есть риск простоя техники" [level=3] [ref=f9e85]
+                  - paragraph [ref=f9e87]: Фиксируем тип автомобиля, маршрут, график и дату выхода, чтобы искать водителя под параметры объекта.
+            - listitem [ref=f9e88]:
+              - list [ref=f9e91]:
+                - listitem [ref=f9e92]:
+                  - generic [ref=f9e93]:
+                    - generic [ref=f9e94]: "1"
+                    - generic [ref=f9e95]: 2 дня
+                    - generic [ref=f9e96]: первые подходящие кандидаты
+                - listitem [ref=f9e97]:
+                  - generic [ref=f9e98]:
+                    - generic [ref=f9e99]: "2"
+                    - generic [ref=f9e100]: 4–5
+                    - generic [ref=f9e101]: релевантных интервью
+                - listitem [ref=f9e102]:
+                  - generic [ref=f9e103]:
+                    - generic [ref=f9e104]: "3"
+                    - generic [ref=f9e105]: 2–3
+                    - generic [ref=f9e106]: сильных кандидата в итоге
+                - listitem [ref=f9e107]:
+                  - generic [ref=f9e108]:
+                    - generic [ref=f9e109]: "4"
+                    - generic [ref=f9e110]: 14 дней
+                    - generic [ref=f9e111]: средний срок закрытия позиции
+      - region [ref=f9e114]:
+        - generic [ref=f9e117]:
+          - generic [ref=f9e119]:
+            - heading "Проверяем кандидата по 7 пунктам" [level=2] [ref=f9e122]
+            - paragraph [ref=f9e123]: Сначала фиксируем параметры перевозки и объекта, затем по ним сопоставляем опыт, документы и готовность кандидата. Это позволяет передавать на рассмотрение водителей, соответствующих согласованным условиям.
+            - figure [ref=f9e124]:
+              - img "Водитель грузового автомобиля проверяет документы в кабине" [ref=f9e125]
+          - list [ref=f9e128]:
+            - listitem [ref=f9e129]:
+              - generic [ref=f9e130]: Тип и назначение грузового автомобиля
+            - listitem [ref=f9e134]:
+              - generic [ref=f9e135]: Маршрут и характер перевозок
+            - listitem [ref=f9e139]:
+              - generic [ref=f9e140]: Количество водителей и срок выхода
+            - listitem [ref=f9e144]:
+              - generic [ref=f9e145]: Регион и график работы
+            - listitem [ref=f9e149]:
+              - generic [ref=f9e150]: Опыт работы на нужном типе грузового автомобиля
+            - listitem [ref=f9e154]:
+              - generic [ref=f9e155]: Категории, удостоверения и документы
+            - listitem [ref=f9e159]:
+              - generic [ref=f9e160]: Дополнительные требования по перевозкам и объекту
+      - region [ref=f9e164]:
+        - generic [ref=f9e166]:
+          - generic [ref=f9e168]:
+            - heading "Как проходит подбор водителя грузового автомобиля" [level=2] [ref=f9e169]
+            - list [ref=f9e170]:
+              - listitem [ref=f9e171]:
+                - article [ref=f9e172]:
+                  - generic [ref=f9e173]: "01"
+                  - heading "Получаем заявку" [level=3] [ref=f9e174]
+                  - paragraph [ref=f9e175]: Уточняем тип автомобиля, задачи перевозки, потребность в водителях и условия объекта.
+              - listitem [ref=f9e176]:
+                - article [ref=f9e177]:
+                  - generic [ref=f9e178]: "02"
+                  - heading "Согласовываем профиль" [level=3] [ref=f9e179]
+                  - paragraph [ref=f9e180]: Фиксируем маршрут, категории, опыт, документы, регион и график работы.
+              - listitem [ref=f9e181]:
+                - article [ref=f9e182]:
+                  - generic [ref=f9e183]: "03"
+                  - heading "Проводим первичный отбор" [level=3] [ref=f9e184]
+                  - paragraph [ref=f9e185]: Сопоставляем сведения о кандидатах с требованиями согласованного профиля.
+              - listitem [ref=f9e186]:
+                - article [ref=f9e187]:
+                  - generic [ref=f9e188]: "04"
+                  - heading "Передаем на рассмотрение" [level=3] [ref=f9e189]
+                  - paragraph [ref=f9e190]: Направляем заказчику информацию о кандидатах для принятия финального решения.
+          - figure [ref=f9e192]:
+            - img "Водитель выходит из грузового автомобиля на строительном объекте" [ref=f9e193]
+    - region [ref=f9e194]:
+      - generic [ref=f9e197]:
+        - generic [ref=f9e199]:
+          - heading "По итогам подбора предоставим" [level=2] [ref=f9e202]
+          - paragraph [ref=f9e203]: Подборку кандидатов для рассмотрения с информацией, необходимой для финального собеседования и выбора.
+          - paragraph [ref=f9e204]: Финальные собеседования, выбор кандидата и оформление выбранного водителя остаются на стороне заказчика.
+        - list [ref=f9e206]:
+          - listitem [ref=f9e207]:
+            - article [ref=f9e208]:
+              - figure [ref=f9e209]
+              - generic [ref=f9e211]: Краткое описание опыта на нужном типе грузового автомобиля
+          - listitem [ref=f9e212]:
+            - article [ref=f9e213]:
+              - figure [ref=f9e214]
+              - generic [ref=f9e216]: Сведения о категориях и документах, заявленных в профиле
+          - listitem [ref=f9e217]:
+            - article [ref=f9e218]:
+              - figure [ref=f9e219]
+              - generic [ref=f9e221]: Готовность к конкретному маршруту, региону и графику
+          - listitem [ref=f9e222]:
+            - article [ref=f9e223]:
+              - figure [ref=f9e224]
+              - generic [ref=f9e226]: Контактные данные для дальнейшего общения с кандидатом
+    - generic [ref=f9e227]:
+      - region [ref=f9e228]:
+        - generic [ref=f9e234]:
+          - heading "Оставьте заявку на подбор водителя" [level=2] [ref=f9e235]
+          - paragraph [ref=f9e236]: Передайте требования по водителям грузового автомобиля. Укажите тип автомобиля, задачи, необходимое количество водителей, регион и график - этого достаточно, чтобы начать обсуждение заявки.
+          - generic [ref=f9e237]:
+            - generic [ref=f9e238]:
+              - generic [ref=f9e239]: Имя *
+              - textbox "Имя" [ref=f9e240]
+            - generic [ref=f9e241]:
+              - generic [ref=f9e242]: Телефон *
+              - textbox "Телефон" [ref=f9e243]
+            - generic [ref=f9e244]:
+              - generic [ref=f9e245]: Регион
+              - textbox "Регион" [ref=f9e246]
+            - generic [ref=f9e247]:
+              - generic [ref=f9e248]: Комментарий
+              - textbox "Комментарий" [ref=f9e249]:
+                - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+            - button "Оставить заявку" [ref=f9e251] [cursor=pointer]
+            - generic [ref=f9e253]:
+              - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f9e254]
+              - generic [ref=f9e255]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+      - region [ref=f9e256]:
+        - generic [ref=f9e259]:
+          - generic [ref=f9e261]:
+            - generic [ref=f9e262]: Команда подбора
+            - heading "Подбор ведет персональный рекрутер" [level=2] [ref=f9e263]
+            - paragraph [ref=f9e264]: "За задачей закрепляется один специалист: он организует поиск, первичный контакт с кандидатами и коммуникацию с вашей командой на всех этапах."
+          - list [ref=f9e266]:
+            - listitem [ref=f9e267]:
+              - article [ref=f9e268]:
+                - generic [ref=f9e269]: 5+ лет
+                - paragraph [ref=f9e270]: опыт каждого рекрутера в подборе персонала
+            - listitem [ref=f9e271]:
+              - article [ref=f9e272]:
+                - generic [ref=f9e273]: 24/7
+                - paragraph [ref=f9e274]: принимаем заявки от компаний и быстро подключаемся к задаче
+            - listitem [ref=f9e275]:
+              - article [ref=f9e276]:
+                - generic [ref=f9e277]: 35+
+                - paragraph [ref=f9e278]: источников используем для поиска кандидатов
+            - listitem [ref=f9e279]:
+              - article [ref=f9e280]:
+                - generic [ref=f9e281]: Персональный рекрутер
+                - paragraph [ref=f9e282]: ведет подбор и коммуникацию на всех этапах
+      - region [ref=f9e283]:
+        - generic [ref=f9e285]:
+          - figure [ref=f9e287]:
+            - img "Водитель грузового автомобиля закрепляет строительные материалы на платформе" [ref=f9e288]
+          - generic [ref=f9e290]:
+            - generic [ref=f9e291]:
+              - heading "Задачи водителя на строительном объекте" [level=2] [ref=f9e292]
+              - paragraph [ref=f9e293]: "Учитываем назначение автомобиля и фактические задачи водителя: перевозку материалов, снабжение площадки, маршруты между объектами или работу по региональному и вахтовому графику."
+            - generic [ref=f9e294]:
+              - article [ref=f9e296]:
+                - heading "Перевозка материалов" [level=3] [ref=f9e299]
+                - paragraph [ref=f9e300]: Доставка строительных материалов, инструмента и оборудования.
+              - article [ref=f9e302]:
+                - heading "Снабжение объекта" [level=3] [ref=f9e305]
+                - paragraph [ref=f9e306]: Работа на маршрутах снабжения строительной или производственной площадки.
+              - article [ref=f9e308]:
+                - heading "Перемещение по площадке" [level=3] [ref=f9e311]
+                - paragraph [ref=f9e312]: Внутриобъектовые и межобъектовые перевозки по согласованным маршрутам.
+              - article [ref=f9e314]:
+                - heading "Региональные и вахтовые работы" [level=3] [ref=f9e317]
+                - paragraph [ref=f9e318]: Работа в заявленном регионе и по согласованному графику объекта.
+    - region [ref=f9e319]:
+      - generic [ref=f9e320]:
+        - heading "Частые вопросы" [level=2] [ref=f9e323]
+        - generic [ref=f9e324]:
+          - generic [ref=f9e325]:
+            - heading [level=3] [ref=f9e326]:
+              - button "Каких водителей грузового автомобиля вы подбираете?" [expanded] [ref=f9e327] [cursor=pointer]
+            - generic [ref=f9e328]: Подбираем водителей грузового автомобиля для перевозки материалов, оборудования и грузов на строительных и производственных объектах.
+          - heading [level=3] [ref=f9e331]:
+            - button "Какие данные нужны для начала подбора?" [ref=f9e332] [cursor=pointer]
+          - heading [level=3] [ref=f9e334]:
+            - button "Можно ли подобрать нескольких водителей на объект?" [ref=f9e335] [cursor=pointer]
+          - heading [level=3] [ref=f9e337]:
+            - button "Подбираете ли вы водителей для вахтовых объектов?" [ref=f9e338] [cursor=pointer]
+          - heading [level=3] [ref=f9e340]:
+            - button "В каких регионах вы работаете?" [ref=f9e341] [cursor=pointer]
+    - region [ref=f9e342]:
+      - generic [ref=f9e348]:
+        - heading "Оставьте заявку на подбор" [level=2] [ref=f9e349]
+        - generic [ref=f9e350]:
+          - generic [ref=f9e351]:
+            - generic [ref=f9e352]: Имя *
+            - textbox "Имя" [ref=f9e353]
+          - generic [ref=f9e354]:
+            - generic [ref=f9e355]: Телефон *
+            - textbox "Телефон" [ref=f9e356]
+          - generic [ref=f9e357]:
+            - generic [ref=f9e358]: Регион
+            - textbox "Регион" [ref=f9e359]
+          - generic [ref=f9e360]:
+            - generic [ref=f9e361]: Комментарий
+            - textbox "Комментарий" [ref=f9e362]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f9e364] [cursor=pointer]
+          - generic [ref=f9e366]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f9e367]
+            - generic [ref=f9e368]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+  - contentinfo [ref=f9e369]:
+    - generic [ref=f9e370]:
+      - generic [ref=f9e371]:
+        - img "АБС" [ref=f9e373]
+        - navigation "Навигация в подвале" [ref=f9e375]:
+          - list [ref=f9e376]:
+            - listitem [ref=f9e377]:
+              - link "Водители" [ref=f9e378] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f9e379]:
+              - link "Машинисты" [ref=f9e380] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f9e381]:
+              - link "О компании" [ref=f9e382] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f9e383]:
+              - link "Вопросы" [ref=f9e384] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f9e385]:
+              - link "Контакты" [ref=f9e386] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f9e387]:
+          - link "+7 917 400-10-59" [ref=f9e388] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f9e389] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f9e390]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f9e391]: © АБС, 2026.

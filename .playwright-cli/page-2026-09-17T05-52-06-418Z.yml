@@ -1,0 +1,282 @@
+- generic [active] [ref=f11e1]:
+  - link "Перейти к содержанию" [ref=f11e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f11e3]:
+    - navigation "Главная навигация" [ref=f11e4]:
+      - generic [ref=f11e7]:
+        - link "АБС, главная" [ref=f11e8] [cursor=pointer]:
+          - /url: /
+          - img "АБС" [ref=f11e9]
+        - button "Открыть меню" [ref=f11e10] [cursor=pointer]
+  - main [ref=f11e12]:
+    - region [ref=f11e13]:
+      - img "Водитель фронтального погрузчика на строительном объекте" [ref=f11e14]
+      - generic [ref=f11e15]:
+        - navigation "Хлебные крошки" [ref=f11e19]:
+          - list [ref=f11e21]:
+            - listitem [ref=f11e22]:
+              - link "Главная" [ref=f11e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f11e24]:
+              - text: /
+              - link "Водители спецтехники" [ref=f11e25] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f11e26]: / Водители погрузчика
+        - generic [ref=f11e28]:
+          - heading "Подбор водителей погрузчика для строительных объектов" [level=1] [ref=f11e29]
+          - paragraph [ref=f11e30]: Подбираем водителей фронтальных, вилочных и других погрузчиков для строительных, производственных и складских площадок. Учитываем тип техники, характер работ, сменность, регион и требования объекта.
+          - link "Оставить заявку" [ref=f11e31] [cursor=pointer]:
+            - /url: "#request"
+    - generic [ref=f11e32]:
+      - region [ref=f11e33]:
+        - generic [ref=f11e34]:
+          - generic [ref=f11e36]:
+            - heading "Подбор без потери времени" [level=2] [ref=f11e37]
+            - paragraph [ref=f11e38]: Для сменной погрузки, разгрузки и размещения материалов важно совместить опыт водителя с условиями конкретного объекта. Отбираем водителей погрузчика по согласованному профилю и передаем на рассмотрение сотрудников, готовых к заявленной задаче.
+          - list [ref=f11e39]:
+            - listitem [ref=f11e40]:
+              - article [ref=f11e41]:
+                - generic [ref=f11e47]:
+                  - heading "Нужно быстро вывести водителя погрузчика на объект" [level=3] [ref=f11e49]
+                  - paragraph [ref=f11e51]: "Сразу ищем по параметрам: тип погрузчика, сменность и зону работ. Первых подходящих сотрудников для рассмотрения обычно представляем в течение трех дней."
+            - listitem [ref=f11e52]:
+              - article [ref=f11e53]:
+                - generic [ref=f11e59]:
+                  - heading "Собственный поиск водителя погрузчика затягивается" [level=3] [ref=f11e61]
+                  - paragraph [ref=f11e63]: Сначала проверяем собственную базу сотрудников, затем подключаем более 35 источников поиска и сопоставляем опыт с профилем до передачи заказчику.
+            - listitem [ref=f11e64]:
+              - article [ref=f11e65]:
+                - generic [ref=f11e71]:
+                  - heading "Важно не допустить простоя погрузчика" [level=3] [ref=f11e73]
+                  - paragraph [ref=f11e75]: До запуска отбора фиксируем тип погрузчика, сменность, зону работ, дату выхода и условия объекта, чтобы искать сотрудника под реальную производственную задачу.
+            - listitem [ref=f11e76]:
+              - article [ref=f11e77]:
+                - generic [ref=f11e83]:
+                  - heading "Нужны водители для разных зон работ" [level=3] [ref=f11e85]
+                  - paragraph [ref=f11e87]: Согласовываем задачи для каждого типа техники и распределение сотрудников по сменам до начала поиска.
+            - listitem [ref=f11e88]:
+              - list [ref=f11e91]:
+                - listitem [ref=f11e92]:
+                  - generic [ref=f11e93]:
+                    - generic [ref=f11e94]: "1"
+                    - generic [ref=f11e95]: 3 дня
+                    - generic [ref=f11e96]: первые подходящие сотрудники для рассмотрения
+                - listitem [ref=f11e97]:
+                  - generic [ref=f11e98]:
+                    - generic [ref=f11e99]: "2"
+                    - generic [ref=f11e100]: 35+
+                    - generic [ref=f11e101]: источников поиска при отсутствии сотрудника в базе
+                - listitem [ref=f11e102]:
+                  - generic [ref=f11e103]:
+                    - generic [ref=f11e104]: "3"
+                    - generic [ref=f11e105]: Тип техники
+                    - generic [ref=f11e106]: фиксируем до запуска поиска
+                - listitem [ref=f11e107]:
+                  - generic [ref=f11e108]:
+                    - generic [ref=f11e109]: "4"
+                    - generic [ref=f11e110]: Сменность
+                    - generic [ref=f11e111]: учитываем в профиле сотрудника
+      - region [ref=f11e114]:
+        - generic [ref=f11e117]:
+          - generic [ref=f11e119]:
+            - heading "Проверяем кандидата по 7 пунктам" [level=2] [ref=f11e122]
+            - paragraph [ref=f11e123]: "Для сменной погрузки, разгрузки и размещения материалов проверяем применимость опыта к условиям объекта: тип погрузчика, сменность и зону работ, регион и график. После этого сопоставляем документы и готовность сотрудника с согласованной заявкой."
+            - figure [ref=f11e124]:
+              - img "Водитель погрузчика проверяет документы перед сменой в складском комплексе" [ref=f11e125]
+          - list [ref=f11e128]:
+            - listitem [ref=f11e129]:
+              - generic [ref=f11e130]: Тип погрузчика и назначение на объекте
+            - listitem [ref=f11e134]:
+              - generic [ref=f11e135]: Характер погрузочно-разгрузочных работ
+            - listitem [ref=f11e139]:
+              - generic [ref=f11e140]: Количество водителей и сменный график
+            - listitem [ref=f11e144]:
+              - generic [ref=f11e145]: Опыт работы на нужном типе погрузчика
+            - listitem [ref=f11e149]:
+              - generic [ref=f11e150]: Удостоверения, категории и документы, включая допуски и медицинский осмотр
+            - listitem [ref=f11e154]:
+              - generic [ref=f11e155]: Регион, дата выхода и дополнительные условия объекта
+            - listitem [ref=f11e159]:
+              - generic [ref=f11e160]: Готовность к согласованной сменности и зоне работ
+      - region [ref=f11e164]:
+        - generic [ref=f11e166]:
+          - generic [ref=f11e168]:
+            - heading "Как проходит подбор водителя погрузчика" [level=2] [ref=f11e169]
+            - list [ref=f11e170]:
+              - listitem [ref=f11e171]:
+                - article [ref=f11e172]:
+                  - generic [ref=f11e173]: "01"
+                  - heading "Получаем заявку" [level=3] [ref=f11e174]
+                  - paragraph [ref=f11e175]: Уточняем тип техники, задачи, потребность в водителях погрузчика и условия объекта.
+              - listitem [ref=f11e176]:
+                - article [ref=f11e177]:
+                  - generic [ref=f11e178]: "02"
+                  - heading "Согласовываем профиль" [level=3] [ref=f11e179]
+                  - paragraph [ref=f11e180]: Уточняем тип погрузчика, сменность, зону работ, характер груза, регион, график и документы.
+              - listitem [ref=f11e181]:
+                - article [ref=f11e182]:
+                  - generic [ref=f11e183]: "03"
+                  - heading "Проводим первичный отбор" [level=3] [ref=f11e184]
+                  - paragraph [ref=f11e185]: Сверяем опыт сотрудников по погрузчику с параметрами согласованной заявки.
+              - listitem [ref=f11e186]:
+                - article [ref=f11e187]:
+                  - generic [ref=f11e188]: "04"
+                  - heading "Передаем на рассмотрение" [level=3] [ref=f11e189]
+                  - paragraph [ref=f11e190]: Направляем сведения о сотрудниках по погрузчику и документы, предусмотренные заявкой, для согласования.
+          - figure [ref=f11e192]:
+            - img "Водитель погрузчика получает задание рядом с техникой на складской площадке" [ref=f11e193]
+    - region [ref=f11e194]:
+      - generic [ref=f11e197]:
+        - generic [ref=f11e199]:
+          - heading "По итогам отбора предоставим" [level=2] [ref=f11e202]
+          - paragraph [ref=f11e203]: Сведения о сотрудниках с опытом сменной погрузки, разгрузки и размещения материалов, чтобы заказчик мог провести финальное собеседование и принять решение.
+          - paragraph [ref=f11e204]: Финальное собеседование и решение по водителю погрузчика остаются на стороне заказчика.
+        - list [ref=f11e206]:
+          - listitem [ref=f11e207]:
+            - article [ref=f11e208]:
+              - figure [ref=f11e209]
+              - generic [ref=f11e211]: Краткое описание опыта работы по погрузчику и на заявленном типе техники
+          - listitem [ref=f11e212]:
+            - article [ref=f11e213]:
+              - figure [ref=f11e214]
+              - generic [ref=f11e216]: Сведения о категориях, удостоверениях и документах, указанных для водителя погрузчика
+          - listitem [ref=f11e217]:
+            - article [ref=f11e218]:
+              - figure [ref=f11e219]
+              - generic [ref=f11e221]: Готовность к маршруту и графику, согласованным для водителя погрузчика
+          - listitem [ref=f11e222]:
+            - article [ref=f11e223]:
+              - figure [ref=f11e224]
+              - generic [ref=f11e226]: Контактные данные водителя погрузчика для финального общения заказчика
+    - generic [ref=f11e227]:
+      - region [ref=f11e228]:
+        - generic [ref=f11e234]:
+          - heading "Оставьте заявку на подбор сотрудника" [level=2] [ref=f11e235]
+          - paragraph [ref=f11e236]: "Опишите потребность в водителях погрузчика: тип погрузчика, сменность и зону работ, количество сотрудников, регион и дату выхода. После этого подготовим профиль для отбора под условия вашего объекта."
+          - generic [ref=f11e237]:
+            - generic [ref=f11e238]:
+              - generic [ref=f11e239]: Имя *
+              - textbox "Имя" [ref=f11e240]
+            - generic [ref=f11e241]:
+              - generic [ref=f11e242]: Телефон *
+              - textbox "Телефон" [ref=f11e243]
+            - generic [ref=f11e244]:
+              - generic [ref=f11e245]: Регион
+              - textbox "Регион" [ref=f11e246]
+            - generic [ref=f11e247]:
+              - generic [ref=f11e248]: Комментарий
+              - textbox "Комментарий" [ref=f11e249]:
+                - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+            - button "Оставить заявку" [ref=f11e251] [cursor=pointer]
+            - generic [ref=f11e253]:
+              - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f11e254]
+              - generic [ref=f11e255]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+      - region [ref=f11e256]:
+        - generic [ref=f11e259]:
+          - generic [ref=f11e261]:
+            - generic [ref=f11e262]: Команда подбора
+            - heading "Отбор ведет персональный менеджер" [level=2] [ref=f11e263]
+            - paragraph [ref=f11e264]: Заявку по погрузчику ведет персональный менеджер. Он согласует профиль, организует первичный отбор и держит вашу команду в курсе по каждому этапу.
+          - list [ref=f11e266]:
+            - listitem [ref=f11e267]:
+              - article [ref=f11e268]:
+                - generic [ref=f11e269]: 5+ лет
+                - paragraph [ref=f11e270]: опыт каждого менеджера с персоналом
+            - listitem [ref=f11e271]:
+              - article [ref=f11e272]:
+                - generic [ref=f11e273]: 24/7
+                - paragraph [ref=f11e274]: принимаем заявки компаний и подключаемся к задаче по погрузчику
+            - listitem [ref=f11e275]:
+              - article [ref=f11e276]:
+                - generic [ref=f11e277]: 35+
+                - paragraph [ref=f11e278]: источников подключаем, если в базе нет сотрудника по погрузчику
+            - listitem [ref=f11e279]:
+              - article [ref=f11e280]:
+                - generic [ref=f11e281]: Персональный менеджер
+                - paragraph [ref=f11e282]: ведет отбор водителей погрузчика и коммуникацию по заявке
+      - region [ref=f11e283]:
+        - generic [ref=f11e285]:
+          - figure [ref=f11e287]:
+            - img "Водитель погрузчика перемещает паллету со строительными материалами" [ref=f11e288]
+          - generic [ref=f11e290]:
+            - generic [ref=f11e291]:
+              - heading "Задачи водителя погрузчика на объекте" [level=2] [ref=f11e292]
+              - paragraph [ref=f11e293]: "Учитываем, где и для чего используется техника: на погрузке и разгрузке материалов, перемещении грузов по площадке, складском помещении или производственном участке."
+            - generic [ref=f11e294]:
+              - article [ref=f11e296]:
+                - heading "Погрузка и разгрузка" [level=3] [ref=f11e299]
+                - paragraph [ref=f11e300]: Работа со строительными материалами, паллетами, оборудованием и грузами.
+              - article [ref=f11e302]:
+                - heading "Складские операции" [level=3] [ref=f11e305]
+                - paragraph [ref=f11e306]: Перемещение и размещение грузов в зоне хранения и выдачи.
+              - article [ref=f11e308]:
+                - heading "Работа на площадке" [level=3] [ref=f11e311]
+                - paragraph [ref=f11e312]: Подача материалов и внутриобъектовые перемещения по согласованным маршрутам.
+              - article [ref=f11e314]:
+                - heading "Сменные и региональные объекты" [level=3] [ref=f11e317]
+                - paragraph [ref=f11e318]: Работа по заявленному графику на строительных и производственных площадках.
+    - region [ref=f11e319]:
+      - generic [ref=f11e320]:
+        - heading "Частые вопросы" [level=2] [ref=f11e323]
+        - generic [ref=f11e324]:
+          - generic [ref=f11e325]:
+            - heading [level=3] [ref=f11e326]:
+              - button "Каких водителей погрузчика вы подбираете?" [expanded] [ref=f11e327] [cursor=pointer]
+            - generic [ref=f11e328]: Подбираем водителей погрузчика для объектов, где требуется опыт в погрузочно-разгрузочных и складских операциях. Профиль формируем под тип техники, условия работ и график заказчика.
+          - heading [level=3] [ref=f11e331]:
+            - button "Что указать в заявке на водителей погрузчика?" [ref=f11e332] [cursor=pointer]
+          - heading [level=3] [ref=f11e334]:
+            - button "Можно ли заявить несколько водителей погрузчика одновременно?" [ref=f11e335] [cursor=pointer]
+          - heading [level=3] [ref=f11e337]:
+            - button "Как проходит отбор водителей погрузчика для вахтового объекта?" [ref=f11e338] [cursor=pointer]
+          - heading [level=3] [ref=f11e340]:
+            - button "Для каких регионов подбираете водителей погрузчика?" [ref=f11e341] [cursor=pointer]
+    - region [ref=f11e342]:
+      - generic [ref=f11e348]:
+        - heading "Оставьте заявку на подбор" [level=2] [ref=f11e349]
+        - generic [ref=f11e350]:
+          - generic [ref=f11e351]:
+            - generic [ref=f11e352]: Имя *
+            - textbox "Имя" [ref=f11e353]
+          - generic [ref=f11e354]:
+            - generic [ref=f11e355]: Телефон *
+            - textbox "Телефон" [ref=f11e356]
+          - generic [ref=f11e357]:
+            - generic [ref=f11e358]: Регион
+            - textbox "Регион" [ref=f11e359]
+          - generic [ref=f11e360]:
+            - generic [ref=f11e361]: Комментарий
+            - textbox "Комментарий" [ref=f11e362]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f11e364] [cursor=pointer]
+          - generic [ref=f11e366]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f11e367]
+            - generic [ref=f11e368]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+  - contentinfo [ref=f11e369]:
+    - generic [ref=f11e370]:
+      - generic [ref=f11e371]:
+        - img "АБС" [ref=f11e373]
+        - navigation "Навигация в подвале" [ref=f11e375]:
+          - list [ref=f11e376]:
+            - listitem [ref=f11e377]:
+              - link "Водители" [ref=f11e378] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f11e379]:
+              - link "Машинисты" [ref=f11e380] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f11e381]:
+              - link "О компании" [ref=f11e382] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f11e383]:
+              - link "Вопросы" [ref=f11e384] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f11e385]:
+              - link "Контакты" [ref=f11e386] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f11e387]:
+          - link "+7 917 400-10-59" [ref=f11e388] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f11e389] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f11e390]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f11e391]: © АБС, 2026.

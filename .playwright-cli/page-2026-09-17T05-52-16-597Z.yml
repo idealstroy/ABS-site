@@ -1,0 +1,282 @@
+- generic [active] [ref=f12e1]:
+  - link "Перейти к содержанию" [ref=f12e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f12e3]:
+    - navigation "Главная навигация" [ref=f12e4]:
+      - generic [ref=f12e7]:
+        - link "АБС, главная" [ref=f12e8] [cursor=pointer]:
+          - /url: /
+          - img "АБС" [ref=f12e9]
+        - button "Открыть меню" [ref=f12e10] [cursor=pointer]
+  - main [ref=f12e12]:
+    - region [ref=f12e13]:
+      - img "Водитель самосвала на карьерном объекте" [ref=f12e14]
+      - generic [ref=f12e15]:
+        - navigation "Хлебные крошки" [ref=f12e19]:
+          - list [ref=f12e21]:
+            - listitem [ref=f12e22]:
+              - link "Главная" [ref=f12e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f12e24]:
+              - text: /
+              - link "Водители спецтехники" [ref=f12e25] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f12e26]: / Водители самосвала
+        - generic [ref=f12e28]:
+          - heading "Подбор водителей самосвала для строительных объектов" [level=1] [ref=f12e29]
+          - paragraph [ref=f12e30]: Подбираем водителей самосвала для перевозки грунта, инертных материалов и строительных грузов на дорожных, промышленных и строительных объектах. Учитываем тип самосвала, маршрут, условия площадки, регион, график и требования объекта.
+          - link "Оставить заявку" [ref=f12e31] [cursor=pointer]:
+            - /url: "#request"
+    - generic [ref=f12e32]:
+      - region [ref=f12e33]:
+        - generic [ref=f12e34]:
+          - generic [ref=f12e36]:
+            - heading "Подбор без потери времени" [level=2] [ref=f12e37]
+            - paragraph [ref=f12e38]: Для вывоза грунта и доставки инертных материалов важно совместить опыт водителя с условиями конкретного объекта. Отбираем водителей самосвала по согласованному профилю и передаем на рассмотрение сотрудников, готовых к заявленной задаче.
+          - list [ref=f12e39]:
+            - listitem [ref=f12e40]:
+              - article [ref=f12e41]:
+                - generic [ref=f12e47]:
+                  - heading "Нужно быстро вывести водителя самосвала на объект" [level=3] [ref=f12e49]
+                  - paragraph [ref=f12e51]: "Сразу ищем по параметрам: тип самосвала, маршрут и условия площадки. Первых подходящих сотрудников для рассмотрения обычно представляем в течение трех дней."
+            - listitem [ref=f12e52]:
+              - article [ref=f12e53]:
+                - generic [ref=f12e59]:
+                  - heading "Собственный поиск водителя самосвала затягивается" [level=3] [ref=f12e61]
+                  - paragraph [ref=f12e63]: Сначала проверяем собственную базу сотрудников, затем подключаем более 35 источников поиска и сопоставляем опыт с профилем до передачи заказчику.
+            - listitem [ref=f12e64]:
+              - article [ref=f12e65]:
+                - generic [ref=f12e71]:
+                  - heading "Важно не допустить простоя самосвала" [level=3] [ref=f12e73]
+                  - paragraph [ref=f12e75]: До запуска отбора фиксируем тип самосвала, маршрут, условия площадки, дату выхода и требования объекта, чтобы искать сотрудника под реальную производственную задачу.
+            - listitem [ref=f12e76]:
+              - article [ref=f12e77]:
+                - generic [ref=f12e83]:
+                  - heading "Нужны водители для разных маршрутов" [level=3] [ref=f12e85]
+                  - paragraph [ref=f12e87]: Согласовываем задачи для каждого участка и режим перевозок до начала поиска.
+            - listitem [ref=f12e88]:
+              - list [ref=f12e91]:
+                - listitem [ref=f12e92]:
+                  - generic [ref=f12e93]:
+                    - generic [ref=f12e94]: "1"
+                    - generic [ref=f12e95]: 3 дня
+                    - generic [ref=f12e96]: первые подходящие сотрудники для рассмотрения
+                - listitem [ref=f12e97]:
+                  - generic [ref=f12e98]:
+                    - generic [ref=f12e99]: "2"
+                    - generic [ref=f12e100]: 35+
+                    - generic [ref=f12e101]: источников поиска при отсутствии сотрудника в базе
+                - listitem [ref=f12e102]:
+                  - generic [ref=f12e103]:
+                    - generic [ref=f12e104]: "3"
+                    - generic [ref=f12e105]: Тип самосвала
+                    - generic [ref=f12e106]: фиксируем до запуска поиска
+                - listitem [ref=f12e107]:
+                  - generic [ref=f12e108]:
+                    - generic [ref=f12e109]: "4"
+                    - generic [ref=f12e110]: Маршрут
+                    - generic [ref=f12e111]: учитываем в профиле сотрудника
+      - region [ref=f12e114]:
+        - generic [ref=f12e117]:
+          - generic [ref=f12e119]:
+            - heading "Проверяем кандидата по 7 пунктам" [level=2] [ref=f12e122]
+            - paragraph [ref=f12e123]: "Для вывоза грунта и доставки инертных материалов проверяем применимость опыта к условиям объекта: тип самосвала, маршрут и условия площадки, регион и график. После этого сопоставляем документы и готовность сотрудника с согласованной заявкой."
+            - figure [ref=f12e124]:
+              - img "Водитель самосвала проверяет документы в кабине на карьере" [ref=f12e125]
+          - list [ref=f12e128]:
+            - listitem [ref=f12e129]:
+              - generic [ref=f12e130]: Тип самосвала и назначение на объекте
+            - listitem [ref=f12e134]:
+              - generic [ref=f12e135]: Перевозимые материалы и характер работ
+            - listitem [ref=f12e139]:
+              - generic [ref=f12e140]: Маршрут, условия площадки и режим перевозок
+            - listitem [ref=f12e144]:
+              - generic [ref=f12e145]: Количество водителей и срок выхода
+            - listitem [ref=f12e149]:
+              - generic [ref=f12e150]: Опыт работы на нужном типе самосвала
+            - listitem [ref=f12e154]:
+              - generic [ref=f12e155]: Категории, удостоверения и документы, включая допуски и медосмотр
+            - listitem [ref=f12e159]:
+              - generic [ref=f12e160]: Регион, график и дополнительные условия работ
+      - region [ref=f12e164]:
+        - generic [ref=f12e166]:
+          - generic [ref=f12e168]:
+            - heading "Как проходит подбор водителя самосвала" [level=2] [ref=f12e169]
+            - list [ref=f12e170]:
+              - listitem [ref=f12e171]:
+                - article [ref=f12e172]:
+                  - generic [ref=f12e173]: "01"
+                  - heading "Получаем заявку" [level=3] [ref=f12e174]
+                  - paragraph [ref=f12e175]: Уточняем тип техники, задачи, потребность в водителях самосвала и условия объекта.
+              - listitem [ref=f12e176]:
+                - article [ref=f12e177]:
+                  - generic [ref=f12e178]: "02"
+                  - heading "Согласовываем профиль" [level=3] [ref=f12e179]
+                  - paragraph [ref=f12e180]: Уточняем тип самосвала, маршрут, площадку, режим перевозок, регион, график и документы.
+              - listitem [ref=f12e181]:
+                - article [ref=f12e182]:
+                  - generic [ref=f12e183]: "03"
+                  - heading "Проводим первичный отбор" [level=3] [ref=f12e184]
+                  - paragraph [ref=f12e185]: Сверяем опыт сотрудников по самосвалу с параметрами согласованной заявки.
+              - listitem [ref=f12e186]:
+                - article [ref=f12e187]:
+                  - generic [ref=f12e188]: "04"
+                  - heading "Передаем на рассмотрение" [level=3] [ref=f12e189]
+                  - paragraph [ref=f12e190]: Направляем сведения о сотрудниках по самосвалу и документы, предусмотренные заявкой, для согласования.
+          - figure [ref=f12e192]:
+            - img "Руководитель участка и водитель самосвала согласовывают задание на карьере" [ref=f12e193]
+    - region [ref=f12e194]:
+      - generic [ref=f12e197]:
+        - generic [ref=f12e199]:
+          - heading "По итогам отбора предоставим" [level=2] [ref=f12e202]
+          - paragraph [ref=f12e203]: Сведения о сотрудниках с опытом вывоза грунта и доставки инертных материалов, чтобы заказчик мог провести финальное собеседование и принять решение.
+          - paragraph [ref=f12e204]: Финальное собеседование и решение по водителю самосвала остаются на стороне заказчика.
+        - list [ref=f12e206]:
+          - listitem [ref=f12e207]:
+            - article [ref=f12e208]:
+              - figure [ref=f12e209]
+              - generic [ref=f12e211]: Краткое описание опыта работы на заявленном типе техники
+          - listitem [ref=f12e212]:
+            - article [ref=f12e213]:
+              - figure [ref=f12e214]
+              - generic [ref=f12e216]: Сведения о категориях, удостоверениях и документах, указанных для водителя самосвала
+          - listitem [ref=f12e217]:
+            - article [ref=f12e218]:
+              - figure [ref=f12e219]
+              - generic [ref=f12e221]: Готовность к маршруту и графику, согласованным для водителя самосвала
+          - listitem [ref=f12e222]:
+            - article [ref=f12e223]:
+              - figure [ref=f12e224]
+              - generic [ref=f12e226]: Контактные данные водителя самосвала для финального общения заказчика
+    - generic [ref=f12e227]:
+      - region [ref=f12e228]:
+        - generic [ref=f12e234]:
+          - heading "Оставьте заявку на подбор сотрудника" [level=2] [ref=f12e235]
+          - paragraph [ref=f12e236]: "Опишите потребность в водителях самосвала: тип самосвала, маршрут и условия площадки, количество сотрудников, регион и дату выхода. После этого подготовим профиль для отбора под условия вашего объекта."
+          - generic [ref=f12e237]:
+            - generic [ref=f12e238]:
+              - generic [ref=f12e239]: Имя *
+              - textbox "Имя" [ref=f12e240]
+            - generic [ref=f12e241]:
+              - generic [ref=f12e242]: Телефон *
+              - textbox "Телефон" [ref=f12e243]
+            - generic [ref=f12e244]:
+              - generic [ref=f12e245]: Регион
+              - textbox "Регион" [ref=f12e246]
+            - generic [ref=f12e247]:
+              - generic [ref=f12e248]: Комментарий
+              - textbox "Комментарий" [ref=f12e249]:
+                - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+            - button "Оставить заявку" [ref=f12e251] [cursor=pointer]
+            - generic [ref=f12e253]:
+              - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f12e254]
+              - generic [ref=f12e255]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+      - region [ref=f12e256]:
+        - generic [ref=f12e259]:
+          - generic [ref=f12e261]:
+            - generic [ref=f12e262]: Команда подбора
+            - heading "Отбор ведет персональный менеджер" [level=2] [ref=f12e263]
+            - paragraph [ref=f12e264]: Заявку по самосвалу ведет персональный менеджер. Он согласует профиль, организует первичный отбор и держит вашу команду в курсе по каждому этапу.
+          - list [ref=f12e266]:
+            - listitem [ref=f12e267]:
+              - article [ref=f12e268]:
+                - generic [ref=f12e269]: 5+ лет
+                - paragraph [ref=f12e270]: опыт каждого менеджера с персоналом
+            - listitem [ref=f12e271]:
+              - article [ref=f12e272]:
+                - generic [ref=f12e273]: 24/7
+                - paragraph [ref=f12e274]: принимаем заявки компаний и подключаемся к задаче по самосвалу
+            - listitem [ref=f12e275]:
+              - article [ref=f12e276]:
+                - generic [ref=f12e277]: 35+
+                - paragraph [ref=f12e278]: источников подключаем, если в базе нет сотрудника по самосвалу
+            - listitem [ref=f12e279]:
+              - article [ref=f12e280]:
+                - generic [ref=f12e281]: Персональный менеджер
+                - paragraph [ref=f12e282]: ведет отбор водителей самосвала и коммуникацию по заявке
+      - region [ref=f12e283]:
+        - generic [ref=f12e285]:
+          - figure [ref=f12e287]:
+            - img "Самосвал разгружается на дорожном строительстве" [ref=f12e288]
+          - generic [ref=f12e290]:
+            - generic [ref=f12e291]:
+              - heading "Задачи водителя самосвала на объекте" [level=2] [ref=f12e292]
+              - paragraph [ref=f12e293]: "Учитываем назначение самосвала и фактические задачи водителя: вывоз грунта, доставку инертных материалов, работу на дорожном участке, в карьере или на строительной площадке."
+            - generic [ref=f12e294]:
+              - article [ref=f12e296]:
+                - heading "Перевозка грунта и инертных материалов" [level=3] [ref=f12e299]
+                - paragraph [ref=f12e300]: Работа на маршрутах вывоза и доставки по задачам объекта.
+              - article [ref=f12e302]:
+                - heading "Дорожное строительство" [level=3] [ref=f12e305]
+                - paragraph [ref=f12e306]: Подача материалов на дорожные участки и технологические маршруты.
+              - article [ref=f12e308]:
+                - heading "Работа на строительной площадке" [level=3] [ref=f12e311]
+                - paragraph [ref=f12e312]: Внутриобъектовые перевозки и взаимодействие с погрузочной техникой.
+              - article [ref=f12e314]:
+                - heading "Региональные и вахтовые объекты" [level=3] [ref=f12e317]
+                - paragraph [ref=f12e318]: Работа по региону и графику, согласованным для водителя самосвала.
+    - region [ref=f12e319]:
+      - generic [ref=f12e320]:
+        - heading "Частые вопросы" [level=2] [ref=f12e323]
+        - generic [ref=f12e324]:
+          - generic [ref=f12e325]:
+            - heading [level=3] [ref=f12e326]:
+              - button "Каких водителей самосвала вы подбираете?" [expanded] [ref=f12e327] [cursor=pointer]
+            - generic [ref=f12e328]: Подбираем водителей самосвала для объектов, где требуется опыт в перевозке грунта, инертных материалов и строительных грузов. Профиль формируем под тип техники, условия работ и график заказчика.
+          - heading [level=3] [ref=f12e331]:
+            - button "Что указать в заявке на водителей самосвала?" [ref=f12e332] [cursor=pointer]
+          - heading [level=3] [ref=f12e334]:
+            - button "Можно ли заявить несколько водителей самосвала одновременно?" [ref=f12e335] [cursor=pointer]
+          - heading [level=3] [ref=f12e337]:
+            - button "Как проходит отбор водителей самосвала для вахтового объекта?" [ref=f12e338] [cursor=pointer]
+          - heading [level=3] [ref=f12e340]:
+            - button "Для каких регионов подбираете водителей самосвала?" [ref=f12e341] [cursor=pointer]
+    - region [ref=f12e342]:
+      - generic [ref=f12e348]:
+        - heading "Оставьте заявку на подбор" [level=2] [ref=f12e349]
+        - generic [ref=f12e350]:
+          - generic [ref=f12e351]:
+            - generic [ref=f12e352]: Имя *
+            - textbox "Имя" [ref=f12e353]
+          - generic [ref=f12e354]:
+            - generic [ref=f12e355]: Телефон *
+            - textbox "Телефон" [ref=f12e356]
+          - generic [ref=f12e357]:
+            - generic [ref=f12e358]: Регион
+            - textbox "Регион" [ref=f12e359]
+          - generic [ref=f12e360]:
+            - generic [ref=f12e361]: Комментарий
+            - textbox "Комментарий" [ref=f12e362]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f12e364] [cursor=pointer]
+          - generic [ref=f12e366]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f12e367]
+            - generic [ref=f12e368]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+  - contentinfo [ref=f12e369]:
+    - generic [ref=f12e370]:
+      - generic [ref=f12e371]:
+        - img "АБС" [ref=f12e373]
+        - navigation "Навигация в подвале" [ref=f12e375]:
+          - list [ref=f12e376]:
+            - listitem [ref=f12e377]:
+              - link "Водители" [ref=f12e378] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f12e379]:
+              - link "Машинисты" [ref=f12e380] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f12e381]:
+              - link "О компании" [ref=f12e382] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f12e383]:
+              - link "Вопросы" [ref=f12e384] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f12e385]:
+              - link "Контакты" [ref=f12e386] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f12e387]:
+          - link "+7 917 400-10-59" [ref=f12e388] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f12e389] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f12e390]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f12e391]: © АБС, 2026.

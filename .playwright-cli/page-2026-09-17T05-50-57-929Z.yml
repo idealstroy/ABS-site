@@ -1,0 +1,173 @@
+- generic [active] [ref=f5e1]:
+  - link "Перейти к содержанию" [ref=f5e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f5e3]:
+    - navigation "Главная навигация" [ref=f5e4]:
+      - generic [ref=f5e7]:
+        - link "АБС, главная" [ref=f5e8] [cursor=pointer]:
+          - /url: /
+          - img "АБС" [ref=f5e9]
+        - button "Открыть меню" [ref=f5e10] [cursor=pointer]
+  - main [ref=f5e12]:
+    - region [ref=f5e13]:
+      - img "Машинист экскаватора рядом с гусеничной техникой на строительном объекте" [ref=f5e14]
+      - generic [ref=f5e15]:
+        - navigation "Хлебные крошки" [ref=f5e19]:
+          - list [ref=f5e21]:
+            - listitem [ref=f5e22]:
+              - link "Главная" [ref=f5e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f5e24]: / Машинисты спецтехники
+        - generic [ref=f5e26]:
+          - heading "Подбор машинистов спецтехники для строительных объектов" [level=1] [ref=f5e27]
+          - paragraph [ref=f5e28]: Подбираем машинистов спецтехники для строительных, промышленных, дорожных и вахтовых объектов. Учитываем тип техники, задачи на площадке, квалификацию, документы, регион и график работы.
+          - link "Оставить заявку" [ref=f5e29] [cursor=pointer]:
+            - /url: "#request"
+    - region [ref=f5e30]:
+      - generic [ref=f5e33]:
+        - figure [ref=f5e35]:
+          - img "Машинист поднимается в кабину экскаватора" [ref=f5e36]
+        - generic [ref=f5e38]:
+          - heading "Подбор под задачу объекта" [level=2] [ref=f5e41]
+          - paragraph [ref=f5e42]: Берем на себя первичный отбор машинистов под согласованные требования объекта и передаем сотрудников для рассмотрения, когда собственных ресурсов на поиск недостаточно или нужен специалист с конкретным опытом на технике.
+          - complementary [ref=f5e43]:
+            - paragraph [ref=f5e44]: Что уточняем до начала отбора
+            - list [ref=f5e45]:
+              - listitem [ref=f5e46]:
+                - generic [ref=f5e47]: Тип техники, задачи и условия работы на объекте
+              - listitem [ref=f5e51]:
+                - generic [ref=f5e52]: Количество машинистов и требуемые сроки выхода
+              - listitem [ref=f5e56]:
+                - generic [ref=f5e57]: Регион, график, вахтовый или сменный формат работы
+              - listitem [ref=f5e61]:
+                - generic [ref=f5e62]: Опыт, удостоверения, разряд и допуски для объекта
+    - region [ref=f5e66]:
+      - generic [ref=f5e67]:
+        - heading "Машинисты для строительной и специальной техники" [level=2] [ref=f5e70]
+        - generic [ref=f5e71]:
+          - article [ref=f5e73]:
+            - heading "Машинисты бульдозера" [level=3] [ref=f5e75]
+            - paragraph [ref=f5e76]: Для планировки, перемещения грунта и подготовки строительной площадки
+          - article [ref=f5e78]:
+            - heading "Машинисты трубоукладчика" [level=3] [ref=f5e80]
+            - paragraph [ref=f5e81]: Для линейного строительства и укладки трубопроводов
+          - article [ref=f5e83]:
+            - heading "Машинисты экскаватора" [level=3] [ref=f5e85]
+            - paragraph [ref=f5e86]: Для работ на экскаваторах и экскаваторах-погрузчиках
+            - link "Машинисты экскаватора":
+              - /url: /mashinisty-spetstehniki/ekskavatorschik/
+          - article [ref=f5e89]:
+            - heading "Машинисты автокрана" [level=3] [ref=f5e91]
+            - paragraph [ref=f5e92]: Для грузоподъемных работ с учетом типа техники и условий объекта
+          - article [ref=f5e94]:
+            - heading "Машинисты автовышки и автогидроподъемника" [level=3] [ref=f5e96]
+            - paragraph [ref=f5e97]: Для работ на высоте с учетом необходимых допусков
+    - region [ref=f5e98]:
+      - generic [ref=f5e99]:
+        - heading "Как проходит подбор машинистов спецтехники" [level=2] [ref=f5e102]
+        - list [ref=f5e103]:
+          - listitem [ref=f5e104]:
+            - article [ref=f5e105]:
+              - generic [ref=f5e106]: "01"
+              - heading "Получаем заявку" [level=3] [ref=f5e107]
+              - paragraph [ref=f5e108]: Уточняем профессию, технику, количество сотрудников и условия объекта.
+          - listitem [ref=f5e109]:
+            - article [ref=f5e110]:
+              - generic [ref=f5e111]: "02"
+              - heading "Согласовываем профиль" [level=3] [ref=f5e112]
+              - paragraph [ref=f5e113]: Фиксируем задачи, опыт, документы, график, регион и дату выхода.
+          - listitem [ref=f5e114]:
+            - article [ref=f5e115]:
+              - generic [ref=f5e116]: "03"
+              - heading "Проводим первичный отбор" [level=3] [ref=f5e117]
+              - paragraph [ref=f5e118]: Сверяем опыт и сведения о кандидатах с параметрами согласованной заявки.
+          - listitem [ref=f5e119]:
+            - article [ref=f5e120]:
+              - generic [ref=f5e121]: "04"
+              - heading "Передаем на рассмотрение" [level=3] [ref=f5e122]
+              - paragraph [ref=f5e123]: Направляем заказчику подходящих машинистов и сведения, предусмотренные заявкой.
+    - region [ref=f5e124]:
+      - article [ref=f5e126]:
+        - generic [ref=f5e127]:
+          - generic [ref=f5e129]:
+            - heading "Что проверяем до передачи машиниста заказчику" [level=2] [ref=f5e132]
+            - figure [ref=f5e133]:
+              - img "Управление экскаватором из кабины на строительном объекте" [ref=f5e134]
+          - list [ref=f5e137]:
+            - listitem [ref=f5e138]:
+              - generic [ref=f5e139]: Опыт работы на нужном типе спецтехники
+            - listitem [ref=f5e142]:
+              - generic [ref=f5e143]: Соответствие задачам на объекте и условиям производства работ
+            - listitem [ref=f5e146]:
+              - generic [ref=f5e147]: Удостоверения, разряд и квалификацию, если они требуются
+            - listitem [ref=f5e150]:
+              - generic [ref=f5e151]: Документы и допуски, необходимые для рассмотрения или выхода на объект
+            - listitem [ref=f5e154]:
+              - generic [ref=f5e155]: Готовность работать в заявленном регионе, графике и вахтовом формате
+            - listitem [ref=f5e158]:
+              - generic [ref=f5e159]: Дополнительные требования по технике, сменности и сроку проекта
+    - region [ref=f5e162]:
+      - generic [ref=f5e168]:
+        - heading "Оставьте заявку на подбор машиниста" [level=2] [ref=f5e169]
+        - generic [ref=f5e171]:
+          - generic [ref=f5e172]:
+            - generic [ref=f5e173]: Имя *
+            - textbox "Имя" [ref=f5e174]
+          - generic [ref=f5e175]:
+            - generic [ref=f5e176]: Телефон *
+            - textbox "Телефон" [ref=f5e177]
+          - generic [ref=f5e178]:
+            - generic [ref=f5e179]: Регион
+            - textbox "Регион" [ref=f5e180]
+          - generic [ref=f5e181]:
+            - generic [ref=f5e182]: Комментарий
+            - textbox "Комментарий" [ref=f5e183]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f5e185] [cursor=pointer]
+          - generic [ref=f5e187]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f5e188]
+            - generic [ref=f5e189]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+    - region [ref=f5e190]:
+      - generic [ref=f5e191]:
+        - heading "Частые вопросы" [level=2] [ref=f5e194]
+        - generic [ref=f5e195]:
+          - generic [ref=f5e196]:
+            - heading [level=3] [ref=f5e197]:
+              - button "Каких машинистов спецтехники вы подбираете?" [expanded] [ref=f5e198] [cursor=pointer]
+            - generic [ref=f5e199]: Подбираем машинистов бульдозера, трубоукладчика, экскаватора, автокрана, автовышки и автогидроподъемника для строительных и производственных объектов.
+          - heading [level=3] [ref=f5e202]:
+            - button "Можно ли подобрать машинистов для нескольких единиц техники?" [ref=f5e203] [cursor=pointer]
+          - heading [level=3] [ref=f5e205]:
+            - button "Какие данные нужны для начала подбора?" [ref=f5e206] [cursor=pointer]
+          - heading [level=3] [ref=f5e208]:
+            - button "Подбираете ли вы машинистов для вахтовых объектов?" [ref=f5e209] [cursor=pointer]
+          - heading [level=3] [ref=f5e211]:
+            - button "В каких регионах вы работаете?" [ref=f5e212] [cursor=pointer]
+  - contentinfo [ref=f5e213]:
+    - generic [ref=f5e214]:
+      - generic [ref=f5e215]:
+        - img "АБС" [ref=f5e217]
+        - navigation "Навигация в подвале" [ref=f5e219]:
+          - list [ref=f5e220]:
+            - listitem [ref=f5e221]:
+              - link "Водители" [ref=f5e222] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f5e223]:
+              - link "Машинисты" [ref=f5e224] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f5e225]:
+              - link "О компании" [ref=f5e226] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f5e227]:
+              - link "Вопросы" [ref=f5e228] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f5e229]:
+              - link "Контакты" [ref=f5e230] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f5e231]:
+          - link "+7 917 400-10-59" [ref=f5e232] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f5e233] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f5e234]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f5e235]: © АБС, 2026.

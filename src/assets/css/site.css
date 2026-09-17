@@ -339,6 +339,10 @@ a:focus-visible {
   border-top: 0.0625rem solid color-mix(in srgb, var(--abs-surface) 18%, transparent);
 }
 
+.final-cta .request-shell::after {
+  display: none;
+}
+
 .content-slot {
   border-left: 0.1875rem solid var(--abs-primary);
   min-height: 4rem;
@@ -2591,6 +2595,15 @@ body.page-template.page-template--home .hero-section--split .btn-abs-primary {
 }
 
 @media (max-width: 991.98px) {
+  .site-header {
+    background: var(--abs-surface);
+  }
+
+  .request-shell::before,
+  .request-shell::after {
+    display: none;
+  }
+
   .site-header .navbar {
     padding-block: 0.75rem;
   }
@@ -2783,10 +2796,44 @@ body.page-template.page-template--home .hero-section--split .btn-abs-primary {
 
 @media (max-width: 991.98px) {
   .site-header .header-main-row .navbar-nav {
+    align-items: stretch;
     gap: 0;
+    text-align: left;
+    width: 100%;
   }
 
-  .site-header .header-main-row .nav-link::after {
+  .site-header .header-main-row .navbar-nav > .nav-item {
+    width: 100%;
+  }
+
+  .site-header .header-main-row .nav-link {
+    text-align: left;
+    width: 100%;
+  }
+
+  .site-header .header-main-row .header-dropdown > .dropdown-toggle {
+    padding-left: 1.75rem;
+    position: relative;
+  }
+
+  .site-header .header-main-row .header-dropdown > .dropdown-toggle::before {
+    border-bottom: 0.125rem solid var(--abs-primary);
+    border-right: 0.125rem solid var(--abs-primary);
+    content: "";
+    height: 0.5rem;
+    left: 0.25rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: transform 180ms ease;
+    width: 0.5rem;
+  }
+
+  .site-header .header-main-row .header-dropdown > .dropdown-toggle.show::before {
+    transform: translateY(-65%) rotate(45deg);
+  }
+
+  .site-header .header-main-row .header-dropdown > .dropdown-toggle::after {
     display: none;
   }
 }
@@ -3338,6 +3385,7 @@ body.page-template.page-template--home .hero-section--split .btn-abs-primary {
   font-size: clamp(2.5rem, 4vw, 3.75rem);
   line-height: 1.02;
   max-width: 52rem;
+  overflow-wrap: anywhere;
 }
 
 .page-template--hero-layout .hero-section--split .hero-lead {
@@ -3384,6 +3432,7 @@ body.page-template.page-template--home .hero-section--split .btn-abs-primary {
 
 /* Specialist pages: structured B2B sections that extend the approved category-page visual language. */
 .page-template--specialist h2 {
+  overflow-wrap: anywhere;
   text-wrap: balance;
 }
 

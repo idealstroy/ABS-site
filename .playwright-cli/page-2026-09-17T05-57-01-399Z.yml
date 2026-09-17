@@ -1,0 +1,282 @@
+- generic [active] [ref=f19e1]:
+  - link "Перейти к содержанию" [ref=f19e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f19e3]:
+    - navigation "Главная навигация" [ref=f19e4]:
+      - generic [ref=f19e7]:
+        - link "АБС, главная" [ref=f19e8] [cursor=pointer]:
+          - /url: /
+          - img "АБС" [ref=f19e9]
+        - button "Открыть меню" [ref=f19e10] [cursor=pointer]
+  - main [ref=f19e12]:
+    - region [ref=f19e13]:
+      - img "Водитель топливозаправщика заправляет технику на строительном объекте" [ref=f19e14]
+      - generic [ref=f19e15]:
+        - navigation "Хлебные крошки" [ref=f19e19]:
+          - list [ref=f19e21]:
+            - listitem [ref=f19e22]:
+              - link "Главная" [ref=f19e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f19e24]:
+              - text: /
+              - link "Водители спецтехники" [ref=f19e25] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f19e26]: / Водители топливозаправщика
+        - generic [ref=f19e28]:
+          - heading "Подбор водителей топливозаправщика для строительных объектов" [level=1] [ref=f19e29]
+          - paragraph [ref=f19e30]: Подбираем водителей топливозаправщика для снабжения строительной и специальной техники на промышленных, дорожных и вахтовых объектах. Учитываем тип техники, маршрут, условия объекта, требуемые документы, регион и график.
+          - link "Оставить заявку" [ref=f19e31] [cursor=pointer]:
+            - /url: "#request"
+    - generic [ref=f19e32]:
+      - region [ref=f19e33]:
+        - generic [ref=f19e34]:
+          - generic [ref=f19e36]:
+            - heading "Подбор без потери времени" [level=2] [ref=f19e37]
+            - paragraph [ref=f19e38]: Для заправки техники по согласованному маршруту важно совместить опыт водителя с условиями конкретного объекта.
+          - list [ref=f19e39]:
+            - listitem [ref=f19e40]:
+              - article [ref=f19e41]:
+                - generic [ref=f19e47]:
+                  - heading "Нужно быстро вывести водителя на объект" [level=3] [ref=f19e49]
+                  - paragraph [ref=f19e51]: "Сразу ищем по параметрам: тип машины, маршрут заправки и документы из заявки."
+            - listitem [ref=f19e52]:
+              - article [ref=f19e53]:
+                - generic [ref=f19e59]:
+                  - heading "Собственный поиск затягивается" [level=3] [ref=f19e61]
+                  - paragraph [ref=f19e63]: Проверяем базу и подключаем более 35 источников поиска.
+            - listitem [ref=f19e64]:
+              - article [ref=f19e65]:
+                - generic [ref=f19e71]:
+                  - heading "Важно не допустить простоя техники" [level=3] [ref=f19e73]
+                  - paragraph [ref=f19e75]: Фиксируем тип машины, маршрут, документы и дату выхода до запуска отбора.
+            - listitem [ref=f19e76]:
+              - article [ref=f19e77]:
+                - generic [ref=f19e83]:
+                  - heading "Нужны водители для разных маршрутов" [level=3] [ref=f19e85]
+                  - paragraph [ref=f19e87]: Согласовываем зоны снабжения и график до начала поиска.
+            - listitem [ref=f19e88]:
+              - list [ref=f19e91]:
+                - listitem [ref=f19e92]:
+                  - generic [ref=f19e93]:
+                    - generic [ref=f19e94]: "1"
+                    - generic [ref=f19e95]: 3 дня
+                    - generic [ref=f19e96]: первые подходящие сотрудники
+                - listitem [ref=f19e97]:
+                  - generic [ref=f19e98]:
+                    - generic [ref=f19e99]: "2"
+                    - generic [ref=f19e100]: 35+
+                    - generic [ref=f19e101]: источников поиска
+                - listitem [ref=f19e102]:
+                  - generic [ref=f19e103]:
+                    - generic [ref=f19e104]: "3"
+                    - generic [ref=f19e105]: Маршрут
+                    - generic [ref=f19e106]: фиксируем до поиска
+                - listitem [ref=f19e107]:
+                  - generic [ref=f19e108]:
+                    - generic [ref=f19e109]: "4"
+                    - generic [ref=f19e110]: Документы
+                    - generic [ref=f19e111]: учитываем в профиле
+      - region [ref=f19e114]:
+        - generic [ref=f19e117]:
+          - generic [ref=f19e119]:
+            - heading "Проверяем кандидата по 7 пунктам" [level=2] [ref=f19e122]
+            - paragraph [ref=f19e123]: "Для заправки техники по согласованному маршруту проверяем применимость опыта к условиям объекта: тип машины, маршрут заправки, документы, регион и график."
+            - figure [ref=f19e124]:
+              - img "Водитель топливозаправщика проверяет документы в кабине" [ref=f19e125]
+          - list [ref=f19e128]:
+            - listitem [ref=f19e129]:
+              - generic [ref=f19e130]: Тип топливозаправщика и назначение на объекте
+            - listitem [ref=f19e134]:
+              - generic [ref=f19e135]: Маршрут и формат снабжения техники
+            - listitem [ref=f19e139]:
+              - generic [ref=f19e140]: Условия работы на площадке
+            - listitem [ref=f19e144]:
+              - generic [ref=f19e145]: Количество водителей и срок выхода
+            - listitem [ref=f19e149]:
+              - generic [ref=f19e150]: Опыт работы на заявленной технике
+            - listitem [ref=f19e154]:
+              - generic [ref=f19e155]: Категории, удостоверения и документы
+            - listitem [ref=f19e159]:
+              - generic [ref=f19e160]: Регион, график и условия работ
+      - region [ref=f19e164]:
+        - generic [ref=f19e166]:
+          - generic [ref=f19e168]:
+            - heading "Как проходит подбор водителя топливозаправщика" [level=2] [ref=f19e169]
+            - list [ref=f19e170]:
+              - listitem [ref=f19e171]:
+                - article [ref=f19e172]:
+                  - generic [ref=f19e173]: "01"
+                  - heading "Получаем заявку" [level=3] [ref=f19e174]
+                  - paragraph [ref=f19e175]: Уточняем тип техники, задачи и условия объекта.
+              - listitem [ref=f19e176]:
+                - article [ref=f19e177]:
+                  - generic [ref=f19e178]: "02"
+                  - heading "Согласовываем профиль" [level=3] [ref=f19e179]
+                  - paragraph [ref=f19e180]: Фиксируем маршрут, график и документы из заявки.
+              - listitem [ref=f19e181]:
+                - article [ref=f19e182]:
+                  - generic [ref=f19e183]: "03"
+                  - heading "Проводим первичный отбор" [level=3] [ref=f19e184]
+                  - paragraph [ref=f19e185]: Сверяем опыт сотрудников с параметрами заявки.
+              - listitem [ref=f19e186]:
+                - article [ref=f19e187]:
+                  - generic [ref=f19e188]: "04"
+                  - heading "Передаем на рассмотрение" [level=3] [ref=f19e189]
+                  - paragraph [ref=f19e190]: Направляем сведения о сотрудниках и документы.
+          - figure [ref=f19e192]:
+            - img "Руководитель и водитель топливозаправщика согласовывают маршрут" [ref=f19e193]
+    - region [ref=f19e194]:
+      - generic [ref=f19e197]:
+        - generic [ref=f19e199]:
+          - heading "По итогам отбора предоставим" [level=2] [ref=f19e202]
+          - paragraph [ref=f19e203]: Сведения о сотрудниках с опытом заправки техники по согласованному маршруту, чтобы заказчик мог провести финальное собеседование и принять решение.
+          - paragraph [ref=f19e204]: Финальное собеседование и решение по водителю топливозаправщика остаются на стороне заказчика.
+        - list [ref=f19e206]:
+          - listitem [ref=f19e207]:
+            - article [ref=f19e208]:
+              - figure [ref=f19e209]
+              - generic [ref=f19e211]: Краткое описание опыта работы по топливозаправщику
+          - listitem [ref=f19e212]:
+            - article [ref=f19e213]:
+              - figure [ref=f19e214]
+              - generic [ref=f19e216]: Сведения о категориях, удостоверениях и документах
+          - listitem [ref=f19e217]:
+            - article [ref=f19e218]:
+              - figure [ref=f19e219]
+              - generic [ref=f19e221]: Готовность к маршруту и графику
+          - listitem [ref=f19e222]:
+            - article [ref=f19e223]:
+              - figure [ref=f19e224]
+              - generic [ref=f19e226]: Контактные данные для финального общения
+    - generic [ref=f19e227]:
+      - region [ref=f19e228]:
+        - generic [ref=f19e234]:
+          - heading "Оставьте заявку на подбор сотрудника" [level=2] [ref=f19e235]
+          - paragraph [ref=f19e236]: "Опишите потребность: тип машины, маршрут заправки, документы, количество сотрудников, регион и дату выхода."
+          - generic [ref=f19e237]:
+            - generic [ref=f19e238]:
+              - generic [ref=f19e239]: Имя *
+              - textbox "Имя" [ref=f19e240]
+            - generic [ref=f19e241]:
+              - generic [ref=f19e242]: Телефон *
+              - textbox "Телефон" [ref=f19e243]
+            - generic [ref=f19e244]:
+              - generic [ref=f19e245]: Регион
+              - textbox "Регион" [ref=f19e246]
+            - generic [ref=f19e247]:
+              - generic [ref=f19e248]: Комментарий
+              - textbox "Комментарий" [ref=f19e249]:
+                - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+            - button "Оставить заявку" [ref=f19e251] [cursor=pointer]
+            - generic [ref=f19e253]:
+              - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f19e254]
+              - generic [ref=f19e255]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+      - region [ref=f19e256]:
+        - generic [ref=f19e259]:
+          - generic [ref=f19e261]:
+            - generic [ref=f19e262]: Команда подбора
+            - heading "Отбор ведет персональный менеджер" [level=2] [ref=f19e263]
+            - paragraph [ref=f19e264]: Заявку по топливозаправщику ведет персональный менеджер. Он согласует профиль, организует первичный отбор и держит вашу команду в курсе.
+          - list [ref=f19e266]:
+            - listitem [ref=f19e267]:
+              - article [ref=f19e268]:
+                - generic [ref=f19e269]: 5+ лет
+                - paragraph [ref=f19e270]: опыт каждого менеджера с персоналом
+            - listitem [ref=f19e271]:
+              - article [ref=f19e272]:
+                - generic [ref=f19e273]: 24/7
+                - paragraph [ref=f19e274]: принимаем заявки компаний
+            - listitem [ref=f19e275]:
+              - article [ref=f19e276]:
+                - generic [ref=f19e277]: 35+
+                - paragraph [ref=f19e278]: источников поиска
+            - listitem [ref=f19e279]:
+              - article [ref=f19e280]:
+                - generic [ref=f19e281]: Персональный менеджер
+                - paragraph [ref=f19e282]: ведет отбор и коммуникацию
+      - region [ref=f19e283]:
+        - generic [ref=f19e285]:
+          - figure [ref=f19e287]:
+            - img "Топливозаправщик снабжает строительную технику" [ref=f19e288]
+          - generic [ref=f19e290]:
+            - generic [ref=f19e291]:
+              - heading "Задачи водителя топливозаправщика на объекте" [level=2] [ref=f19e292]
+              - paragraph [ref=f19e293]: "Учитываем, как организовано снабжение техники: работу на маршруте, заправку техники на площадке, сменность и условия удаленного объекта."
+            - generic [ref=f19e294]:
+              - article [ref=f19e296]:
+                - heading "Снабжение техники топливом" [level=3] [ref=f19e299]
+                - paragraph [ref=f19e300]: Работа по задачам заправки специальной техники.
+              - article [ref=f19e302]:
+                - heading "Маршруты между точками" [level=3] [ref=f19e305]
+                - paragraph [ref=f19e306]: Перемещение по согласованному графику снабжения.
+              - article [ref=f19e308]:
+                - heading "Работа на площадке" [level=3] [ref=f19e311]
+                - paragraph [ref=f19e312]: Обслуживание техники на территории объекта.
+              - article [ref=f19e314]:
+                - heading "Удаленные и вахтовые объекты" [level=3] [ref=f19e317]
+                - paragraph [ref=f19e318]: Работа по согласованному региону и графику.
+    - region [ref=f19e319]:
+      - generic [ref=f19e320]:
+        - heading "Частые вопросы" [level=2] [ref=f19e323]
+        - generic [ref=f19e324]:
+          - generic [ref=f19e325]:
+            - heading [level=3] [ref=f19e326]:
+              - button "Каких водителей топливозаправщика вы подбираете?" [expanded] [ref=f19e327] [cursor=pointer]
+            - generic [ref=f19e328]: Подбираем водителей для объектов, где требуется опыт в заправке техники и перевозке топлива по объекту.
+          - heading [level=3] [ref=f19e331]:
+            - button "Что указать в заявке?" [ref=f19e332] [cursor=pointer]
+          - heading [level=3] [ref=f19e334]:
+            - button "Можно ли заявить несколько водителей?" [ref=f19e335] [cursor=pointer]
+          - heading [level=3] [ref=f19e337]:
+            - button "Подбираете для вахтового объекта?" [ref=f19e338] [cursor=pointer]
+          - heading [level=3] [ref=f19e340]:
+            - button "Для каких регионов работаете?" [ref=f19e341] [cursor=pointer]
+    - region [ref=f19e342]:
+      - generic [ref=f19e348]:
+        - heading "Оставьте заявку на подбор" [level=2] [ref=f19e349]
+        - generic [ref=f19e350]:
+          - generic [ref=f19e351]:
+            - generic [ref=f19e352]: Имя *
+            - textbox "Имя" [ref=f19e353]
+          - generic [ref=f19e354]:
+            - generic [ref=f19e355]: Телефон *
+            - textbox "Телефон" [ref=f19e356]
+          - generic [ref=f19e357]:
+            - generic [ref=f19e358]: Регион
+            - textbox "Регион" [ref=f19e359]
+          - generic [ref=f19e360]:
+            - generic [ref=f19e361]: Комментарий
+            - textbox "Комментарий" [ref=f19e362]:
+              - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа."
+          - button "Оставить заявку" [ref=f19e364] [cursor=pointer]
+          - generic [ref=f19e366]:
+            - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных." [ref=f19e367]
+            - generic [ref=f19e368]: Отправляя форму, вы соглашаетесь на обработку персональных данных.
+  - contentinfo [ref=f19e369]:
+    - generic [ref=f19e370]:
+      - generic [ref=f19e371]:
+        - img "АБС" [ref=f19e373]
+        - navigation "Навигация в подвале" [ref=f19e375]:
+          - list [ref=f19e376]:
+            - listitem [ref=f19e377]:
+              - link "Водители" [ref=f19e378] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=f19e379]:
+              - link "Машинисты" [ref=f19e380] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=f19e381]:
+              - link "О компании" [ref=f19e382] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=f19e383]:
+              - link "Вопросы" [ref=f19e384] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=f19e385]:
+              - link "Контакты" [ref=f19e386] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=f19e387]:
+          - link "+7 917 400-10-59" [ref=f19e388] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=f19e389] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=f19e390]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=f19e391]: © АБС, 2026.
