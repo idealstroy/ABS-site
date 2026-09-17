@@ -21,14 +21,14 @@
     { "label": "Водители спецтехники", "href": "" }
   ],
   "cards": [
-    { "icon": "truck.svg", "title": "Водители грузового автомобиля", "description": "Для строительных и производственных перевозок.", "href": "/voditel-spetstehnika/voditel-gruzovogo-avtomobilya/" },
-    { "icon": "boxes.svg", "title": "Водители погрузчика", "description": "Для вилочных и фронтальных погрузчиков с учетом техники и сменности.", "href": "/voditel-spetstehnika/voditel-pogruzchika/" },
-    { "icon": "truck-flatbed.svg", "title": "Водители самосвала", "description": "Для перевозки грунта, инертных материалов и работ на площадке.", "href": "/voditel-spetstehnika/voditel-samosvala/" },
-    { "icon": "truck.svg", "title": "Водители тягача", "description": "Для работы с тягачами и специализированных перевозок.", "href": "/voditel-spetstehnika/voditel-tyagacha/" },
-    { "icon": "fuel-pump.svg", "title": "Водители топливозаправщика", "description": "Для топливозаправочной техники с учетом требуемых документов.", "href": "/voditel-spetstehnika/voditel-toplivozapravshchika/" },
-    { "icon": "truck-front.svg", "title": "Водители трала", "description": "Для перевозки крупногабаритной строительной и специальной техники.", "href": "/voditel-spetstehnika/voditel-trala/" },
-    { "icon": "car-front.svg", "title": "Водители вездехода", "description": "Для удаленных объектов и сложных маршрутов.", "href": "/voditel-spetstehnika/voditel-vezdehoda/", "columnClass": "col-12 col-md-6 col-xl-6" },
-    { "icon": "recycle.svg", "title": "Водители ломовоза", "description": "Для ломовозной техники и перевозки металлолома.", "href": "/voditel-spetstehnika/voditel-lomovoza/", "columnClass": "col-12 col-md-6 col-xl-6" }
+    { "icon": "equipment-cargo-truck.svg", "title": "Водители грузового автомобиля", "description": "Для строительных и производственных перевозок.", "href": "/voditel-spetstehnika/voditel-gruzovogo-avtomobilya/" },
+    { "icon": "equipment-forklift.svg", "title": "Водители погрузчика", "description": "Для вилочных и фронтальных погрузчиков с учетом техники и сменности.", "href": "/voditel-spetstehnika/voditel-pogruzchika/" },
+    { "icon": "equipment-dump-truck.svg", "title": "Водители самосвала", "description": "Для перевозки грунта, инертных материалов и работ на площадке.", "href": "/voditel-spetstehnika/voditel-samosvala/" },
+    { "icon": "equipment-tractor-unit.svg", "title": "Водители тягача", "description": "Для работы с тягачами и специализированных перевозок.", "href": "/voditel-spetstehnika/voditel-tyagacha/" },
+    { "icon": "equipment-tanker-truck.svg", "title": "Водители топливозаправщика", "description": "Для топливозаправочной техники с учетом требуемых документов.", "href": "/voditel-spetstehnika/voditel-toplivozapravshchika/" },
+    { "icon": "equipment-lowbed-trailer.svg", "title": "Водители трала", "description": "Для перевозки крупногабаритной строительной и специальной техники.", "href": "/voditel-spetstehnika/voditel-trala/" },
+    { "icon": "equipment-all-terrain.svg", "title": "Водители вездехода", "description": "Для удаленных объектов и сложных маршрутов.", "href": "/voditel-spetstehnika/voditel-vezdehoda/", "columnClass": "col-12 col-md-6 col-xl-6" },
+    { "icon": "equipment-scrap-truck.svg", "title": "Водители ломовоза", "description": "Для ломовозной техники и перевозки металлолома.", "href": "/voditel-spetstehnika/voditel-lomovoza/", "columnClass": "col-12 col-md-6 col-xl-6" }
   ],
   "category": {
     "listTitle": "Водители для строительной и специальной техники",

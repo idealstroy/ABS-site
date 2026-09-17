@@ -21,11 +21,11 @@
     { "label": "Машинисты спецтехники", "href": "" }
   ],
   "cards": [
-    { "icon": "cone-striped.svg", "title": "Машинисты бульдозера", "description": "Для планировки, перемещения грунта и подготовки строительной площадки", "href": "/mashinisty-spetstehniki/buldozeristy/" },
-    { "icon": "diagram-2.svg", "title": "Машинисты трубоукладчика", "description": "Для линейного строительства и укладки трубопроводов", "href": "/mashinisty-spetstehniki/mashinist-truboukladchika/" },
-    { "icon": "tools.svg", "title": "Машинисты экскаватора", "description": "Для работ на экскаваторах и экскаваторах-погрузчиках", "href": "/mashinisty-spetstehniki/ekskavatorschik/" },
-    { "icon": "arrow-up-right-square.svg", "title": "Машинисты автокрана", "description": "Для грузоподъемных работ с учетом типа техники и условий объекта", "href": "/mashinisty-spetstehniki/mashinisty-avtokrana/", "columnClass": "col-12 col-md-6 col-xl-6" },
-    { "icon": "arrow-up-right-square.svg", "title": "Машинисты автовышки и автогидроподъемника", "description": "Для работ на высоте с учетом необходимых допусков", "href": "/mashinisty-spetstehniki/mashinist-avtovyshki/", "columnClass": "col-12 col-md-6 col-xl-6" }
+    { "icon": "equipment-bulldozer.svg", "title": "Машинисты бульдозера", "description": "Для планировки, перемещения грунта и подготовки строительной площадки", "href": "/mashinisty-spetstehniki/buldozeristy/" },
+    { "icon": "equipment-pipe-layer.svg", "title": "Машинисты трубоукладчика", "description": "Для линейного строительства и укладки трубопроводов", "href": "/mashinisty-spetstehniki/mashinist-truboukladchika/" },
+    { "icon": "equipment-excavator.svg", "title": "Машинисты экскаватора", "description": "Для работ на экскаваторах и экскаваторах-погрузчиках", "href": "/mashinisty-spetstehniki/ekskavatorschik/" },
+    { "icon": "equipment-mobile-crane.svg", "title": "Машинисты автокрана", "description": "Для грузоподъемных работ с учетом типа техники и условий объекта", "href": "/mashinisty-spetstehniki/mashinisty-avtokrana/", "columnClass": "col-12 col-md-6 col-xl-6" },
+    { "icon": "equipment-boom-lift.svg", "title": "Машинисты автовышки и автогидроподъемника", "description": "Для работ на высоте с учетом необходимых допусков", "href": "/mashinisty-spetstehniki/mashinist-avtovyshki/", "columnClass": "col-12 col-md-6 col-xl-6" }
   ],
   "category": {
     "listTitle": "Машинисты для строительной и специальной техники",

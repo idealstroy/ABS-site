@@ -22,25 +22,25 @@
       "title": "Водители",
       "columnClass": "col-12 col-sm-6 col-lg-3",
       "items": [
-        { "title": "Водители грузового автомобиля", "description": "Для строительных и производственных перевозок.", "href": "/voditel-spetstehnika/voditel-gruzovogo-avtomobilya/", "icon": "truck.svg" },
-        { "title": "Водители погрузчика", "description": "Для вилочных и фронтальных погрузчиков с учетом техники и сменности.", "href": "/voditel-spetstehnika/voditel-pogruzchika/", "icon": "minecart-loaded.svg" },
-        { "title": "Водители самосвала", "description": "Для перевозки грунта, инертных материалов и работ на площадке.", "href": "/voditel-spetstehnika/voditel-samosvala/", "icon": "truck-front.svg" },
-        { "title": "Водители тягача", "description": "Для работы с тягачами и специализированных перевозок.", "href": "/voditel-spetstehnika/voditel-tyagacha/", "icon": "truck-front.svg" },
-        { "title": "Водители топливозаправщика", "description": "Для топливозаправочной техники с учетом требуемых документов.", "href": "/voditel-spetstehnika/voditel-toplivozapravshchika/", "icon": "fuel-pump.svg" },
-        { "title": "Водители трала", "description": "Для перевозки крупногабаритной строительной и специальной техники.", "href": "/voditel-spetstehnika/voditel-trala/", "icon": "truck-flatbed.svg" },
-        { "title": "Водители вездехода", "description": "Для удаленных объектов и сложных маршрутов.", "href": "/voditel-spetstehnika/voditel-vezdehoda/", "icon": "car-front.svg" },
-        { "title": "Водители ломовоза", "description": "Для ломовозной техники и перевозки металлолома.", "href": "/voditel-spetstehnika/voditel-lomovoza/", "icon": "truck.svg" }
+        { "title": "Водители грузового автомобиля", "description": "Для строительных и производственных перевозок.", "href": "/voditel-spetstehnika/voditel-gruzovogo-avtomobilya/", "icon": "equipment-cargo-truck.svg" },
+        { "title": "Водители погрузчика", "description": "Для вилочных и фронтальных погрузчиков с учетом техники и сменности.", "href": "/voditel-spetstehnika/voditel-pogruzchika/", "icon": "equipment-forklift.svg" },
+        { "title": "Водители самосвала", "description": "Для перевозки грунта, инертных материалов и работ на площадке.", "href": "/voditel-spetstehnika/voditel-samosvala/", "icon": "equipment-dump-truck.svg" },
+        { "title": "Водители тягача", "description": "Для работы с тягачами и специализированных перевозок.", "href": "/voditel-spetstehnika/voditel-tyagacha/", "icon": "equipment-tractor-unit.svg" },
+        { "title": "Водители топливозаправщика", "description": "Для топливозаправочной техники с учетом требуемых документов.", "href": "/voditel-spetstehnika/voditel-toplivozapravshchika/", "icon": "equipment-tanker-truck.svg" },
+        { "title": "Водители трала", "description": "Для перевозки крупногабаритной строительной и специальной техники.", "href": "/voditel-spetstehnika/voditel-trala/", "icon": "equipment-lowbed-trailer.svg" },
+        { "title": "Водители вездехода", "description": "Для удаленных объектов и сложных маршрутов.", "href": "/voditel-spetstehnika/voditel-vezdehoda/", "icon": "equipment-all-terrain.svg" },
+        { "title": "Водители ломовоза", "description": "Для ломовозной техники и перевозки металлолома.", "href": "/voditel-spetstehnika/voditel-lomovoza/", "icon": "equipment-scrap-truck.svg" }
       ]
     },
     {
       "title": "Машинисты и операторы",
       "columnClass": "col-12 col-sm-6 col-lg-4",
       "items": [
-        { "title": "Машинисты бульдозера", "description": "Для планировки, перемещения грунта и подготовки строительной площадки.", "href": "/mashinisty-spetstehniki/buldozeristy/", "icon": "cone-striped.svg" },
-        { "title": "Машинисты трубоукладчика", "description": "Для линейного строительства и укладки трубопроводов.", "href": "/mashinisty-spetstehniki/mashinist-truboukladchika/", "icon": "diagram-2.svg" },
-        { "title": "Машинисты экскаватора", "description": "Для работ на экскаваторах и экскаваторах-погрузчиках.", "href": "/mashinisty-spetstehniki/ekskavatorschik/", "icon": "tools.svg" },
-        { "title": "Машинисты автокрана", "description": "Для грузоподъемных работ с учетом типа техники и условий объекта.", "href": "/mashinisty-spetstehniki/mashinisty-avtokrana/", "icon": "arrow-up-right-square.svg" },
-        { "title": "Машинисты автовышки и автогидроподъемников", "description": "Для работ на высоте с учетом необходимых допусков.", "href": "/mashinisty-spetstehniki/mashinist-avtovyshki/", "icon": "arrow-up-right-square.svg" }
+        { "title": "Машинисты бульдозера", "description": "Для планировки, перемещения грунта и подготовки строительной площадки.", "href": "/mashinisty-spetstehniki/buldozeristy/", "icon": "equipment-bulldozer.svg" },
+        { "title": "Машинисты трубоукладчика", "description": "Для линейного строительства и укладки трубопроводов.", "href": "/mashinisty-spetstehniki/mashinist-truboukladchika/", "icon": "equipment-pipe-layer.svg" },
+        { "title": "Машинисты экскаватора", "description": "Для работ на экскаваторах и экскаваторах-погрузчиках.", "href": "/mashinisty-spetstehniki/ekskavatorschik/", "icon": "equipment-excavator.svg" },
+        { "title": "Машинисты автокрана", "description": "Для грузоподъемных работ с учетом типа техники и условий объекта.", "href": "/mashinisty-spetstehniki/mashinisty-avtokrana/", "icon": "equipment-mobile-crane.svg" },
+        { "title": "Машинисты автовышки и автогидроподъемников", "description": "Для работ на высоте с учетом необходимых допусков.", "href": "/mashinisty-spetstehniki/mashinist-avtovyshki/", "icon": "equipment-boom-lift.svg" }
       ]
     }
   ],

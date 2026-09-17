@@ -532,12 +532,13 @@ textarea.form-control::placeholder {
 
 .form-consent .form-check-input {
   border-color: var(--abs-secondary);
+  flex: 0 0 auto;
   float: none;
-  margin: 0;
+  margin: 0.2rem 0 0;
 }
 
 .form-consent {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -545,7 +546,9 @@ textarea.form-control::placeholder {
 }
 
 .form-consent .form-check-label {
+  flex: 1 1 0;
   line-height: 1.4;
+  min-width: 0;
 }
 
 .form-consent .invalid-feedback {
@@ -1502,6 +1505,14 @@ body.page-template.page-template--home .specialists-section .specialist-card__ic
   width: 2rem;
 }
 
+body.page-template.page-template--home .specialists-section .specialist-card__icon[src*="equipment-"] {
+  flex-basis: 2.5rem;
+  height: 2.5rem;
+  padding: 0.35rem;
+  transform: translateY(-0.15rem);
+  width: 2.5rem;
+}
+
 body.page-template.page-template--home .specialists-section .specialist-card__title {
   display: block;
   font-size: 0.95rem;
@@ -2402,6 +2413,12 @@ body.page-template.page-template--home .specialists-section .specialist-card:foc
     right: 4%;
     width: auto;
   }
+
+  .page-template--home .objects-showcase__media > img.objects-showcase__map {
+    max-height: none;
+    right: 3%;
+    width: 94%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -3003,6 +3020,11 @@ body.page-template.page-template--home .hero-section--split .btn-abs-primary {
   margin-bottom: 1.25rem;
 }
 
+.page-template--category .driver-category-specialists .component-card__icon[src*="equipment-"] {
+  height: 2.75rem;
+  width: 2.75rem;
+}
+
 .page-template--category .driver-category-specialists .component-card h3 {
   font-size: 1.125rem;
   margin-bottom: 0.75rem;
@@ -3322,6 +3344,12 @@ body.page-template.page-template--home .hero-section--split .btn-abs-primary {
   position: absolute;
   width: 100%;
   z-index: 0;
+}
+
+/* Homepage hero image fills the complete hero frame; the shared offset is for inner-page heroes. */
+.page-template--home.page-template--hero-layout .hero-section--split .hero-media {
+  height: 100%;
+  inset: 0;
 }
 
 .page-template--hero-layout .hero-section--split::before {

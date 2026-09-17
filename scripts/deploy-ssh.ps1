@@ -10,7 +10,7 @@ $projectRoot = Split-Path -Parent $PSScriptRoot
 $distPath = Join-Path $projectRoot 'dist'
 $configPath = Join-Path $projectRoot '.deploy-config.json'
 $sshHost = 'idealstroy.beget.tech'
-$sshUser = 'idealstroy_1'
+$sshUser = 'idealstroy_dev'
 
 if ([string]::IsNullOrWhiteSpace($RemotePath) -and (Test-Path -LiteralPath $configPath)) {
     $config = Get-Content -LiteralPath $configPath -Raw -Encoding UTF8 | ConvertFrom-Json
@@ -18,12 +18,12 @@ if ([string]::IsNullOrWhiteSpace($RemotePath) -and (Test-Path -LiteralPath $conf
 }
 
 if ([string]::IsNullOrWhiteSpace($RemotePath)) {
-    $RemotePath = Read-Host 'Введите полный путь к каталогу сайта на Beget (один раз)'
+    $RemotePath = Read-Host 'Enter the full website directory path on Beget (once)'
     if ([string]::IsNullOrWhiteSpace($RemotePath)) {
         throw 'RemotePath is required. Upload cancelled.'
     }
     [ordered]@{ remotePath = $RemotePath } | ConvertTo-Json | Set-Content -LiteralPath $configPath -Encoding UTF8
-    Write-Host "Путь сохранён локально в $configPath. Этот файл не попадёт в Git."
+    Write-Host "The path was saved locally in $configPath. This file is excluded from Git."
 }
 
 $remoteTarget = "$sshUser@$($sshHost):$RemotePath"
@@ -45,9 +45,20 @@ try {
         throw 'The dist directory is empty. Upload cancelled.'
     }
 
+    $backupDate = Get-Date -Format 'yyyyMMdd'
+    $backupRemotePath = "~/abs-engineer.ru/backup-served-$backupDate.tgz"
+    $backupCommand = "mkdir -p ~/abs-engineer.ru && tar -czf $backupRemotePath -C '$RemotePath' ."
+
+    Write-Host "Creating the server backup at $backupRemotePath"
+    Write-Host 'OpenSSH will request the server password for the backup now.'
+    & ssh "$sshUser@$($sshHost)" $backupCommand
+    if ($LASTEXITCODE -ne 0) {
+        throw "Backup failed with exit code $LASTEXITCODE. Upload cancelled."
+    }
+
     Write-Host "Uploading the final build to $sshUser@$($sshHost):$RemotePath"
     Write-Host 'OpenSSH will request the server password now. It is not saved by this script.'
-    & scp -r @($files.FullName) $remoteTarget
+    & scp -O -r @($files.FullName) $remoteTarget
     if ($LASTEXITCODE -ne 0) {
         throw "Upload failed with exit code $LASTEXITCODE."
     }
