@@ -942,6 +942,135 @@ textarea.form-control::placeholder {
   padding-left: 1.25rem;
 }
 
+.page-template--about .about-accreditation {
+  background: var(--abs-white);
+}
+
+.page-template--about .about-accreditation__shell {
+  background: var(--abs-text);
+  border-radius: var(--abs-radius-lg);
+  box-shadow: var(--abs-shadow);
+  overflow: hidden;
+  position: relative;
+}
+
+.page-template--about .about-accreditation__copy {
+  color: var(--abs-white);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: clamp(2rem, 4vw, 4.5rem);
+  position: relative;
+}
+
+.page-template--about .about-accreditation__copy::before {
+  background: var(--abs-primary);
+  content: "";
+  height: 0.3125rem;
+  left: clamp(2rem, 4vw, 4.5rem);
+  position: absolute;
+  top: 0;
+  width: 5rem;
+}
+
+.page-template--about .about-accreditation__eyebrow {
+  color: var(--abs-primary);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.page-template--about .about-accreditation__copy h2 {
+  color: var(--abs-white);
+  margin-bottom: 1.25rem;
+}
+
+.page-template--about .about-accreditation__copy > p {
+  color: color-mix(in srgb, var(--abs-white) 76%, transparent);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+}
+
+.page-template--about .about-accreditation__details {
+  border-top: 0.0625rem solid color-mix(in srgb, var(--abs-white) 24%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.page-template--about .about-accreditation__details div {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+}
+
+.page-template--about .about-accreditation__details dt {
+  color: color-mix(in srgb, var(--abs-white) 62%, transparent);
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+.page-template--about .about-accreditation__details dd {
+  color: var(--abs-white);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-template--about .about-accreditation__document {
+  align-items: center;
+  background: var(--abs-surface);
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  padding: clamp(1.5rem, 3vw, 3rem);
+}
+
+.page-template--about .about-accreditation__document a {
+  box-shadow: 0 1.25rem 3rem color-mix(in srgb, var(--abs-text) 24%, transparent);
+  display: block;
+  max-width: 28rem;
+  position: relative;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.page-template--about .about-accreditation__document a:hover,
+.page-template--about .about-accreditation__document a:focus-visible {
+  box-shadow: 0 1.5rem 3.5rem color-mix(in srgb, var(--abs-text) 34%, transparent);
+  transform: translateY(-0.25rem);
+}
+
+.page-template--about .about-accreditation__document a:focus-visible {
+  outline: 0.1875rem solid var(--abs-primary);
+  outline-offset: 0.25rem;
+}
+
+.page-template--about .about-accreditation__document img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.page-template--about .about-accreditation__document span {
+  background: var(--abs-primary);
+  bottom: 0;
+  color: var(--abs-white);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0.04em;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
 .page-template--about .about-principles {
   overflow: hidden;
 }
@@ -1105,6 +1234,10 @@ textarea.form-control::placeholder {
 
   .page-template--about .about-mission__media {
     height: clamp(24rem, 70vw, 34rem);
+  }
+
+  .page-template--about .about-accreditation__document a {
+    max-width: min(28rem, 100%);
   }
 }
 
