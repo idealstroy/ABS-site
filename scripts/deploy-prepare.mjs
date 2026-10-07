@@ -43,6 +43,13 @@ export function createManifest(buildRoot, commit) {
   return { version: 1, commit, policy, files };
 }
 
+export function extractSourceArchive(archive, destination) {
+  // Git stores path names as UTF-8. Windows bsdtar otherwise interprets them
+  // using the system code page, corrupting Cyrillic names during extraction.
+  const charset = process.platform === 'win32' ? ['--options', 'hdrcharset=UTF-8'] : [];
+  command('tar', [...charset, '-xf', archive, '-C', destination]);
+}
+
 export function prepare(ref = 'HEAD') {
   if (command('git', ['status', '--porcelain', '--untracked-files=normal'])) throw new Error('Working tree is not clean. Commit the intended release first; deployment cancelled.');
   const commit = command('git', ['rev-parse', '--verify', `${ref}^{commit}`]);
@@ -52,7 +59,7 @@ export function prepare(ref = 'HEAD') {
   const buildRoot = path.join(work, 'source');
   fs.mkdirSync(buildRoot);
   command('git', ['archive', '--format=tar', `--output=${archive}`, commit]);
-  command('tar', ['-xf', archive, '-C', buildRoot]);
+  extractSourceArchive(archive, buildRoot);
   command(process.execPath, ['scripts/test.mjs'], buildRoot);
   const manifest = createManifest(buildRoot, commit);
   const manifestPath = path.join(work, 'manifest.json');

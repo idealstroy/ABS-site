@@ -3,10 +3,31 @@ import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import { spawnSync } from 'node:child_process';
-import { createManifest, packageChanges } from './deploy-prepare.mjs';
+import { createManifest, packageChanges, extractSourceArchive } from './deploy-prepare.mjs';
 
 const work = fs.mkdtempSync(path.join(os.tmpdir(), 'abs-deploy-unit-'));
 try {
+  const sourceArchive = path.join(work, 'source.tar');
+  const extractedSource = path.join(work, 'source');
+  fs.mkdirSync(extractedSource);
+  const archived = spawnSync('git', ['archive', '--format=tar', `--output=${sourceArchive}`, 'HEAD'], { encoding: 'utf8' });
+  assert.equal(archived.status, 0, archived.stderr);
+  extractSourceArchive(sourceArchive, extractedSource);
+  const names = spawnSync('git', ['ls-tree', '-r', '--name-only', '-z', 'HEAD'], { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });
+  assert.equal(names.status, 0, names.stderr);
+  const trackedNames = names.stdout.split('\0').filter(Boolean);
+  for (const name of trackedNames) assert.ok(fs.existsSync(path.join(extractedSource, name)), `Git path corrupted during extraction: ${name}`);
+  for (const name of ['Template libraries/иконки/Логотип полный.svg', 'Template libraries/иконки/Графический логотип.svg']) {
+    const charset = process.platform === 'win32' ? ['--options', 'hdrcharset=UTF-8'] : [];
+    const original = spawnSync('tar', [...charset, '-xOf', sourceArchive, name], { maxBuffer: 1024 * 1024 });
+    assert.equal(original.status, 0, original.stderr?.toString());
+    assert.deepEqual(fs.readFileSync(path.join(extractedSource, name)), original.stdout);
+  }
+  console.log(`Git UTF-8 extraction: ${trackedNames.length} paths verified; both Cyrillic logos match archive bytes.`);
+  if (process.argv.includes('--verify-build')) {
+    const built = spawnSync(process.execPath, ['scripts/test.mjs'], { cwd: extractedSource, stdio: 'inherit' });
+    assert.equal(built.status, 0, 'Isolated commit build failed');
+  }
   fs.mkdirSync(path.join(work, 'scripts'));
   const policy = JSON.parse(fs.readFileSync('scripts/deploy-policy.json', 'utf8'));
   fs.writeFileSync(path.join(work, 'scripts/deploy-policy.json'), JSON.stringify(policy));
