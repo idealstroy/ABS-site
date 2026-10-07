@@ -1,0 +1,78 @@
+<section class="hero-section hero-section--split overflow-hidden" id="top" aria-labelledby="page-title">
+  <img class="hero-media" src="{{solutionHeroImage}}" width="{{solutionHeroWidth}}" height="{{solutionHeroHeight}}" alt="{{solutionHeroAlt}}" fetchpriority="high" />
+  <div class="container position-relative"><div class="row hero-content-row"><div class="col-12 col-lg-8">
+    <p class="solution-hero-label mb-3">{{solutionHeroLabel}}</p>
+    <h1 class="hero-title text-white mb-4" id="page-title">{{h1}}</h1>
+    <p class="hero-lead lead text-white mb-0">{{solutionHeroLead}}</p>
+    <div class="d-flex flex-wrap align-items-center gap-4"><a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>{{solutionHeroCta}}</a><a class="solution-hero-link" href="#solution">{{solutionHeroLink}} <span aria-hidden="true">↓</span></a></div>
+  </div></div></div>
+</section>
+
+<section class="solution-brief" aria-label="Условия предоставления персонала"><div class="container"><div class="row g-4">
+  <div class="col-12 col-md-4"><div class="solution-brief__item"><img src="/assets/icons/gear.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>{{solutionBrief1Title}}</h3><p class="mb-0">{{solutionBrief1Text}}</p></div></div></div>
+  <div class="col-12 col-md-4"><div class="solution-brief__item"><img src="/assets/icons/calendar-check.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>{{solutionBrief2Title}}</h3><p class="mb-0">{{solutionBrief2Text}}</p></div></div></div>
+  <div class="col-12 col-md-4"><div class="solution-brief__item"><img src="/assets/icons/geo-alt.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>{{solutionBrief3Title}}</h3><p class="mb-0">{{solutionBrief3Text}}</p></div></div></div>
+</div></div></section>
+
+<section class="section-space solution-tasks" id="solution" aria-labelledby="solution-task-title"><div class="container">
+  <div class="row g-4 mb-5 align-items-end"><div class="col-12 col-lg-7"><p class="eyebrow mb-3">{{solutionTaskLabel}}</p><h2 class="mb-0" id="solution-task-title">{{solutionTaskTitle}}</h2></div><div class="col-12 col-lg-5"><p class="mb-0">{{solutionTaskLead}}</p></div></div>
+  <div class="solution-task-shell"><div class="row g-0">
+    <div class="col-12 col-lg-5"><div class="nav flex-column solution-task-nav h-100" role="tablist" aria-orientation="vertical" aria-label="Задачи объекта">
+      <button class="nav-link active" id="task-shortage-tab" data-bs-toggle="tab" data-bs-target="#task-shortage" type="button" role="tab" aria-controls="task-shortage" aria-selected="true"><span class="solution-task-nav__number" aria-hidden="true">01</span><span>{{solutionTask1Tab}}</span><span class="solution-task-nav__arrow" aria-hidden="true">↗</span></button>
+      <button class="nav-link" id="task-growth-tab" data-bs-toggle="tab" data-bs-target="#task-growth" type="button" role="tab" aria-controls="task-growth" aria-selected="false"><span class="solution-task-nav__number" aria-hidden="true">02</span><span>{{solutionTask2Tab}}</span><span class="solution-task-nav__arrow" aria-hidden="true">↗</span></button>
+      <button class="nav-link" id="task-rotation-tab" data-bs-toggle="tab" data-bs-target="#task-rotation" type="button" role="tab" aria-controls="task-rotation" aria-selected="false"><span class="solution-task-nav__number" aria-hidden="true">03</span><span>{{solutionTask3Tab}}</span><span class="solution-task-nav__arrow" aria-hidden="true">↗</span></button>
+    </div></div>
+    <div class="col-12 col-lg-7"><div class="tab-content solution-task-content h-100">
+      <article class="tab-pane active" id="task-shortage" role="tabpanel" aria-labelledby="task-shortage-tab" tabindex="0"><h3>{{solutionTask1Title}}</h3><p>{{solutionTask1Text}}</p><div class="solution-task-result"><p class="solution-caption">{{solutionTaskResultLabel}}</p><p class="mb-0">{{solutionTask1Result}}</p></div><a href="#request" data-request-popup-trigger>{{solutionTaskCta}} <span aria-hidden="true">→</span></a></article>
+      <article class="tab-pane" id="task-growth" role="tabpanel" aria-labelledby="task-growth-tab" tabindex="0"><h3>{{solutionTask2Title}}</h3><p>{{solutionTask2Text}}</p><div class="solution-task-result"><p class="solution-caption">{{solutionTaskResultLabel}}</p><p class="mb-0">{{solutionTask2Result}}</p></div><a href="#request" data-request-popup-trigger>{{solutionTaskCta}} <span aria-hidden="true">→</span></a></article>
+      <article class="tab-pane" id="task-rotation" role="tabpanel" aria-labelledby="task-rotation-tab" tabindex="0"><h3>{{solutionTask3Title}}</h3><p>{{solutionTask3Text}}</p><div class="solution-task-result"><p class="solution-caption">{{solutionTaskResultLabel}}</p><p class="mb-0">{{solutionTask3Result}}</p></div><a href="#request" data-request-popup-trigger>{{solutionTaskCta}} <span aria-hidden="true">→</span></a></article>
+    </div></div>
+  </div></div>
+</div></section>
+
+<section class="section-space solution-scope" aria-labelledby="solution-scope-title"><div class="container">
+  <div class="row g-4 g-lg-5 align-items-start"><div class="col-12 col-lg-5"><p class="solution-label-light mb-3">{{solutionScopeLabel}}</p><h2 class="text-white mb-4" id="solution-scope-title">{{solutionScopeTitle}}</h2><p class="solution-scope__lead mb-0">{{solutionScopeLead}}</p></div>
+    <div class="col-12 col-lg-6 offset-lg-1"><ol class="solution-scope-list list-unstyled mb-0">
+      <li><span class="solution-scope-list__number">01</span><div><h3>{{solutionScope1Title}}</h3><p>{{solutionScope1Text}}</p></div></li>
+      <li><span class="solution-scope-list__number">02</span><div><h3>{{solutionScope2Title}}</h3><p>{{solutionScope2Text}}</p></div></li>
+      <li><span class="solution-scope-list__number">03</span><div><h3>{{solutionScope3Title}}</h3><p>{{solutionScope3Text}}</p></div></li>
+    </ol></div>
+  </div>
+  <div class="solution-deliverable"><div class="row g-4 align-items-center"><div class="col-12 col-lg-3"><p class="solution-caption mb-0">{{solutionScopeResultLabel}}</p></div><div class="col-12 col-lg-9"><h3 class="mb-3">{{solutionScopeResultTitle}}</h3><p class="mb-0">{{solutionScopeResultText}}</p></div></div></div>
+</div></section>
+
+<section class="section-space specialists-section" id="specialists" aria-labelledby="solution-catalog-title"><div class="container">
+  <div class="row g-4 mb-5"><div class="col-12 col-lg-7"><p class="eyebrow mb-3">{{solutionCatalogLabel}}</p><h2 class="mb-0" id="solution-catalog-title">{{solutionCatalogTitle}}</h2></div><div class="col-12 col-lg-5"><p class="lead mb-0">{{solutionCatalogLead}}</p></div></div>
+  {{specialistCards}}
+  <p class="solution-catalog-note mb-0">{{solutionCatalogFooter}}</p>
+</div></section>
+
+<section class="section-space section-surface" aria-labelledby="solution-readiness-title"><div class="container"><div class="row g-4 g-lg-5 align-items-stretch">
+  <div class="col-12 col-lg-7"><p class="eyebrow mb-3">{{solutionReadinessLabel}}</p><h2 class="mb-4" id="solution-readiness-title">{{solutionReadinessTitle}}</h2><p class="mb-4">{{solutionReadinessLead}}</p>
+    <ul class="list-unstyled row g-4 mb-0 solution-checks">
+      <li class="col-12"><div><img src="/assets/icons/check-circle-fill.svg" width="24" height="24" alt="" aria-hidden="true" /><span>{{solutionCheck1}}</span></div></li>
+      <li class="col-12"><div><img src="/assets/icons/check-circle-fill.svg" width="24" height="24" alt="" aria-hidden="true" /><span>{{solutionCheck2}}</span></div></li>
+      <li class="col-12"><div><img src="/assets/icons/check-circle-fill.svg" width="24" height="24" alt="" aria-hidden="true" /><span>{{solutionCheck3}}</span></div></li>
+      <li class="col-12"><div><img src="/assets/icons/check-circle-fill.svg" width="24" height="24" alt="" aria-hidden="true" /><span>{{solutionCheck4}}</span></div></li>
+    </ul>
+  </div>
+  <div class="col-12 col-lg-5"><article class="solution-accreditation h-100"><div><p class="solution-caption">{{solutionAccreditationLabel}}</p><h3 class="mb-3">{{solutionAccreditationTitle}}</h3><p class="mb-4">{{solutionAccreditationText}}</p></div><a href="/assets/images/about-accreditation.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/images/about-accreditation.jpg" width="1244" height="1757" alt="Уведомление об аккредитации АБС ИНЖИНИРИНГ" loading="lazy" /><span>{{solutionAccreditationLink}} <span aria-hidden="true">↗</span></span></a></article></div>
+</div></div></section>
+
+<section class="section-space solution-process" aria-labelledby="solution-process-title"><div class="container"><div class="row mb-5"><div class="col-12 col-lg-8"><p class="eyebrow mb-3">{{solutionProcessLabel}}</p><h2 class="mb-0" id="solution-process-title">{{solutionProcessTitle}}</h2></div></div>
+  <ol class="list-unstyled row g-4 mb-4">
+    <li class="col-12 col-md-6 col-xl-3"><article class="solution-step h-100"><span class="solution-step__number">01</span><h3>{{solutionProcess1Title}}</h3><p class="mb-0">{{solutionProcess1Text}}</p></article></li>
+    <li class="col-12 col-md-6 col-xl-3"><article class="solution-step h-100"><span class="solution-step__number">02</span><h3>{{solutionProcess2Title}}</h3><p class="mb-0">{{solutionProcess2Text}}</p></article></li>
+    <li class="col-12 col-md-6 col-xl-3"><article class="solution-step h-100"><span class="solution-step__number">03</span><h3>{{solutionProcess3Title}}</h3><p class="mb-0">{{solutionProcess3Text}}</p></article></li>
+    <li class="col-12 col-md-6 col-xl-3"><article class="solution-step h-100"><span class="solution-step__number">04</span><h3>{{solutionProcess4Title}}</h3><p class="mb-0">{{solutionProcess4Text}}</p></article></li>
+  </ol><p class="mb-0">{{solutionProcessNote}}</p>
+</div></section>
+
+<section class="section-space section-surface" aria-labelledby="solution-faq-title"><div class="container"><div class="row g-4 g-lg-5"><div class="col-12 col-lg-4"><h2 class="mb-0" id="solution-faq-title">{{solutionFaqTitle}}</h2></div><div class="col-12 col-lg-8">{{faq}}</div></div></div></section>
+
+<section class="section-space solution-request" id="request" aria-labelledby="request-title"><div class="container"><div class="solution-request-shell"><div class="row g-4 g-lg-5 align-items-start">
+  <div class="col-12 col-lg-5"><p class="solution-label-light mb-3">{{solutionRequestLabel}}</p><h2 class="text-white mb-4" id="request-title">{{solutionRequestTitle}}</h2><p>{{solutionRequestLead}}</p><p class="solution-request-hint">{{solutionRequestHint}}</p><a class="solution-request-phone" href="tel:+79174001059">+7 917 400-10-59</a></div>
+  <div class="col-12 col-lg-6 offset-lg-1"><div class="solution-request-form" data-request-popup-source>{{form}}</div></div>
+</div></div></div></section>
+
+<div class="modal fade request-form-modal" id="requestFormModal" tabindex="-1" aria-labelledby="requestFormModalTitle" aria-hidden="true" data-request-popup><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content request-shell p-0"><div class="modal-header border-0 px-4 pt-4 pb-0"><h2 class="h3 mb-0" id="requestFormModalTitle">{{solutionHeroCta}}</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть форму"></button></div><div class="modal-body px-4 pb-4 pt-3" data-request-popup-form></div></div></div></div>

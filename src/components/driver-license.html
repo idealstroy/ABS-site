@@ -1,0 +1,24 @@
+<section class="driver-license" id="{{licenseId}}" aria-labelledby="{{licenseId}}-title">
+    <article class="driver-license__shell">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-12 col-lg-4">
+          <div class="driver-license__identity h-100">
+            <p class="driver-license__eyebrow">{{licenseLabel}}</p>
+            <p class="driver-license__code" aria-label="Категория прав {{licenseCode}}">{{licenseCode}}</p>
+            <p class="driver-license__brief-label">Для заявки</p>
+            <p class="mb-0">{{licenseBrief}}</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="driver-license__content">
+            <h2 id="{{licenseId}}-title" class="mb-4">{{licenseTitle}}</h2>
+            <p class="driver-license__intro">{{licenseIntro}}</p>
+            <ul class="row row-cols-1 row-cols-md-2 g-4 list-unstyled mb-0">{{licenseItems}}</ul>
+            <p class="driver-license__note">{{licenseNote}}</p>
+            {{licenseLink}}
+            <a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>Предоставить водителей</a>
+          </div>
+        </div>
+      </div>
+    </article>
+</section>

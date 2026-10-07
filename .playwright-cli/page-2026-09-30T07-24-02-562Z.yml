@@ -1,0 +1,134 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Быстрый подбор ключевых слов" [ref=e6]
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Подбор слов":
+            - /url: /keywords/
+        - listitem [ref=e9]:
+          - link "Анализ доменов":
+            - /url: /site/
+        - listitem [ref=e10]:
+          - link "Инструменты":
+            - /url: /normalizer/
+        - listitem [ref=e11]:
+          - link "Тарифы" [ref=e12] [cursor=pointer]:
+            - /url: /price.html
+        - listitem [ref=e13]:
+          - link "Войти" [ref=e14] [cursor=pointer]:
+            - /url: /login/
+    - generic [ref=e15]:
+      - heading "Подбор ключевых слов" [level=1] [ref=e16]
+      - heading "из базы в 2 млрд. поисковых запросов" [level=2] [ref=e17]
+    - generic [ref=e18]:
+      - generic:
+        - link:
+          - /url: /keywords/
+        - link "Перейти к простому поиску":
+          - /url: /keywords/
+      - generic [ref=e19]:
+        - link "Перейти к расширенному поиску" [ref=e20] [cursor=pointer]:
+          - /url: /mkeywords/
+        - link [ref=e21] [cursor=pointer]:
+          - /url: /mkeywords/
+    - generic [ref=e22]:
+      - textbox "ключевое слово" [active] [ref=e24]
+      - button "Найти" [ref=e26]
+    - heading "Подберите ключевые слова поиском базового словосочетания" [level=3] [ref=e27]
+    - generic [ref=e29]:
+      - paragraph [ref=e30]: Даже если у вас есть хорошее представление о том, какими словами лучше описать ваш сайт, вы вряд ли догадываетесь о многих комбинациях использования слов, относящихся к теме сайта.
+      - paragraph [ref=e31]: С помощью инструмента подбора ключевых слов по базовым словам вы сможете проверить и расширить свои текущие наработки по использованию ключевых слов, а также увидеть интересные идеи описания вашего бизнеса новыми ключевыми словами.
+      - paragraph [ref=e32]: Введите поисковое слово или словосочетание для получения списка ключевых фраз, в состав которых входят поисковые слова.
+      - paragraph [ref=e33]: "Вы также можете исключить из полученных результатов словосочетания с несколькими словами, добавив слова для исключения в поисковую строку со знаком минус без пробела, например:"
+      - paragraph [ref=e34]: поисковое слово -исключение1 -исключение2 -исключение3
+      - paragraph [ref=e35]: В Простом подборе слов исключаются отдельные слова, а не словосочетания.
+  - list [ref=e37]:
+    - listitem [ref=e38]:
+      - link "Тарифы" [ref=e39] [cursor=pointer]:
+        - /url: /price.html
+    - listitem [ref=e40]:
+      - link "Контакты" [ref=e41] [cursor=pointer]:
+        - /url: /contact.html
+    - listitem [ref=e42]:
+      - link "Новости проекта" [ref=e43] [cursor=pointer]:
+        - /url: /news.html
+    - listitem [ref=e44]:
+      - link "API Букварикса" [ref=e45] [cursor=pointer]:
+        - /url: /api.html
+  - generic [ref=e46]:
+    - generic [ref=e47]:
+      - list [ref=e49]:
+        - listitem [ref=e50]: Сервисы ключевых слов и доменов
+        - listitem [ref=e51]:
+          - link "Поиск по одному слову" [ref=e52] [cursor=pointer]:
+            - /url: /keywords/
+        - listitem [ref=e53]:
+          - link "Поиск по списку слов" [ref=e54] [cursor=pointer]:
+            - /url: /mkeywords/
+        - listitem [ref=e55]:
+          - link "Топ поисковых запросов" [ref=e56] [cursor=pointer]:
+            - /url: /top-keywords/
+        - listitem [ref=e57]:
+          - link "Поиск по одному домену" [ref=e58] [cursor=pointer]:
+            - /url: /site/
+        - listitem [ref=e59]:
+          - link "Сравнение двух доменов" [ref=e60] [cursor=pointer]:
+            - /url: /cmp/
+        - listitem [ref=e61]:
+          - link "Сравнение нескольких доменов" [ref=e62] [cursor=pointer]:
+            - /url: /mcmp/
+      - list [ref=e64]:
+        - listitem [ref=e65]: Инструменты для работы со списками
+        - listitem [ref=e66]:
+          - link "Нормализатор слов" [ref=e67] [cursor=pointer]:
+            - /url: /normalizer/
+        - listitem [ref=e68]:
+          - link "Дедупликатор слов" [ref=e69] [cursor=pointer]:
+            - /url: /deduplicator/
+        - listitem [ref=e70]:
+          - link "Комбинатор слов" [ref=e71] [cursor=pointer]:
+            - /url: /combiner/
+        - listitem [ref=e72]:
+          - link "Компаратор слов" [ref=e73] [cursor=pointer]:
+            - /url: /comparer/
+        - listitem [ref=e74]:
+          - link "Анализатор слов" [ref=e75] [cursor=pointer]:
+            - /url: /analyzer/
+    - generic [ref=e76]:
+      - list [ref=e78]:
+        - listitem [ref=e79]: Дополнительная информация
+        - listitem [ref=e80]:
+          - link "Характеристики баз" [ref=e81] [cursor=pointer]:
+            - /url: /about_bases.html
+        - listitem [ref=e82]:
+          - link "Учебные материалы" [ref=e83] [cursor=pointer]:
+            - /url: /help.html
+        - listitem [ref=e84]:
+          - link "Полезные списки слов" [ref=e85] [cursor=pointer]:
+            - /url: /word_lists.html
+        - listitem [ref=e86]:
+          - link "Старая версия сайта" [ref=e87] [cursor=pointer]:
+            - /url: /desktop-software.html
+      - list [ref=e89]:
+        - listitem [ref=e90]: Условия использования
+        - listitem [ref=e91]:
+          - link "Лицензионное соглашение" [ref=e92] [cursor=pointer]:
+            - /url: /terms.html
+        - listitem [ref=e93]:
+          - link "Политика конфиденциальности" [ref=e94] [cursor=pointer]:
+            - /url: /privacy.html
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - link [ref=e98] [cursor=pointer]:
+          - /url: https://www.facebook.com/bukvarixsoftware
+        - link [ref=e99] [cursor=pointer]:
+          - /url: https://vk.com/bukvarix
+      - generic [ref=e100]:
+        - link [ref=e101] [cursor=pointer]:
+          - /url: https://twitter.com/bukvarix
+        - link [ref=e102] [cursor=pointer]:
+          - /url: https://www.youtube.com/user/Bukvarix
+  - paragraph [ref=e104]: © 2025 Букварикс

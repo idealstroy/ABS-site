@@ -286,12 +286,13 @@ const renderForm = async (page, region, { idSuffix = "", includeValidationModal 
   return form;
 };
 
-const renderHeader = async (site, readyRoutes) => renderTokens(await readText("components/header.html"), {
+const renderHeader = async (site, readyRoutes, headerTagline = "Начните подбор персонала") => renderTokens(await readText("components/header.html"), {
   contactsLink: readyRoutes.has("/kontakty/")
     ? '<a class="header-topline__contact" href="/kontakty/">Контакты</a>'
     : '<span class="header-topline__contact" aria-disabled="true">Контакты</span>',
   email: escapeHtml(site.email),
   homeHref: "/",
+  headerTagline: escapeHtml(headerTagline),
   logo: escapeHtml(site.logo),
   navigation: renderHeaderNavigation(site.navigation, readyRoutes),
   phone: escapeHtml(site.phone),
@@ -319,6 +320,9 @@ const robotsFor = (page) => isTechnicalPage(page) || page.status !== "ready"
 const isIndexable = (page) => robotsFor(page) === "index, follow";
 
 const getPageVisual = (page) => {
+  if (page.template === "home-alternative") {
+    return { src: page.solution.heroImage, width: page.solution.heroWidth, height: page.solution.heroHeight, alt: page.solution.heroAlt };
+  }
   if (page.template === "home") {
     return {
       src: "/assets/images/hero-construction-specialist.png",
@@ -480,6 +484,23 @@ const validatePageModel = (page) => {
   }
 };
 
+const renderLicenseSegments = async (segments = []) => {
+  if (!segments.length) return "";
+  const template = await readText("components/driver-license.html");
+  const blocks = segments.map((segment) => `<div class="col-12">${renderTokens(template, {
+    licenseId: escapeHtml(segment.id),
+    licenseCode: escapeHtml(segment.code),
+    licenseLabel: escapeHtml(segment.label),
+    licenseTitle: escapeHtml(segment.title),
+    licenseIntro: escapeHtml(segment.intro),
+    licenseNote: escapeHtml(segment.note),
+    licenseBrief: escapeHtml(segment.brief),
+    licenseItems: segment.items.map((item) => `<li class="col d-flex"><div class="driver-license__item w-100"><h3>${escapeHtml(item.title)}</h3><p class="mb-0">${escapeHtml(item.text)}</p></div></li>`).join(""),
+    licenseLink: segment.link ? `<p class="driver-license__link"><a href="${escapeHtml(segment.link)}">${escapeHtml(segment.linkText)}</a></p>` : "",
+  })}</div>`).join("\n");
+  return `<div class="section-space driver-license-group pt-0"><div class="container"><div class="row g-0 driver-license-group__items">${blocks}</div></div></div>\n`;
+};
+
 export const build = async () => {
   await rm(dist, { recursive: true, force: true });
   await mkdir(dist, { recursive: true });
@@ -492,6 +513,7 @@ export const build = async () => {
   const readyRoutes = new Set(pages.filter((page) => page.status === "ready").map((page) => page.path));
   const navigation = buildHeaderNavigation(site.navigation, homePage, pages, readyRoutes);
   const header = await renderHeader({ ...site, navigation }, readyRoutes);
+  const homeHeader = await renderHeader({ ...site, navigation }, readyRoutes, "Нужен персонал на объект?");
   const footer = await renderFooter(site, readyRoutes);
 
   for (const page of pages) {
@@ -504,6 +526,12 @@ export const build = async () => {
     const contacts = page.contacts || {};
     const about = page.about || {};
     const main = renderTokens(pageTemplate, {
+      ...Object.fromEntries(Object.entries(page.copy || {}).map(([key, value]) => [key, escapeHtml(value)])),
+      solutionHeroImage: escapeHtml(page.solution?.heroImage || ""),
+      solutionHeroWidth: String(page.solution?.heroWidth || 1895),
+      solutionHeroHeight: String(page.solution?.heroHeight || 830),
+      solutionHeroAlt: escapeHtml(page.solution?.heroAlt || ""),
+      licenseSegments: await renderLicenseSegments(page.licenseSegments),
       breadcrumbs: await renderBreadcrumbs(page.breadcrumbs),
       cards: await renderCards(page.cards, readyRoutes),
       categoryChecks: renderCategoryChecks(category.checks),
@@ -614,11 +642,11 @@ export const build = async () => {
     });
     const head = renderHeadExtras(page, site);
     const html = renderTokens(baseTemplate, {
-      bodyClass: escapeHtml(`${page.bodyClass || ""}${["home", "category", "specialist", "contacts", "about"].includes(page.template) ? " page-template--hero-layout" : ""}`),
+      bodyClass: escapeHtml(`${page.bodyClass || ""}${["home", "home-alternative", "category", "specialist", "contacts", "about"].includes(page.template) ? " page-template--hero-layout" : ""}`),
       canonical: head.canonical,
       description: escapeHtml(page.seo.description),
       footer,
-      header,
+      header: ["home", "home-alternative"].includes(page.template) ? homeHeader : header,
       main,
       openGraph: head.openGraph,
       pageType: escapeHtml(page.pageType),
