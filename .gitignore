@@ -10,7 +10,6 @@ outputs/
 # Local agent and dependency folders
 .agents/
 node_modules/
-.deploy-config.json
 
 # Local operating-system and application artifacts
 *.log

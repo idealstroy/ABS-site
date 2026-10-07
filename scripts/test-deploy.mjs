@@ -61,14 +61,10 @@ try {
     const parse = spawnSync('powershell', ['-NoProfile', '-Command', "$tokens = $null; $errors = $null; $null = [System.Management.Automation.Language.Parser]::ParseFile((Join-Path (Get-Location) 'scripts/deploy-ssh.ps1'), [ref]$tokens, [ref]$errors); if ($errors.Count) { $errors | ForEach-Object { Write-Error $_.Message }; exit 1 }; Write-Output 'PowerShell syntax: passed.'"], { encoding: 'utf8', timeout: 30000 });
     assert.equal(parse.status, 0, parse.error?.message || parse.stderr);
     console.log(parse.stdout.trim());
+    const transport = spawnSync(process.execPath, ['scripts/test-deploy-transport.mjs'], { stdio: 'inherit' });
+    assert.equal(transport.status, 0, 'PowerShell stdin transport test failed');
   }
-  let python;
-  for (const executable of ['python', 'python3']) {
-    const version = spawnSync(executable, ['--version'], { encoding: 'utf8' });
-    if (!version.error && version.status === 0) { python = executable; break; }
-  }
-  assert.ok(python, 'Python is required for deployment tests');
-  const result = spawnSync(python, ['-B', 'scripts/test-deploy.py'], { stdio: 'inherit' });
+  const result = spawnSync(process.execPath, ['scripts/test-deploy-shell.mjs'], { stdio: 'inherit' });
   assert.equal(result.status, 0, 'Remote failure-injection tests failed');
 } finally {
   fs.rmSync(work, { recursive: true, force: true }); // Only our mkdtemp test fixture.
