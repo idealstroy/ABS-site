@@ -3,15 +3,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import { spawnSync } from 'node:child_process';
-import { createManifest, packageChanges, extractSourceArchive } from './deploy-prepare.mjs';
+import { createManifest, packageChanges, extractSourceArchive, createSourceArchive } from './deploy-prepare.mjs';
 
 const work = fs.mkdtempSync(path.join(os.tmpdir(), 'abs-deploy-unit-'));
 try {
   const sourceArchive = path.join(work, 'source.tar');
   const extractedSource = path.join(work, 'source');
   fs.mkdirSync(extractedSource);
-  const archived = spawnSync('git', ['archive', '--format=tar', `--output=${sourceArchive}`, 'HEAD'], { encoding: 'utf8' });
-  assert.equal(archived.status, 0, archived.stderr);
+  createSourceArchive(sourceArchive, 'HEAD');
   extractSourceArchive(sourceArchive, extractedSource);
   const names = spawnSync('git', ['ls-tree', '-r', '--name-only', '-z', 'HEAD'], { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 });
   assert.equal(names.status, 0, names.stderr);
@@ -22,11 +21,23 @@ try {
     const original = spawnSync('tar', [...charset, '-xOf', sourceArchive, name], { maxBuffer: 1024 * 1024 });
     assert.equal(original.status, 0, original.stderr?.toString());
     assert.deepEqual(fs.readFileSync(path.join(extractedSource, name)), original.stdout);
+    const committed = spawnSync('git', ['show', `HEAD:${name}`], { maxBuffer: 1024 * 1024 });
+    assert.equal(committed.status, 0, committed.stderr?.toString());
+    assert.deepEqual(original.stdout, committed.stdout, 'Archive changed line endings of the committed logo');
   }
-  console.log(`Git UTF-8 extraction: ${trackedNames.length} paths verified; both Cyrillic logos match archive bytes.`);
+  console.log(`Git UTF-8 extraction: ${trackedNames.length} paths verified; Cyrillic logos match Git bytes without Windows CRLF conversion.`);
   if (process.argv.includes('--verify-build')) {
     const built = spawnSync(process.execPath, ['scripts/test.mjs'], { cwd: extractedSource, stdio: 'inherit' });
     assert.equal(built.status, 0, 'Isolated commit build failed');
+    if (process.argv.includes('--verify-live')) {
+      for (const name of ['assets/images/logo-full.svg', 'assets/images/logo-mark.svg', 'assets/icons/truck.svg', 'robots.txt', 'assets/js/site.js']) {
+        const response = await fetch(`https://abs-engineer.ru/${name}?read_only_check=${Date.now()}`, { signal: AbortSignal.timeout(25000), headers: { 'Accept-Encoding': 'identity' } });
+        assert.equal(response.status, 200, `Public read failed: ${name}`);
+        const publicBytes = Buffer.from(await response.arrayBuffer());
+        assert.deepEqual(fs.readFileSync(path.join(extractedSource, 'dist', name)), publicBytes, `Unchanged public file still differs: ${name}`);
+        console.log('Read-only public comparison: exact match ' + name);
+      }
+    }
   }
   fs.mkdirSync(path.join(work, 'scripts'));
   const policy = JSON.parse(fs.readFileSync('scripts/deploy-policy.json', 'utf8'));

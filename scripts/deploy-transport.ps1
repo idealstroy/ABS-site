@@ -1,4 +1,5 @@
-# Send exact UTF-8 bytes to stdin. Do not use PowerShell's text pipeline for sh.
+# Send UTF-8 through a native process, not PowerShell's text pipeline. Windows
+# .NET may add a stdin preamble; the Base64 decoder handles it before invoking sh.
 function ConvertTo-DeployShellTransport {
     param([string]$Program)
     $encoding = New-Object System.Text.UTF8Encoding($false)

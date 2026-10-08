@@ -50,6 +50,12 @@ export function extractSourceArchive(archive, destination) {
   command('tar', [...charset, '-xf', archive, '-C', destination]);
 }
 
+export function createSourceArchive(archive, commit) {
+  // A Linux release must not inherit Windows core.autocrlf=true. Override
+  // only this Git process; do not change the user's checkout/configuration.
+  command('git', ['-c', 'core.autocrlf=false', '-c', 'core.eol=lf', 'archive', '--format=tar', `--output=${archive}`, commit]);
+}
+
 export function prepare(ref = 'HEAD') {
   if (command('git', ['status', '--porcelain', '--untracked-files=normal'])) throw new Error('Working tree is not clean. Commit the intended release first; deployment cancelled.');
   const commit = command('git', ['rev-parse', '--verify', `${ref}^{commit}`]);
@@ -58,7 +64,7 @@ export function prepare(ref = 'HEAD') {
   const archive = path.join(work, 'source.tar');
   const buildRoot = path.join(work, 'source');
   fs.mkdirSync(buildRoot);
-  command('git', ['archive', '--format=tar', `--output=${archive}`, commit]);
+  createSourceArchive(archive, commit);
   extractSourceArchive(archive, buildRoot);
   command(process.execPath, ['scripts/test.mjs'], buildRoot);
   const manifest = createManifest(buildRoot, commit);
