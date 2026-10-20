@@ -1,0 +1,626 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e7]:
+      - link "ПТО онлайн — на главную" [ref=e8] [cursor=pointer]:
+        - /url: /
+      - navigation "Основная навигация" [ref=e10]:
+        - link "О сервисе" [ref=e11] [cursor=pointer]:
+          - /url: /functionality/
+        - button "Строительным компаниям" [ref=e13]
+        - link "Тарифы" [ref=e14] [cursor=pointer]:
+          - /url: /tariffs/
+        - link "Справочный центр" [ref=e15] [cursor=pointer]:
+          - /url: https://helpcenter.pto-app.ru/
+        - link "Блог" [ref=e16] [cursor=pointer]:
+          - /url: /blog/
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - link "+7 (967) 555-47-32" [ref=e19] [cursor=pointer]:
+            - /url: tel:79675554732
+          - generic "Выбор языка" [ref=e20]:
+            - link "RU" [ref=e21] [cursor=pointer]:
+              - /url: /
+            - generic [aria-hidden] [ref=e22]: /
+            - link "EN" [ref=e23] [cursor=pointer]:
+              - /url: /en/
+            - generic [aria-hidden] [ref=e24]: /
+            - link "中文" [ref=e25] [cursor=pointer]:
+              - /url: /ch/
+        - link "Вход / регистрация" [ref=e26] [cursor=pointer]:
+          - /url: https://app.pto-app.ru/auth
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: ПТО онлайн
+          - heading "Автоматизация ПТО без сложных внедрений" [level=1] [ref=e35]
+          - paragraph [ref=e36]: Сокращайте время на оформление документации на 40% и снижайте ошибки на 30%
+        - form [ref=e37]:
+          - heading "Оставьте заявку на презентацию" [level=2] [ref=e38]
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: Имя
+              - textbox "Имя" [ref=e42]
+            - generic [ref=e43]:
+              - generic [ref=e44]: Телефон
+              - textbox "Телефон" [ref=e45]
+            - button "Отправить заявку" [ref=e46] [cursor=pointer]
+          - generic [ref=e47]:
+            - checkbox "Нажимая на кнопку, вы даете согласие на обработку своих персональных данных" [ref=e48] [cursor=pointer]
+            - generic [ref=e49]:
+              - text: Нажимая на кнопку, вы даете согласие на обработку своих
+              - link "персональных данных" [ref=e50] [cursor=pointer]:
+                - /url: policy.pdf
+      - generic [ref=e52]:
+        - paragraph [ref=e59]: 🔥 Общение с ИИ-агентом ПТО онлайн через MAX
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]: Динамика документов
+            - generic [ref=e70]: Онлайн
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]: Новые сегодня
+              - generic [ref=e74]: "24"
+            - generic [ref=e75]:
+              - generic [ref=e76]: Авто-согласование
+              - generic [ref=e77]: 86%
+            - generic [ref=e78]:
+              - generic [ref=e79]: Экономия часов
+              - generic [ref=e80]: "18"
+            - generic [ref=e81]:
+              - generic [ref=e82]: В очереди
+              - generic [ref=e83]: "11"
+            - generic [ref=e84]:
+              - generic [ref=e85]: ЭЦП
+              - generic [ref=e86]: "26"
+          - generic [ref=e89]:
+            - text: Документооборот
+            - strong [ref=e90]: 6 потоков
+            - text: без ручной пересылки
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: Документы
+              - generic [ref=e94]: "248"
+            - generic [ref=e95]:
+              - generic [ref=e96]: В работе
+              - generic [ref=e97]: "37"
+            - generic [ref=e98]:
+              - generic [ref=e99]: Готово
+              - generic [ref=e100]: "211"
+            - generic [ref=e101]:
+              - generic [ref=e102]: Автопроцессы
+              - generic [ref=e103]: "14"
+        - generic [ref=e110]:
+          - generic [ref=e111]: 42%
+          - generic [ref=e112]:
+            - generic [ref=e113]: Комплектность ИД
+            - generic [ref=e114]: 42% готово к сдаче, 58% в обработке
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - strong [ref=e117]: "12"
+              - generic [ref=e118]: на согласовании
+            - generic [ref=e119]:
+              - strong [ref=e120]: "7"
+              - generic [ref=e121]: требуют правки
+            - generic [ref=e122]:
+              - strong [ref=e123]: "23"
+              - generic [ref=e124]: подписаны
+            - generic [ref=e125]:
+              - strong [ref=e126]: "8"
+              - generic [ref=e127]: ожидают ЭЦП
+        - generic [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e132]: Поток документов
+            - generic [ref=e133]: Сегодня
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e136]: В работе
+              - strong [ref=e137]: "37"
+            - generic [ref=e138]:
+              - generic [ref=e139]: Подписано
+              - strong [ref=e140]: "211"
+            - generic [ref=e141]:
+              - generic [ref=e142]: На проверке
+              - strong [ref=e143]: "18"
+          - generic [ref=e150]:
+            - generic [ref=e151]: Акт скрытых работ
+            - strong [ref=e152]: "31"
+            - generic [ref=e153]: подписано за день
+  - region "Преимущества сервиса" [ref=e154]:
+    - article [ref=e155]:
+      - paragraph [ref=e157]: "-40% времени на заполнение документов"
+    - article [ref=e158]:
+      - paragraph [ref=e160]: Поддержка искусственного интеллекта
+    - article [ref=e161]:
+      - paragraph [ref=e163]: Вся документацияв едином пространстве
+    - article [ref=e164]:
+      - paragraph [ref=e166]: Внедрение за 2 дня без громоздких систем
+    - article [ref=e167]:
+      - paragraph [ref=e169]: Быстрая техподдержка 24/7,обучение работе с ПО
+  - region [ref=e170]:
+    - heading "ПТО онлайн - это сервис для подрядчиков и субподрядчиков строительства" [level=2] [ref=e172]
+    - generic [ref=e173]:
+      - article [ref=e174]:
+        - img "ПТО онлайн - сервис для подрядчиков и субподрядчиков строительства" [ref=e175]
+        - generic [ref=e176]:
+          - heading "Директорам и руководителям" [level=3] [ref=e177]
+          - paragraph [ref=e178]: Контроль генподрядчиков и подрядчиков
+      - article [ref=e179]:
+        - img "ПТО онлайн для руководителей проектов" [ref=e180]
+        - generic [ref=e181]:
+          - heading "Руководителям проектов" [level=3] [ref=e182]
+          - paragraph [ref=e183]: контроль задач и управление командой
+      - article [ref=e184]:
+        - img "ПТО онлайн для прорабов и мастеров" [ref=e185]
+        - generic [ref=e186]:
+          - heading "Прорабам и мастерам" [level=3] [ref=e187]: Прорабами мастерам
+          - paragraph [ref=e188]: удобное заполнение данных в реальном времени
+      - article [ref=e189]:
+        - img "ПТО онлайн для инженеров ПТО" [ref=e190]
+        - generic [ref=e191]:
+          - heading "Инженерам ПТО" [level=3] [ref=e192]: ИнженерамПТО
+          - paragraph [ref=e193]: автоматизация заполнения документов и рутинных задач
+    - generic "Статусы ПТО онлайн" [ref=e194]:
+      - article [ref=e195]:
+        - generic [ref=e200]:
+          - heading "В реестре Российского ПО" [level=3] [ref=e201]
+          - paragraph [ref=e202]: Регистрационный номер 2024684221
+      - article [ref=e203]:
+        - generic [aria-hidden] [ref=e204]: Sk
+        - generic [ref=e205]:
+          - heading "Резиденты Сколково" [level=3] [ref=e206]
+          - paragraph [ref=e207]: С 2025 года
+    - link "Попробовать бесплатно" [ref=e208] [cursor=pointer]:
+      - /url: https://app.pto-app.ru/auth?register=true
+  - region "Посмотрите видео с детализацией о каждой функции" [ref=e210]:
+    - article [ref=e211]:
+      - generic [ref=e212]:
+        - heading "Возможности программы" [level=2] [ref=e213]
+        - paragraph [ref=e214]: Оцените возможности сервиса в коротком видео
+      - generic [ref=e215] [cursor=pointer]:
+        - img "Превью видео о возможностях программы" [ref=e216]
+        - button "Смотреть видео" [ref=e217]
+        - paragraph [ref=e218]: Время просмотра 5:45 мин
+    - generic "Ключевые возможности программы" [ref=e219]:
+      - article [ref=e220]:
+        - heading "ПТО Онлайн — цифровой ПТО" [level=3] [ref=e226]
+        - paragraph [ref=e227]: "Облачная платформа для исполнительной документации на объекте: объекты, библиотека ИД, журналы, сметы и аналитика — всё в одном рабочем пространстве."
+      - article [ref=e228]:
+        - heading "Объекты и проекты" [level=3] [ref=e233]
+        - paragraph [ref=e234]: Создавайте объекты и настраивайте реквизиты участников, формы журналов и договорные параметры. Команда объекта и роли определяют доступ и ответственность.
+      - article [ref=e235]:
+        - heading "Библиотека ИД и шаблоны" [level=3] [ref=e241]
+        - paragraph [ref=e242]: "Единая библиотека ИД по объекту и шифрам: создавайте документы по шаблонам или добавляйте готовые файлы. Комментарии и выгрузка в Word/Excel — из карточки документа."
+      - article [ref=e243]:
+        - heading "Конструктор и реестры" [level=3] [ref=e248]
+        - paragraph [ref=e249]: "Создавайте свои шаблоны актов и журналов: поля, переменные и печатные формы DOCX/Excel. Собирайте документы в реестры и контролируйте готовность комплекта."
+      - generic [ref=e250]:
+        - article [ref=e251]:
+          - heading "Создание реестра ИД через ИИ" [level=3] [ref=e256]
+          - paragraph [ref=e257]: Поручите ИИ сформировать реестр исполнительной документации на основе данных по объекту. Проверьте готовый реестр перед передачей заказчику, не собирая его вручную.
+        - article [ref=e258]:
+          - heading "Матрица дефицитов ИД" [level=3] [ref=e265]
+          - paragraph [ref=e266]: Мониторьте недостающие документы по каждому шифру и этапу работ, чтобы вовремя закрывать дефициты в исполнительной документации
+        - article [ref=e267]:
+          - heading "Редактор исполнительных схем внутри ПО" [level=3] [ref=e271]
+          - paragraph [ref=e272]: Редактируйте исполнительные схемы прямо в ПТО онлайн, не переключаясь между программами. Подготовьте схему для включения в комплект исполнительной документации.
+      - article [ref=e273]:
+        - heading "Автозаполнение документов" [level=3] [ref=e277]
+        - paragraph [ref=e278]: Автозаполнение реквизитов из справочников и распознавание сканов/сертификатов. Подстановка работ из ведомости и голосовой ввод для больших текстов ускоряют оформление.
+      - article [ref=e279]:
+        - heading "Электронные журналы" [level=3] [ref=e285]
+        - paragraph [ref=e286]: Электронные ОЖР и входной контроль по выбранным формам. Записи связаны с документами, доступна история изменений и выгрузка в Word/Excel.
+      - article [ref=e287]:
+        - heading "Сметы" [level=3] [ref=e292]
+        - paragraph [ref=e293]: "Ведите сметы по объектам в едином цифровом пространстве: контролируйте состав работ, объёмы и актуальность расчётов."
+      - article [ref=e294]:
+        - heading "Статусы, сроки и замечания" [level=3] [ref=e298]
+        - paragraph [ref=e299]: Статусы документов и сроки по шифрам помогают контролировать прогресс и просрочки. Замечания и обсуждения фиксируются в комментариях к документам и реестрам.
+      - article [ref=e300]:
+        - heading "Аналитика" [level=3] [ref=e305]
+        - paragraph [ref=e306]: Экран контроля комплектности показывает готовность по шифрам и реестрам, счётчики статусов и динамику во времени. Реестры собирают пакет документов для проверки и сдачи.
+      - article [ref=e307]:
+        - heading "КС-2, КС-3, КС-6а" [level=3] [ref=e312]
+        - paragraph [ref=e313]: Готовьте акты выполненных работ и справки о стоимости по данным проекта, чтобы быстрее согласовывать закрывающие документы.
+      - article [ref=e314]:
+        - heading "Ведомость работ" [level=3] [ref=e318]
+        - paragraph [ref=e319]: Фиксируйте объёмы и виды работ в ведомости, чтобы использовать единые исходные данные в документах и сметах.
+      - article [ref=e320]:
+        - heading "Материалы" [level=3] [ref=e325]
+        - paragraph [ref=e326]: Учитывайте материалы на объекте и связывайте их с работами, документами и подтверждающими сертификатами.
+  - complementary [ref=e328]:
+    - form [ref=e329]:
+      - heading "Закажите онлайн презентацию возможностей" [level=3] [ref=e330]
+      - generic [ref=e331]:
+        - textbox "Введите ваше имя" [ref=e333]:
+          - /placeholder: Имя
+        - textbox "Введите ваш телефон" [ref=e335]:
+          - /placeholder: Телефон
+      - generic [ref=e336]:
+        - generic [ref=e337]:
+          - checkbox "Согласие на обработку персональных данных" [ref=e338] [cursor=pointer]
+          - paragraph [ref=e339]:
+            - generic [ref=e340]:
+              - text: Нажимая на кнопку, вы даете согласие на обработку своих
+              - link "персональных данных" [ref=e341] [cursor=pointer]:
+                - /url: /policy.pdf
+        - button "Заказать презентацию" [ref=e342] [cursor=pointer]
+  - region [ref=e346]:
+    - generic [ref=e348]:
+      - heading "Полный контроль исполнительной документации в реальном времени" [level=2] [ref=e349]
+      - generic [ref=e350]: на базе AI
+    - generic "Преимущества платформы" [ref=e354]:
+      - article [ref=e355]:
+        - generic [ref=e362]:
+          - heading "Единая панель объекта" [level=3] [ref=e363]
+          - paragraph [ref=e364]: "Документы, журналы, задачи и статусы в одном окне: полная картина без прыжков между папками и сервисами."
+      - article [ref=e365]:
+        - generic [ref=e369]:
+          - heading "Статусы и сроки онлайн" [level=3] [ref=e370]
+          - paragraph [ref=e371]: Сразу видно этапы «не начато / в работе / готово» и близость дедлайнов; просрочки не теряются в переписке.
+      - article [ref=e372]:
+        - generic [ref=e378]:
+          - heading "Связь журналов и актов" [level=3] [ref=e379]
+          - paragraph [ref=e380]: "Записи ОЖР и актов привязаны к документам: меньше ручной сверки и дублирования данных по объектам."
+      - article [ref=e381]:
+        - generic [ref=e386]:
+          - heading "Комплектность перед сдачей" [level=3] [ref=e387]
+          - paragraph [ref=e388]: "Сводка по шифрам и реестрам: что готово, чего не хватает, до передачи комплекта заказчику или в архив."
+      - article [ref=e389]:
+        - generic [ref=e393]:
+          - heading "Замечания в контексте" [level=3] [ref=e394]
+          - paragraph [ref=e395]: "Комментарии у конкретного документа или реестра: исполнитель, срок и история обсуждений без разрыва контекста."
+      - article [ref=e396]:
+        - generic [ref=e401]:
+          - heading "Кто и что менял" [level=3] [ref=e402]
+          - paragraph [ref=e403]: "История ключевых полей и действий: прозрачность для ПТО, подрядчиков и согласующих сторон."
+      - article [ref=e404]:
+        - generic [ref=e410]:
+          - heading "Доступ по ролям" [level=3] [ref=e411]
+          - paragraph [ref=e412]: Команда объекта видит зоны ответственности; данные организации изолированы от чужих проектов.
+      - article [ref=e413]:
+        - generic [ref=e417]:
+          - heading "AI и автоматизация" [level=3] [ref=e418]
+          - paragraph [ref=e419]: Распознавание, подстановка из справочников и подсказки сокращают ручной ввод и типовые ошибки.
+      - article [ref=e420]:
+        - generic [ref=e425]:
+          - heading "Доска задач и приоритеты" [level=3] [ref=e426]
+          - paragraph [ref=e427]: "Канбан по объектам: статусы, сроки и связь с реестрами — контроль работ в одном месте."
+      - article [ref=e428]:
+        - generic [ref=e432]:
+          - heading "Облако без установки" [level=3] [ref=e433]
+          - paragraph [ref=e434]: Работа из браузера; актуальные данные у команды онлайн, пока есть доступ в сеть — без развёртывания ПО.
+      - article [ref=e435]:
+        - generic [ref=e441]:
+          - heading "Электронный документооборот" [level=3] [ref=e442]
+          - paragraph [ref=e443]: "Обмен документацией прямо в программе: подписывайте акты ЭЦП и отправляйте контрагентам без переключения окон."
+      - article [ref=e444]:
+        - generic [ref=e449]:
+          - heading "Работа со сметами" [level=3] [ref=e450]
+          - paragraph [ref=e451]: "Подгружайте сметы в сервис: он автоматически извлечёт виды, объёмы работ и единицы измерения, сразу заполняя ведомости."
+      - article [ref=e452]:
+        - generic [ref=e456]:
+          - heading "Запрос исходных данных" [level=3] [ref=e457]
+          - paragraph [ref=e458]: "Отправляйте запросы на предоставление данных прямо из сервиса: как зарегистрированным подрядчикам, так и на внешние email-адреса."
+  - region [ref=e459]:
+    - heading "Начните использовать уже сейчас" [level=2] [ref=e461]
+    - generic [ref=e463]:
+      - article [ref=e464]:
+        - heading "Вы уже платите за ручную работу" [level=3] [ref=e466]
+        - paragraph [ref=e467]: До 40% времени инженеров ПТО уходит на заполнение и перепроверку документов. Это время оплачивается из бюджета — и теряется каждый день
+      - article [ref=e468]:
+        - heading "Потеря ресурсов" [level=3] [ref=e470]
+        - paragraph [ref=e471]: Каждый день без цифрового ПТО — это потерянное время, деньги и контроль
+      - article [ref=e472]:
+        - heading "Ошибки в ИД обходятся дороже, чем внедрение сервиса" [level=3] [ref=e474]
+        - paragraph [ref=e475]: Возвраты документации, переделки, срывы сроков и штрафы — это прямые финансовые потери, которые можно предотвратить
+      - article [ref=e476]:
+        - heading "Рост объектов без автоматизации = рост проблем" [level=3] [ref=e478]
+        - paragraph [ref=e479]: Чем больше объектов, тем выше нагрузка на ПТО. Без цифровой системы каждый новый проект увеличивает хаос, а не прибыль
+    - complementary [ref=e481]:
+      - form [ref=e482]:
+        - heading "Закажите онлайн презентацию сервиса" [level=3] [ref=e483]
+        - generic [ref=e484]:
+          - textbox "Введите ваше имя" [ref=e486]:
+            - /placeholder: Имя
+          - textbox "Введите ваш телефон" [ref=e488]:
+            - /placeholder: Телефон
+        - generic [ref=e489]:
+          - generic [ref=e490]:
+            - checkbox "Согласие на обработку персональных данных" [ref=e491] [cursor=pointer]
+            - paragraph [ref=e492]:
+              - generic [ref=e493]:
+                - text: Нажимая на кнопку, вы даете согласие на обработку своих
+                - link "персональных данных" [ref=e494] [cursor=pointer]:
+                  - /url: /policy.pdf
+          - button "Заказать презентацию" [ref=e495] [cursor=pointer]
+  - region [ref=e499]:
+    - heading "Отличие от типовых решений" [level=2] [ref=e501]
+    - region "Отличие от типовых решений" [ref=e503]:
+      - table [ref=e504]:
+        - caption [ref=e505]: "Сравнение по колонкам: ПТО-онлайн, приложение с веб-сервером, приложение со своим сервером"
+        - rowgroup [ref=e506]:
+          - row [ref=e507]:
+            - columnheader [ref=e508]
+            - columnheader "ПТО-онлайн" [ref=e509]
+            - columnheader "Приложение + веб-сервер" [ref=e510]
+            - columnheader "Приложение + свой сервер" [ref=e511]
+        - rowgroup [ref=e512]:
+          - row [ref=e513]:
+            - rowheader "Функциональность" [ref=e514]
+            - cell [ref=e515]
+            - cell [ref=e516]
+            - cell [ref=e517]
+          - row [ref=e518]:
+            - rowheader "Автоматическое формирование ИД" [ref=e519]
+            - cell "✓" [ref=e520]
+            - cell "Частично" [ref=e521]
+            - cell "Частично" [ref=e522]
+          - row [ref=e523]:
+            - rowheader "Конструктор шаблонов документов" [ref=e524]
+            - cell "✓" [ref=e525]
+            - cell "Частично" [ref=e526]
+            - cell "✕" [ref=e527]
+          - row [ref=e528]:
+            - rowheader "Автозаполнение документов по данным объекта" [ref=e529]
+            - cell "✓" [ref=e530]
+            - cell "✓" [ref=e531]
+            - cell "✓" [ref=e532]
+          - row [ref=e533]:
+            - rowheader "Электронное ведение ОЖР / спецжурналов" [ref=e534]
+            - cell "✓" [ref=e535]
+            - cell "✓" [ref=e536]
+            - cell "✓" [ref=e537]
+          - row [ref=e538]:
+            - rowheader "Библиотека шаблонов ИД" [ref=e539]
+            - cell "✓" [ref=e540]
+            - cell "✓" [ref=e541]
+            - cell "✓" [ref=e542]
+          - row [ref=e543]:
+            - rowheader "Канбан-контроль задач" [ref=e544]
+            - cell "✓" [ref=e545]
+            - cell "✕" [ref=e546]
+            - cell "✕" [ref=e547]
+          - row [ref=e548]:
+            - rowheader "Контроль статусов исполнительной документации" [ref=e549]
+            - cell "✓" [ref=e550]
+            - cell "Частично" [ref=e551]
+            - cell "✓" [ref=e552]
+          - row [ref=e553]:
+            - rowheader "Управление замечаниями" [ref=e554]
+            - cell "✓" [ref=e555]
+            - cell "Частично" [ref=e556]
+            - cell "✓" [ref=e557]
+          - row [ref=e558]:
+            - rowheader "Контроль комплектности ИД перед сдачей" [ref=e559]
+            - cell "✓" [ref=e560]
+            - cell "✓" [ref=e561]
+            - cell "Частично" [ref=e562]
+          - row [ref=e563]:
+            - rowheader "Внедрение и удобство" [ref=e564]
+            - cell [ref=e565]
+            - cell [ref=e566]
+            - cell [ref=e567]
+          - row [ref=e568]:
+            - rowheader "Облачное решение (без сервера)" [ref=e569]
+            - cell "✓" [ref=e570]
+            - cell "Частично" [ref=e571]
+            - cell "✕" [ref=e572]
+          - row [ref=e573]:
+            - rowheader "Быстрый старт без длительного внедрения" [ref=e574]
+            - cell "✓" [ref=e575]
+            - cell "✕" [ref=e576]
+            - cell "✕" [ref=e577]
+          - row [ref=e578]:
+            - rowheader "Не требует сложного обучения" [ref=e579]
+            - cell "✓" [ref=e580]
+            - cell "✕" [ref=e581]
+            - cell "✕" [ref=e582]
+          - row [ref=e583]:
+            - rowheader "Запуск за 1 день" [ref=e584]
+            - cell "✓" [ref=e585]
+            - cell "Частично" [ref=e586]
+            - cell "✕" [ref=e587]
+          - row [ref=e588]:
+            - rowheader "Простота интерфейса" [ref=e589]
+            - cell "✓" [ref=e590]
+            - cell "Частично" [ref=e591]
+            - cell "Частично" [ref=e592]
+          - row [ref=e593]:
+            - rowheader "Работа через браузер" [ref=e594]
+            - cell "✓" [ref=e595]
+            - cell "Частично" [ref=e596]
+            - cell "✓" [ref=e597]
+          - row [ref=e598]:
+            - rowheader "Не требует IT-специалиста" [ref=e599]
+            - cell "✓" [ref=e600]
+            - cell "Частично" [ref=e601]
+            - cell "✕" [ref=e602]
+          - row [ref=e603]:
+            - rowheader "Экономика" [ref=e604]
+            - cell [ref=e605]
+            - cell [ref=e606]
+            - cell [ref=e607]
+          - row [ref=e608]:
+            - rowheader "Стоимость внедрения" [ref=e609]
+            - cell "Низкая" [ref=e610]
+            - cell "Высокая" [ref=e611]
+            - cell "Высокая" [ref=e612]
+          - row [ref=e613]:
+            - rowheader "Отдельная плата за доработки" [ref=e614]
+            - cell "Нет / минимально" [ref=e615]
+            - cell "Часто да" [ref=e616]
+            - cell "Часто да" [ref=e617]
+          - row [ref=e618]:
+            - rowheader "Стоимость владения (TCO)" [ref=e619]
+            - cell "Низкая" [ref=e620]
+            - cell "Высокая" [ref=e621]
+            - cell "Высокая" [ref=e622]
+          - row [ref=e623]:
+            - rowheader "Экономия времени ПТО" [ref=e624]
+            - cell "Высокая" [ref=e625]
+            - cell "Средняя" [ref=e626]
+            - cell "Средняя" [ref=e627]
+          - row [ref=e628]:
+            - rowheader "Снижение трудозатрат на ИД" [ref=e629]
+            - cell "✓" [ref=e630]
+            - cell "✓" [ref=e631]
+            - cell "✓" [ref=e632]
+          - row [ref=e633]:
+            - rowheader "Контроль и управление" [ref=e634]
+            - cell [ref=e635]
+            - cell [ref=e636]
+            - cell [ref=e637]
+          - row [ref=e638]:
+            - rowheader "Контроль сроков задач" [ref=e639]
+            - cell "✓" [ref=e640]
+            - cell "Частично" [ref=e641]
+            - cell "✓" [ref=e642]
+          - row [ref=e643]:
+            - rowheader "Контроль просрочек" [ref=e644]
+            - cell "✓" [ref=e645]
+            - cell "Частично" [ref=e646]
+            - cell "✓" [ref=e647]
+          - row [ref=e648]:
+            - rowheader "Контроль ответственных" [ref=e649]
+            - cell "✓" [ref=e650]
+            - cell "Частично" [ref=e651]
+            - cell "✓" [ref=e652]
+          - row [ref=e653]:
+            - rowheader "История изменений" [ref=e654]
+            - cell "✓" [ref=e655]
+            - cell "Частично" [ref=e656]
+            - cell "✓" [ref=e657]
+          - row [ref=e658]:
+            - rowheader "Разграничение прав доступа" [ref=e659]
+            - cell "✓" [ref=e660]
+            - cell "Частично" [ref=e661]
+            - cell "✓" [ref=e662]
+          - row [ref=e663]:
+            - rowheader "Прозрачность статусов по объектам" [ref=e664]
+            - cell "✓" [ref=e665]
+            - cell "Частично" [ref=e666]
+            - cell "✓" [ref=e667]
+  - region [ref=e668]:
+    - heading "Попробуйте прямо сейчас" [level=2] [ref=e672]
+    - form "Форма регистрации" [ref=e673]:
+      - link "Попробовать бесплатно" [ref=e674] [cursor=pointer]:
+        - /url: https://app.pto-app.ru/auth?register=true
+  - region [ref=e676]:
+    - heading "Легкий старт работы с «ПТО онлайн»" [level=2] [ref=e678]
+    - list "Шаги начала работы" [ref=e679]:
+      - listitem [ref=e680]:
+        - heading "Зарегистрируйтесь и загрузите документы" [level=3] [ref=e682]
+        - generic [ref=e683]: "1"
+      - listitem [ref=e685]:
+        - generic [ref=e687]: "2"
+        - heading "Сканируйте данные с помощью AI" [level=3] [ref=e689]
+      - listitem [ref=e690]:
+        - heading "Автоматизируйте заполнение и проверку документов" [level=3] [ref=e692]
+        - generic [ref=e693]: "3"
+      - listitem [ref=e695]:
+        - heading "Экспортируйте готовые документы в нужный формат" [level=3] [ref=e697]
+        - generic [ref=e698]: "4"
+      - listitem [ref=e700]:
+        - heading "Используйте базу шаблонов и образцов" [level=3] [ref=e702]
+        - generic [ref=e703]: "5"
+  - region [ref=e705]:
+    - generic [ref=e706]:
+      - generic [ref=e707]:
+        - heading "Структура личного кабинета" [level=2] [ref=e708]
+        - paragraph [ref=e709]: Интуитивно понятный интерфейс с понятными элементами навигации для быстрой адаптации
+      - img "Слайд 1" [ref=e712]
+      - navigation "Пагинация слайдов" [ref=e713]:
+        - button "Предыдущий слайд" [ref=e714] [cursor=pointer]
+        - tablist [ref=e716]:
+          - tab "Слайд 1" [selected] [ref=e717] [cursor=pointer]
+          - tab "Слайд 2" [ref=e718] [cursor=pointer]
+          - tab "Слайд 3" [ref=e719] [cursor=pointer]
+          - tab "Слайд 4" [ref=e720] [cursor=pointer]
+          - tab "Слайд 5" [ref=e721] [cursor=pointer]
+        - button "Следующий слайд" [ref=e722] [cursor=pointer]
+  - region [ref=e724]:
+    - heading "Сокращайте время на оформление документов на 40% и уменьшайте ошибки на 30%" [level=2] [ref=e727]: Сокращайте время на оформление документов на 40%и уменьшайте ошибки на 30%
+    - form "Форма регистрации" [ref=e728]:
+      - link "Попробовать бесплатно" [ref=e729] [cursor=pointer]:
+        - /url: https://app.pto-app.ru/auth?register=true
+  - region [ref=e731]:
+    - generic [ref=e732]:
+      - generic [ref=e733]:
+        - heading "Вопросы и ответы" [level=2] [ref=e734]
+        - paragraph [ref=e735]:
+          - generic [ref=e736]: Поддержка
+          - generic [ref=e737]: 24/7
+      - list "Часто задаваемые вопросы" [ref=e738]:
+        - listitem [ref=e739] [cursor=pointer]:
+          - heading "Почему ваше программное обеспечение лучше других аналогов на рынке?" [level=3] [ref=e741]
+        - listitem [ref=e743] [cursor=pointer]:
+          - heading "Какие преимущества я получу, используя ваше программное обеспечение?" [level=3] [ref=e745]
+        - listitem [ref=e747] [cursor=pointer]:
+          - heading "Как ваше программное обеспечение помогает экономить ресурсы?" [level=3] [ref=e749]
+        - listitem [ref=e751] [cursor=pointer]:
+          - heading "Есть ли возможность адаптации программного обеспечения под мои конкретные задачи?" [level=3] [ref=e753]
+        - listitem [ref=e755] [cursor=pointer]:
+          - heading "Как искусственный интеллект в вашем ПО упрощает работу с документами?" [level=3] [ref=e757]
+        - listitem [ref=e759] [cursor=pointer]:
+          - heading "Чем ваше ПО отличается от ручного заполнения документов или использования Excel?" [level=3] [ref=e761]
+  - region "Техническая информация о ПО" [ref=e763]:
+    - generic [ref=e764]:
+      - article [ref=e765]:
+        - heading "Установка программного обеспечения" [level=2] [ref=e766]
+        - paragraph [ref=e767]:
+          - text: Приложение «Онлайн ПТО» является веб-сервисом, установка и удаление на стороне пользователя не требуется. Для доступа к системе необходимо использовать веб-браузер. Подробный порядок действий описан в
+          - link "инструкции по установке" [ref=e768] [cursor=pointer]:
+            - /url: instructions.pdf
+          - text: .
+      - article [ref=e769]:
+        - heading "Эксплуатации программного обеспечения" [level=2] [ref=e770]
+        - paragraph [ref=e771]:
+          - text: Подробные инструкции по работе с программой "ПТО онлайн" описаны в виде
+          - link "инструкции на портале" [ref=e772] [cursor=pointer]:
+            - /url: instructions-app.pdf
+          - text: "и видео-уроков:"
+  - generic [ref=e774]:
+    - generic [ref=e776]:
+      - generic [ref=e777]:
+        - link "ПТО онлайн на главную" [ref=e778] [cursor=pointer]:
+          - /url: /
+          - img "ПТО онлайн" [ref=e779]
+        - navigation "Разделы сайта" [ref=e780]:
+          - link "О сервисе" [ref=e781] [cursor=pointer]:
+            - /url: /functionality/
+          - link "Автоматизация ИД объекта" [ref=e782] [cursor=pointer]:
+            - /url: /services/avtomatizatsiya-ispolnitelnoy-dokumentatsii/
+          - link "Программа для инженеров ПТО" [ref=e783] [cursor=pointer]:
+            - /url: /services/programma-dlya-ispolnitelnoy-dokumentatsii/
+          - link "Тарифы" [ref=e784] [cursor=pointer]:
+            - /url: /tariffs/
+          - link "Справочный центр" [ref=e785] [cursor=pointer]:
+            - /url: https://helpcenter.pto-app.ru/
+          - link "Блог" [ref=e786] [cursor=pointer]:
+            - /url: /blog/
+      - generic [ref=e787]:
+        - generic [ref=e788]:
+          - link "+7 (967) 555-47-32" [ref=e789] [cursor=pointer]:
+            - /url: tel:79675554732
+          - paragraph [ref=e790]: Контактный телефон сервиса
+        - generic [ref=e791]:
+          - link "client@pto-app.ru" [ref=e792] [cursor=pointer]:
+            - /url: mailto:client@pto-app.ru
+          - paragraph [ref=e793]: Электронная почта поддержки
+    - generic [ref=e795]:
+      - paragraph [ref=e796]:
+        - link "Политика обработки ПДн" [ref=e797] [cursor=pointer]:
+          - /url: /policy.pdf
+        - text: ·
+        - link "Общие условия простой лицензии" [ref=e798] [cursor=pointer]:
+          - /url: /offer.pdf
+        - text: ·
+        - link "Лицензия сервиса «ПТО онлайн»" [ref=e799] [cursor=pointer]:
+          - /url: /agreement.pdf
+      - generic [ref=e800]:
+        - img "Участник Сколково" [ref=e802]
+        - generic [ref=e803]:
+          - paragraph [ref=e804]: АО "Стройинтеграция", 121351, г. Москва, ул. Партизанская, д. 35, к. 3, помещ. 2/1. Материалы на странице носят информационный характер и не являются публичной офертой.
+          - paragraph [ref=e805]: © 2024 — 2026 ПТО онлайн
+        - link "Вход / регистрация" [ref=e807] [cursor=pointer]:
+          - /url: https://app.pto-app.ru/auth

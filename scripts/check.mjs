@@ -83,6 +83,8 @@ export const check = async () => {
     assert(/<html lang="ru">/.test(html), `${relative}: missing Russian lang`, errors);
     assert(/<meta charset="utf-8"/.test(html), `${relative}: missing UTF-8 charset`, errors);
     assert(/name="viewport"/.test(html), `${relative}: missing viewport`, errors);
+    const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1] ?? "";
+    assert((head.match(/<meta name="yandex-verification" content="4af3edb4f96f2c09"\s*\/?>/g) ?? []).length === 1, `${relative}: expected one Yandex verification tag in head`, errors);
     assert(/bootstrap@5\.3\.3/.test(html), `${relative}: Bootstrap 5.3.3 is not connected`, errors);
     assert(/class="skip-link"/.test(html), `${relative}: missing skip link`, errors);
     assert(/<header[\s>]/.test(html), `${relative}: missing header`, errors);

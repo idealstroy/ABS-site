@@ -12,7 +12,7 @@ const server = spawn("php", ["-S", `${host}:${port}`, "-t", dist, router], {
   stdio: "inherit",
 });
 
-process.stdout.write(`Local site: http://${host}:${port}/_prototype/home/\n`);
+process.stdout.write(`Local site: http://${host}:${port}/\n`);
 process.stdout.write("Local form submissions are written to dist/var/submissions.log and are not emailed.\n");
 
 const stop = () => server.kill();

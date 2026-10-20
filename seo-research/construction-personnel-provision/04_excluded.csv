@@ -1,0 +1,13 @@
+keyword,base_frequency,exact_frequency,reason,source,region,checked_at
+договор предоставления строительного персонала,4,0,zero-exact-frequency,Bukvarix,Весь мир,2026-10-15
+договор на предоставление строительного персонала,2,0,zero-exact-frequency,Bukvarix,Весь мир,2026-10-15
+предоставление персонала строительство,5,0,zero-exact-frequency,Bukvarix,Весь мир,2026-10-15
+рабочий персонал в строительстве,59,0,zero-exact-frequency,Bukvarix,Весь мир,2026-10-15
+аутсорсинг строительного персонала москва,4,4,geo-mismatch,Bukvarix,Весь мир,2026-10-15
+аутсорсинг строительного персонала в спб,1,1,geo-mismatch,Bukvarix,Весь мир,2026-10-15
+план мобилизации персонала на строительный объект,9,7,informational-intent,Bukvarix,Весь мир,2026-10-15
+численность персонала на строительной площадке,1,1,informational-intent,Bukvarix,Весь мир,2026-10-15
+строительный персонал это,81,1,informational-intent,Bukvarix,Весь мир,2026-10-15
+персонал строительного предприятия,107,2,informational-intent,Bukvarix,Весь мир,2026-10-15
+требования к персоналу строительной организации,17,1,informational-intent,Bukvarix,Весь мир,2026-10-15
+строительный двор директор по персоналу,1,1,irrelevant,Bukvarix,Весь мир,2026-10-15

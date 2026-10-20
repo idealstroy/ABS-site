@@ -132,7 +132,7 @@ const renderSpecialistCards = async (groups, readyRoutes) => {
   const template = await readText("components/specialist-card.html");
   return groups.map((group, groupIndex) => {
     const groupId = `specialist-group-${groupIndex + 1}`;
-    const cards = group.items.map((item) => `<div class="${escapeHtml(group.columnClass || "col-12 col-sm-6 col-xl-3")}">${renderTokens(template, {
+    const cards = group.items.map((item) => `<div class="${escapeHtml(item.columnClass || group.columnClass || "col-12 col-sm-6 col-xl-3")}">${renderTokens(template, {
       description: escapeHtml(item.description || ""),
       icon: escapeHtml(item.icon),
       link: readyRoutes.has(item.href)
@@ -277,6 +277,10 @@ const renderForm = async (page, region, { idSuffix = "", includeValidationModal 
     form = form.replace(/\n<div class="modal fade request-validation-modal"[\s\S]*$/, "");
   }
 
+  if (page.template === "home") {
+    form = form.replace(/\.(?=<|"|\s*<)/g, "");
+  }
+
   if (idSuffix) {
     ["company-site", "request-name", "request-phone", "request-region", "request-comment", "request-consent"].forEach((id) => {
       form = form.replaceAll(id, `${id}-${idSuffix}`);
@@ -320,16 +324,8 @@ const robotsFor = (page) => isTechnicalPage(page) || page.status !== "ready"
 const isIndexable = (page) => robotsFor(page) === "index, follow";
 
 const getPageVisual = (page) => {
-  if (page.template === "home-alternative") {
-    return { src: page.solution.heroImage, width: page.solution.heroWidth, height: page.solution.heroHeight, alt: page.solution.heroAlt };
-  }
   if (page.template === "home") {
-    return {
-      src: "/assets/images/hero-construction-specialist.png",
-      width: 1915,
-      height: 821,
-      alt: "Специалист на строительном объекте",
-    };
+    return { src: page.solution.heroImage, width: page.solution.heroWidth, height: page.solution.heroHeight, alt: page.solution.heroAlt };
   }
 
   const section = page.template === "category" ? page.category
@@ -506,7 +502,7 @@ export const build = async () => {
   await mkdir(dist, { recursive: true });
 
   const site = await readJson("data/site.json");
-  const homePage = await readJson("data/pages/prototype-home.json");
+  const homePage = await readJson("data/pages/home.json");
   const baseTemplate = await readText("templates/base.html");
   const pageFiles = (await readdir(path.join(src, "data/pages"))).filter((name) => name.endsWith(".json")).sort();
   const pages = await Promise.all(pageFiles.map((file) => readJson(`data/pages/${file}`)));
@@ -642,11 +638,11 @@ export const build = async () => {
     });
     const head = renderHeadExtras(page, site);
     const html = renderTokens(baseTemplate, {
-      bodyClass: escapeHtml(`${page.bodyClass || ""}${["home", "home-alternative", "category", "specialist", "contacts", "about"].includes(page.template) ? " page-template--hero-layout" : ""}`),
+      bodyClass: escapeHtml(`${page.bodyClass || ""}${["home", "category", "specialist", "contacts", "about"].includes(page.template) ? " page-template--hero-layout" : ""}`),
       canonical: head.canonical,
       description: escapeHtml(page.seo.description),
       footer,
-      header: ["home", "home-alternative"].includes(page.template) ? homeHeader : header,
+      header: page.template === "home" ? homeHeader : header,
       main,
       openGraph: head.openGraph,
       pageType: escapeHtml(page.pageType),

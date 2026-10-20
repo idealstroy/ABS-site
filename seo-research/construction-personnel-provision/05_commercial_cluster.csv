@@ -1,0 +1,10 @@
+keyword,base_frequency,exact_frequency,intent,usage,source,region,checked_at
+предоставление строительного персонала,44,9,commercial,primary,Bukvarix,Весь мир,2026-10-15
+аутсорсинг строительного персонала,79,8,commercial,semantic-context,Bukvarix,Весь мир,2026-10-15
+аутстаффинг строительного персонала,22,6,commercial,secondary,Bukvarix,Весь мир,2026-10-15
+подбор строительного персонала,91,6,commercial,secondary,Bukvarix,Весь мир,2026-10-15
+строительный персонал,1704,7,mixed,secondary,Bukvarix,Весь мир,2026-10-15
+персонал строительный,1712,7,mixed,word-order-variant,Bukvarix,Весь мир,2026-10-15
+аренда строительного персонала,9,1,commercial,excluded-from-copy-legal-wording,Bukvarix,Весь мир,2026-10-15
+подбор персонала строительных специальностей,6,1,commercial,semantic-context,Bukvarix,Весь мир,2026-10-15
+агентство по подбору строительного персонала,2,1,commercial,semantic-context,Bukvarix,Весь мир,2026-10-15

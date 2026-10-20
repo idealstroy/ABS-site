@@ -1,121 +1,83 @@
 <section class="hero-section hero-section--split overflow-hidden" id="top" aria-labelledby="page-title">
-  <img class="hero-media" src="/assets/images/hero-construction-specialist.png" width="1915" height="821" alt="Специалист на строительном объекте" fetchpriority="high" />
-  <div class="container position-relative">
-    <div class="row align-items-center hero-content-row">
-      <div class="col-12 col-lg-8">
-        <h1 class="hero-title text-white mb-4" id="page-title">{{h1}}</h1>
-        <p class="hero-lead lead text-white mb-3">Предоставляем водителей, машинистов и операторов спецтехники для строительных, промышленных, дорожных и вахтовых объектов.</p>
-        <a class="btn btn-abs-primary mt-4" href="#request" data-request-popup-trigger>Запросить персонал</a>
-      </div>
-    </div>
+  <img class="hero-media" src="{{solutionHeroImage}}" width="{{solutionHeroWidth}}" height="{{solutionHeroHeight}}" alt="{{solutionHeroAlt}}" fetchpriority="high" />
+  <div class="container position-relative"><div class="row hero-content-row"><div class="col-12 col-lg-8">
+    <p class="solution-hero-label mb-3">{{solutionHeroLabel}}</p>
+    <h1 class="hero-title text-white mb-4" id="page-title">{{h1}}</h1>
+    <p class="hero-lead lead text-white mb-0">{{solutionHeroLead}}</p>
+    <a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>{{solutionHeroCta}}</a>
+  </div></div></div>
+</section>
+
+<section class="solution-brief" aria-label="Условия предоставления персонала"><div class="container"><div class="row g-4">
+  <div class="col-12 col-md-4"><article class="benefit-card h-100"><img class="mb-3" src="/assets/icons/gear.svg" width="32" height="32" alt="" aria-hidden="true" /><h3>{{solutionBrief1Title}}</h3><p class="mb-0">{{solutionBrief1Text}}</p></article></div>
+  <div class="col-12 col-md-4"><article class="benefit-card h-100"><img class="mb-3" src="/assets/icons/calendar-check.svg" width="32" height="32" alt="" aria-hidden="true" /><h3>{{solutionBrief2Title}}</h3><p class="mb-0">{{solutionBrief2Text}}</p></article></div>
+  <div class="col-12 col-md-4"><article class="benefit-card h-100"><img class="mb-3" src="/assets/icons/geo-alt.svg" width="32" height="32" alt="" aria-hidden="true" /><h3>{{solutionBrief3Title}}</h3><p class="mb-0">{{solutionBrief3Text}}</p></article></div>
+</div></div></section>
+
+<section class="section-space solution-tasks" id="solution" aria-labelledby="solution-task-title"><div class="container" id="objects">
+  <div class="row g-4 mb-5 align-items-end"><div class="col-12 col-lg-7"><p class="eyebrow mb-3">{{solutionTaskLabel}}</p><h2 class="mb-0" id="solution-task-title">{{solutionTaskTitle}}</h2></div><div class="col-12 col-lg-5"><p class="mb-0">{{solutionTaskLead}}</p></div></div>
+  <div class="solution-task-shell"><div class="row g-0">
+    <div class="col-12"><div class="nav row g-4 solution-task-nav" role="tablist" aria-label="Задачи объекта">
+      <div class="col-12 col-md-4"><button class="nav-link active w-100 h-100" id="task-shortage-tab" data-bs-toggle="tab" data-bs-target="#task-shortage" type="button" role="tab" aria-controls="task-shortage" aria-selected="true"><span class="solution-task-nav__heading"><span class="solution-task-nav__number" aria-hidden="true">01</span><span>{{solutionTask1Tab}}</span><span class="solution-task-nav__arrow" aria-hidden="true">→</span></span><img src="/assets/images/home-solution-task-staffing.jpg" width="960" height="640" alt="" loading="lazy" /></button></div>
+      <div class="col-12 col-md-4"><button class="nav-link w-100 h-100" id="task-growth-tab" data-bs-toggle="tab" data-bs-target="#task-growth" type="button" role="tab" aria-controls="task-growth" aria-selected="false"><span class="solution-task-nav__heading"><span class="solution-task-nav__number" aria-hidden="true">02</span><span>{{solutionTask2Tab}}</span><span class="solution-task-nav__arrow" aria-hidden="true">→</span></span><img src="/assets/images/home-solution-task-growth.jpg" width="960" height="640" alt="" loading="lazy" /></button></div>
+      <div class="col-12 col-md-4"><button class="nav-link w-100 h-100" id="task-rotation-tab" data-bs-toggle="tab" data-bs-target="#task-rotation" type="button" role="tab" aria-controls="task-rotation" aria-selected="false"><span class="solution-task-nav__heading"><span class="solution-task-nav__number" aria-hidden="true">03</span><span>{{solutionTask3Tab}}</span><span class="solution-task-nav__arrow" aria-hidden="true">→</span></span><img src="/assets/images/home-solution-task-rotation.jpg" width="960" height="640" alt="" loading="lazy" /></button></div>
+    </div></div>
+    <div class="col-12"><div class="solution-task-content"><div class="row g-4 g-lg-5 align-items-center solution-task-layout">
+      <div class="col-12 col-lg-7"><div class="tab-content">
+        <article class="tab-pane active" id="task-shortage" role="tabpanel" aria-labelledby="task-shortage-tab" tabindex="0"><h3>{{solutionTask1Title}}</h3><p>{{solutionTask1Text}}</p><p class="solution-task-result">{{solutionTask1Result}}</p><a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>{{solutionTaskCta}}</a></article>
+        <article class="tab-pane" id="task-growth" role="tabpanel" aria-labelledby="task-growth-tab" tabindex="0"><h3>{{solutionTask2Title}}</h3><p>{{solutionTask2Text}}</p><p class="solution-task-result">{{solutionTask2Result}}</p><a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>{{solutionTaskCta}}</a></article>
+        <article class="tab-pane" id="task-rotation" role="tabpanel" aria-labelledby="task-rotation-tab" tabindex="0"><h3>{{solutionTask3Title}}</h3><p>{{solutionTask3Text}}</p><p class="solution-task-result">{{solutionTask3Result}}</p><a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>{{solutionTaskCta}}</a></article>
+      </div></div>
+      <div class="col-12 col-lg-5"><div class="solution-task-illustration"><img class="solution-task-image--staffing" src="/assets/images/home-solution-staffing-plan.png" width="800" height="800" alt="" loading="lazy" /><img class="solution-task-image--growth" src="/assets/images/home-solution-growth-plan.png" width="800" height="800" alt="" loading="lazy" /><img class="solution-task-image--rotation" src="/assets/images/home-solution-rotation-plan.png" width="800" height="800" alt="" loading="lazy" /></div></div>
+    </div></div></div>
+  </div></div>
+</div></section>
+
+<section class="section-space solution-scope" aria-labelledby="solution-scope-title"><div class="container">
+  <div class="row mb-5"><div class="col-12 col-lg-10"><p class="solution-label-light mb-3">{{solutionScopeLabel}}</p><h2 class="text-white mb-4" id="solution-scope-title">{{solutionScopeTitle}}</h2><p class="solution-scope__lead mb-0">{{solutionScopeLead}}</p></div></div>
+  <div class="row g-4 g-lg-5 align-items-stretch"><div class="col-12 col-lg-5"><figure class="solution-scope-evidence mb-0"><div class="solution-scope-media"><img class="solution-scope-photo" src="/assets/images/home-solution-arrival.jpg" width="960" height="640" alt="Бригадир согласует план работ со строительной бригадой на российской стройке" loading="lazy" /></div><figcaption class="solution-scope-result"><p class="solution-caption">{{solutionScopeResultLabel}}</p><h3 class="mb-3">{{solutionScopeResultTitle}}</h3><p class="mb-0">{{solutionScopeResultText}}</p></figcaption></figure></div>
+    <div class="col-12 col-lg-7"><ol class="solution-scope-list list-unstyled mb-0">
+      <li><span class="solution-scope-list__number">01</span><div><h3>{{solutionScope1Title}}</h3><p>{{solutionScope1Text}}</p></div></li>
+      <li><span class="solution-scope-list__number">02</span><div><h3>{{solutionScope2Title}}</h3><p>{{solutionScope2Text}}</p></div></li>
+      <li><span class="solution-scope-list__number">03</span><div><h3>{{solutionScope3Title}}</h3><p>{{solutionScope3Text}}</p></div></li>
+    </ol></div>
   </div>
-</section>
+</div></section>
 
-<section class="section-space intro-section" aria-labelledby="intro-title">
-  <div class="container">
-    <div class="row gy-5 align-items-stretch">
-      <div class="col-12 col-lg-5">
-        <div class="intro-media">
-          <img src="/assets/images/hero-construction-v2.png" width="1536" height="1024" alt="Руководитель строительного объекта на строительной площадке" loading="lazy" />
-          <span class="intro-media__frame" aria-hidden="true"></span>
-          <p class="intro-media__badge mb-0">Заявки из любого региона России</p>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6 offset-lg-1">
-        <p class="intro-section__eyebrow mb-2">АБС - предоставление персонала для объектов</p>
-        <h2 id="intro-title" class="mb-4">Водители и машинисты для строительных объектов</h2>
-        <p class="large-copy mb-4">Когда на объекте не хватает водителей или машинистов, важно учесть не только специальность, но и тип техники, документы, график и условия площадки. АБС предоставляет персонал для работы на объекте с учётом этих требований.</p>
-        <p class="large-copy text-secondary mb-4">Работаем и с заявками на нескольких специалистов для одного объекта. Сообщите, кто требуется, сколько человек нужно, где находится площадка и в каком графике предстоит работать. По этим данным уточним условия предоставления персонала.</p>
-        <ul class="intro-points row row-cols-1 row-cols-sm-2 g-2 list-unstyled mb-4">
-          <li class="col">Персонал под требования конкретного объекта</li>
-          <li class="col">Водители, машинисты и операторы спецтехники</li>
-          <li class="col">Проверка опыта и документов</li>
-          <li class="col">Заявки из любого региона России</li>
-        </ul>
-        <div class="row g-3 mb-4">
-          <div class="col-12 col-sm-6"><div class="intro-stat h-100"><strong>Групповые запросы</strong><span>С возможностью комплектования нескольких позиций на объекте.</span></div></div>
-          <div class="col-12 col-sm-6"><div class="intro-stat h-100"><strong>По всей России</strong><span>Работаем с заявками из разных регионов России.</span></div></div>
-        </div>
-        <a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>Оставить заявку на персонал</a>
-      </div>
-    </div>
+<section class="section-space specialists-section" id="specialists" aria-labelledby="solution-catalog-title"><div class="container">
+  <div class="row mb-5"><div class="col-12"><p class="eyebrow mb-3">{{solutionCatalogLabel}}</p><h2 class="mb-0" id="solution-catalog-title">{{solutionCatalogTitle}}</h2></div></div>
+  {{specialistCards}}
+  <div class="solution-catalog-note"><div class="row g-4 align-items-center"><div class="col-12 col-lg-8"><p class="mb-0">{{solutionCatalogFooter}}</p></div><div class="col-12 col-lg-4 text-lg-end"><a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>{{solutionHeroCta}}</a></div></div></div>
+</div></section>
+
+<section class="section-space section-surface solution-readiness" aria-labelledby="solution-readiness-title"><div class="container">
+  <div class="row g-4 align-items-end mb-5"><div class="col-12 col-lg-7"><p class="eyebrow mb-3">{{solutionReadinessLabel}}</p><h2 class="mb-0" id="solution-readiness-title">{{solutionReadinessTitle}}</h2></div><div class="col-12 col-lg-5"><p class="mb-0">{{solutionReadinessLead}}</p></div></div>
+  <div class="row g-4 g-lg-5 align-items-stretch"><div class="col-12 col-lg-5">
+    <div class="solution-readiness-evidence"><img class="solution-readiness-photo" src="/assets/images/home-solution-readiness.jpg" width="960" height="640" alt="Сверка документов и требований к опыту специалиста" loading="lazy" /><ul class="list-unstyled row g-0 mb-0 solution-checks">
+      <li class="col-12"><div><img src="/assets/icons/tools.svg" width="20" height="20" alt="" aria-hidden="true" /><span>{{solutionCheck1}}</span></div></li>
+      <li class="col-12"><div><img src="/assets/icons/person-badge.svg" width="20" height="20" alt="" aria-hidden="true" /><span>{{solutionCheck2}}</span></div></li>
+      <li class="col-12"><div><img src="/assets/icons/shield-check.svg" width="20" height="20" alt="" aria-hidden="true" /><span>{{solutionCheck3}}</span></div></li>
+      <li class="col-12"><div><img src="/assets/icons/calendar-check.svg" width="20" height="20" alt="" aria-hidden="true" /><span>{{solutionCheck4}}</span></div></li>
+    </ul></div>
   </div>
-</section>
+  <div class="col-12 col-lg-7"><article class="solution-accreditation"><div class="row g-4 align-items-start"><div class="col-12 col-xl-5"><p class="solution-caption">{{solutionAccreditationLabel}}</p><h3 class="mb-3">{{solutionAccreditationTitle}}</h3><p class="mb-0">{{solutionAccreditationText}}</p></div><div class="col-12 col-xl-7"><a href="/assets/images/about-accreditation.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/images/about-accreditation.jpg" width="1244" height="1757" alt="Уведомление об аккредитации АБС ИНЖИНИРИНГ" loading="lazy" /><span>{{solutionAccreditationLink}} <span aria-hidden="true">↗</span></span></a></div></div></article></div>
+</div></div></section>
 
-<section class="section-space section-surface specialists-section" id="specialists" aria-labelledby="specialists-title">
-  <div class="container">
-    <div class="row mb-5"><div class="col-12"><h2 id="specialists-title" class="mb-3">Кого предоставляем</h2><div class="row"><div class="col-12 col-lg-8"><p class="lead mb-0">Предоставляем водителей и машинистов для работы с грузовой, специальной, погрузочной, землеройной и подъёмной техникой.</p></div></div></div></div>
-    <div class="row g-4 mb-5">
-      <div class="col-12 col-lg-6"><a class="category-panel text-decoration-none h-100" href="/voditel-spetstehnika/"><img src="/assets/icons/truck.svg" width="48" height="48" alt="" aria-hidden="true" /><span><h3>Водители спецтехники</h3><span>Водители грузового автомобиля, самосвала, погрузчика, тягача, трала, топливозаправщика, вездехода и ломовоза.</span></span></a></div>
-      <div class="col-12 col-lg-6"><a class="category-panel text-decoration-none h-100" href="/mashinisty-spetstehniki/"><img src="/assets/icons/gear.svg" width="48" height="48" alt="" aria-hidden="true" /><span><h3>Машинисты спецтехники</h3><span>Машинисты бульдозера, экскаватора, трубоукладчика, автокрана, автовышки и автогидроподъемника.</span></span></a></div>
-    </div>
-    {{specialistCards}}
-  </div>
-</section>
+<section class="section-space solution-process" id="process" aria-labelledby="solution-process-title"><div class="container"><div class="row mb-5"><div class="col-12 col-lg-8"><p class="eyebrow mb-3">{{solutionProcessLabel}}</p><h2 class="mb-0" id="solution-process-title">{{solutionProcessTitle}}</h2></div></div>
+  <ol class="list-unstyled row g-4 mb-4">
+    <li class="col-12 col-lg-6"><article class="solution-step h-100"><span class="solution-step__number">01</span><div><h3>{{solutionProcess1Title}}</h3><p class="mb-0">{{solutionProcess1Text}}</p></div></article></li>
+    <li class="col-12 col-lg-6"><article class="solution-step h-100"><span class="solution-step__number">02</span><div><h3>{{solutionProcess2Title}}</h3><p class="mb-0">{{solutionProcess2Text}}</p></div></article></li>
+    <li class="col-12 col-lg-6"><article class="solution-step h-100"><span class="solution-step__number">03</span><div><h3>{{solutionProcess3Title}}</h3><p class="mb-0">{{solutionProcess3Text}}</p></div></article></li>
+    <li class="col-12 col-lg-6"><article class="solution-step h-100"><span class="solution-step__number">04</span><div><h3>{{solutionProcess4Title}}</h3><p class="mb-0">{{solutionProcess4Text}}</p></div></article></li>
+  </ol><p class="mb-0">{{solutionProcessNote}}</p>
+</div></section>
 
-<section class="request-section section-space" id="request" aria-labelledby="request-title"><div class="container"><div class="row justify-content-center"><div class="col-12 col-xl-10"><div class="request-shell"><div class="row justify-content-center"><div class="col-12 col-lg-10"><h2 id="request-title" class="mb-4 text-center">Оставьте заявку на предоставление персонала</h2><div data-request-popup-source>{{form}}</div></div></div></div></div></div>
-</section>
+<section class="section-space solution-request" id="request" aria-labelledby="request-title"><div class="container"><div class="solution-request-shell">
+  <div class="row g-4 align-items-end mb-4"><div class="col-12 col-lg-7"><p class="solution-label-light mb-3">{{solutionRequestLabel}}</p><h2 class="text-white mb-0" id="request-title">{{solutionRequestTitle}}</h2></div><div class="col-12 col-lg-5"><p class="mb-0">{{solutionRequestLead}}</p></div></div>
+  <div class="row g-4 align-items-start"><div class="col-12 col-lg-5"><img class="solution-request-photo" src="/assets/images/home-solution-coordinator.jpg" width="960" height="640" alt="Координатор обсуждает заявку и записывает условия объекта" loading="lazy" /><p class="solution-request-hint">{{solutionRequestHint}}</p><a class="solution-request-phone" href="tel:+79174001059">+7 917 400-10-59</a></div>
+  <div class="col-12 col-lg-7"><div class="solution-request-form" data-request-popup-source>{{form}}</div></div>
+</div></div></div></section>
 
-<div class="modal fade request-form-modal" id="requestFormModal" tabindex="-1" aria-labelledby="requestFormModalTitle" aria-hidden="true" data-request-popup>
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content request-shell p-0">
-      <div class="modal-header border-0 px-4 pt-4 pb-0">
-        <h2 class="h3 mb-0" id="requestFormModalTitle">Оставьте заявку на предоставление персонала</h2>
-        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть форму"></button>
-      </div>
-      <div class="modal-body px-4 pb-4 pt-3" data-request-popup-form></div>
-    </div>
-  </div>
-</div>
+<section class="section-space section-surface solution-faq" id="faq" aria-labelledby="solution-faq-title"><div class="container"><div class="row g-4 align-items-center mb-4"><div class="col-12 col-lg-8"><h2 class="mb-0" id="solution-faq-title">{{solutionFaqTitle}}</h2></div><div class="col-12 col-lg-4 text-lg-end"><a class="solution-faq-contact" href="tel:+79174001059"><img src="/assets/icons/phone-fill.svg" width="24" height="24" alt="" /><span>+7 917 400-10-59</span></a></div></div>{{faq}}</div></section>
 
-<section class="section-space objects-section" id="objects" aria-labelledby="objects-title">
-  <div class="container">
-    <div class="objects-showcase__heading">
-      <h2 id="objects-title" class="mb-3">Для каких объектов предоставляем персонал</h2>
-      <div class="row"><div class="col-12"><p class="large-copy mb-0">Потребность в персонале зависит от задачи объекта: на дорожном участке может понадобиться водитель самосвала, на промышленной площадке — машинист экскаватора, на вахтовом проекте — несколько специалистов разных профилей. Уточняем состав, технику и условия работы, чтобы согласовать предоставление персонала под конкретную площадку.</p></div></div>
-    </div>
-    <div class="objects-showcase">
-      <div class="row g-4 g-xl-5 align-items-stretch">
-        <div class="col-12 col-lg-7 order-2 order-lg-1">
-          <div class="row row-cols-1 row-cols-md-2 g-3 objects-showcase__tiles h-100">
-            <div class="col"><article class="object-card h-100"><img src="/assets/icons/building-gear.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>Промышленное строительство</h3><p>Персонал для строительства, реконструкции и обслуживания производственных площадок.</p></div></article></div>
-            <div class="col-12 col-md-6"><article class="object-card h-100"><img src="/assets/icons/building.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>Гражданское строительство</h3><p>Специалисты для жилых, коммерческих и инфраструктурных объектов.</p></div></article></div>
-            <div class="col-12 col-md-6"><article class="object-card h-100"><img src="/assets/icons/signpost-2.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>Дорожное строительство</h3><p>Водители и машинисты для транспортных, погрузочных, землеройных и подъемных работ.</p></div></article></div>
-            <div class="col"><article class="object-card h-100"><img src="/assets/icons/geo-alt.svg" width="32" height="32" alt="" aria-hidden="true" /><div><h3>Удаленные и вахтовые объекты</h3><p>Водители и машинисты для вахтовых объектов с учётом региона, графика, срока проекта и условий на площадке.</p></div></article></div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-5 order-1 order-lg-2">
-          <figure class="objects-showcase__media mb-0"><img class="objects-showcase__map" src="/assets/images/russia-map-network.png" width="1536" height="1024" alt="Карта России с сетью строительных объектов" loading="lazy" /><figcaption class="objects-coverage"><span class="objects-coverage__icon"><img src="/assets/icons/map.svg" width="28" height="28" alt="" aria-hidden="true" /></span><div><h3>Строительные площадки по всей России</h3><p>Работаем с заявками из разных регионов России и учитываем расположение объекта при согласовании состава персонала и условий выхода.</p></div></figcaption></figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-dark section-space" id="process" aria-labelledby="process-title" data-bs-theme="dark">
-  <div class="container">
-    <div class="row mb-5"><div class="col-12 col-lg-7"><h2 class="text-white mb-0" id="process-title">Как предоставляем персонал для объекта</h2></div></div>
-    <ol class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 list-unstyled mb-0">
-      <li class="col"><article class="process-card"><span>01</span><h3>Принимаем заявку</h3><p>Вы сообщаете специальности, количество людей, регион объекта, график и планируемый срок работы.</p></article></li>
-      <li class="col"><article class="process-card"><span>02</span><h3>Уточняем требования объекта</h3><p>Сверяем тип техники, необходимый опыт, категории, удостоверения, допуски и условия выхода.</p></article></li>
-      <li class="col"><article class="process-card"><span>03</span><h3>Согласовываем состав персонала</h3><p>Сопоставляем задачу объекта с доступными специалистами и уточняем, кто может выйти в нужном регионе и графике.</p></article></li>
-      <li class="col"><article class="process-card"><span>04</span><h3>Проверяем опыт и документы</h3><p>Сверяем сведения по соответствующему виду техники и требованиям объекта.</p></article></li>
-      <li class="col"><article class="process-card"><span>05</span><h3>Согласовываем условия предоставления</h3><p>Фиксируем состав персонала, сроки и организационные условия выхода на объект.</p></article></li>
-      <li class="col"><article class="process-card"><span>06</span><h3>Согласовываем выход на объект</h3><p>Согласовываем дату и организационные детали выхода персонала на объект.</p></article></li>
-    </ol>
-  </div>
-</section>
-
-<section class="section-space" aria-labelledby="checks-title">
-  <div class="container"><div class="row gx-lg-5 gy-5"><div class="col-12 col-lg-5"><h2 id="checks-title" class="mb-4">Что проверяем перед выходом персонала</h2><p class="large-copy mb-0">Предоставление персонала для работы с техникой требует предварительной проверки.</p></div><div class="col-12 col-lg-7"><h3 class="check-list__title mb-4">Перед выходом на объект уточняем</h3><ul class="check-list list-unstyled mb-5"><li>Опыт работы на нужном типе техники;</li><li>Водительские категории, удостоверения машиниста и квалификационный разряд;</li><li>Допуски, если они требуются для объекта и вида работ;</li><li>Комплект документов, необходимый для выхода на объект;</li><li>Готовность к региону, графику, вахте и условиям проживания;</li><li>Соответствие дополнительным требованиям по технике, сменности и сроку проекта.</li></ul><p class="mb-0">Это помогает согласовать состав персонала до начала работы.</p></div></div></div>
-</section>
-
-<section class="section-space section-surface benefits-section" aria-labelledby="benefits-title">
-  <div class="container"><div class="row mb-5"><div class="col-12 col-lg-10"><h2 id="benefits-title">Почему компании обращаются за персоналом в АБС</h2></div></div><div class="row g-4"><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/sliders.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Учитываем требования объекта</h3><p>Фиксируем технику, регион, график и необходимые документы до согласования состава персонала.</p></article></div><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/people.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Несколько специалистов для объекта</h3><p>Рассматриваем заявки на несколько позиций для одной или нескольких площадок.</p></article></div><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/calendar-check.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Учитываем вахтовый формат</h3><p>Уточняем график, регион и условия размещения перед согласованием выхода персонала.</p></article></div><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/file-earmark-check.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Проверяем требования к специалистам</h3><p>До выхода сверяем опыт, документы и условия работы на объекте.</p></article></div><div class="col-12 col-md-6 col-xl"><article class="benefit-card h-100"><span class="benefit-card__icon"><img src="/assets/icons/geo-alt.svg" width="32" height="32" alt="" aria-hidden="true" /></span><h3>Работаем с объектами по России</h3><p>География объекта учитывается в заявке с самого начала, поэтому условия региона и логистика не остаются на финальном этапе</p></article></div></div></div>
-</section>
-
-<section class="section-space" id="faq" aria-labelledby="faq-title"><div class="container"><div class="row gy-4 mb-5"><div class="col-12 col-lg-7"><h2 id="faq-title">Частые вопросы</h2></div><div class="col-12 col-lg-5"><p class="lead mb-0 text-lg-nowrap">Частые вопросы о предоставлении персонала</p></div></div>{{faq}}</div>
-</section>
-
-<section class="final-cta section-space" aria-labelledby="final-title"><div class="container"><div class="request-shell"><div class="row align-items-center gy-4"><div class="col-12 col-lg-8"><h2 class="mb-3" id="final-title">Нужны водители или машинисты на объект?</h2><p class="lead mb-0">Передайте заявку на персонал. Укажите, какие специалисты требуются и где находится объект, — уточним условия и возможность предоставления.</p></div><div class="col-12 col-lg-4 text-lg-end"><a class="btn btn-abs-primary" href="#request" data-request-popup-trigger>Оставить заявку</a></div></div></div></div>
-</section>
+<div class="modal fade request-form-modal" id="requestFormModal" tabindex="-1" aria-labelledby="requestFormModalTitle" aria-hidden="true" data-request-popup><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content request-shell p-0"><div class="modal-header border-0 px-4 pt-4 pb-0"><h2 class="h3 mb-0" id="requestFormModalTitle">{{solutionHeroCta}}</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть форму"></button></div><div class="modal-body px-4 pb-4 pt-3" data-request-popup-form></div></div></div></div>

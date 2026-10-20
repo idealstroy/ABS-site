@@ -1,8 +1,8 @@
-<header class="site-header sticky-top">
+<header class="site-header">
   <nav class="navbar navbar-expand-lg" aria-label="Главная навигация">
     <div class="container">
       <div class="header-shell">
-        <div class="header-topline d-none d-lg-flex">
+        <div class="header-topline">
           <div class="header-topline__start">
             <span>{{headerTagline}}</span>
             {{contactsLink}}
@@ -23,9 +23,10 @@
             <ul class="navbar-nav mx-lg-auto py-3 py-lg-0">
               {{navigation}}
             </ul>
-            <div class="d-none d-lg-flex align-items-lg-center pb-3 pb-lg-0">
-              <a class="btn btn-abs-primary" href="/request/" data-request-popup-trigger>Оставить заявку</a>
-            </div>
+          </div>
+          <div class="header-actions">
+            <a class="header-floating-phone" href="tel:{{phoneHref}}">{{phone}}</a>
+            <a class="btn btn-abs-primary" href="/request/" data-request-popup-trigger>Оставить заявку</a>
           </div>
         </div>
       </div>

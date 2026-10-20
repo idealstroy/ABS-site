@@ -9,7 +9,7 @@
     "check": "node scripts/check.mjs",
     "test:form": "node scripts/test-form.mjs",
     "test": "node scripts/test.mjs",
-    "test:deploy": "node scripts/test-deploy.mjs",
+    "test:deploy": "powershell -ExecutionPolicy Bypass -File scripts/deploy-ssh.ps1 -ValidateOnly",
     "deploy": "powershell -ExecutionPolicy Bypass -File scripts/deploy-ssh.ps1"
   },
   "engines": {

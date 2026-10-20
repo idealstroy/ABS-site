@@ -35,6 +35,77 @@ const hideProjectModal = (modal) => {
   syncModalBody();
 };
 
+const siteHeader = document.querySelector(".site-header");
+const headerShell = siteHeader?.querySelector(".header-shell");
+if (siteHeader && headerShell) {
+  const compactNavigation = new Set(["Водители", "Машинисты", "О компании", "Контакты"]);
+  const secondaryItems = [...siteHeader.querySelectorAll(".navbar-nav > .nav-item")]
+    .filter((item) => !compactNavigation.has(item.querySelector(":scope > .nav-link")?.textContent.trim()));
+  secondaryItems.forEach((item) => item.classList.add("header-secondary-item"));
+  const topline = siteHeader.querySelector(".header-topline");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let expandedHeight = 0;
+  let morphAnimation;
+  let scrollQueued = false;
+
+  const measureExpandedHeight = () => {
+    const copy = siteHeader.cloneNode(true);
+    copy.classList.remove("header-is-compact");
+    copy.removeAttribute("id");
+    copy.querySelectorAll("[id]").forEach((element) => element.removeAttribute("id"));
+    copy.setAttribute("aria-hidden", "true");
+    copy.inert = true;
+    Object.assign(copy.style, {
+      position: "absolute", top: "0", left: "0", right: "auto", height: "auto",
+      width: `${siteHeader.getBoundingClientRect().width}px`, visibility: "hidden", pointerEvents: "none",
+    });
+    const menu = copy.querySelector(".navbar-collapse");
+    menu?.classList.remove("show", "collapsing");
+    menu?.classList.add("collapse");
+    if (menu) menu.style.height = "";
+    document.body.append(copy);
+    expandedHeight = copy.getBoundingClientRect().height;
+    copy.remove();
+    if (siteHeader.classList.contains("header-is-compact")) siteHeader.style.height = `${expandedHeight}px`;
+  };
+
+  const updateHeader = (animate = true) => {
+    scrollQueued = false;
+    const compact = window.scrollY > 8;
+    if (siteHeader.classList.contains("header-is-compact") === compact) return;
+    const before = headerShell.getBoundingClientRect();
+    const previousRadius = getComputedStyle(headerShell).borderRadius;
+    morphAnimation?.cancel();
+    siteHeader.style.height = compact ? `${expandedHeight}px` : "";
+    siteHeader.classList.toggle("header-is-compact", compact);
+    secondaryItems.forEach((item) => { item.inert = compact; });
+    if (topline) topline.inert = compact;
+    if (!animate || reducedMotion.matches) return;
+
+    const after = headerShell.getBoundingClientRect();
+    const offsetX = compact
+      ? before.left + before.width / 2 - after.left - after.width / 2
+      : before.left - after.left;
+    const offsetY = Math.max(before.top, -before.height) - after.top;
+    const baseTransform = compact ? "translateX(-50%) " : "";
+    morphAnimation = headerShell.animate([
+      { transform: `${baseTransform}translate(${offsetX}px, ${offsetY}px)`, width: `${before.width}px`, maxWidth: `${before.width}px`, height: `${before.height}px`, borderRadius: previousRadius },
+      { transform: `${baseTransform}translate(0, 0)`, width: `${after.width}px`, maxWidth: `${after.width}px`, height: `${after.height}px`, borderRadius: getComputedStyle(headerShell).borderRadius },
+    ], { duration: 420, easing: "cubic-bezier(0.22, 1, 0.36, 1)" });
+  };
+
+  window.addEventListener("scroll", () => {
+    if (scrollQueued) return;
+    scrollQueued = true;
+    requestAnimationFrame(() => updateHeader());
+  }, { passive: true });
+  window.addEventListener("resize", () => { morphAnimation?.cancel(); measureExpandedHeight(); });
+  reducedMotion.addEventListener("change", () => { if (reducedMotion.matches) morphAnimation?.cancel(); });
+  document.fonts?.ready.then(measureExpandedHeight);
+  measureExpandedHeight();
+  updateHeader(false);
+}
+
 const navigation = document.getElementById("siteNavigation");
 if (navigation && window.bootstrap) {
   const navigationHeader = navigation.closest(".site-header");

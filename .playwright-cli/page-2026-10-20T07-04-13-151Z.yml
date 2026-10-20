@@ -1,0 +1,347 @@
+- generic [active] [ref=e1]:
+  - link "Перейти к содержанию" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Главная навигация" [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - generic [ref=e9]: Нужен персонал на объект?
+            - link "Контакты" [ref=e10] [cursor=pointer]:
+              - /url: /kontakty/
+          - generic [ref=e11]:
+            - link "+7 917 400-10-59" [ref=e12] [cursor=pointer]:
+              - /url: tel:+79174001059
+            - link "info@abs-engineer.ru" [ref=e13] [cursor=pointer]:
+              - /url: mailto:info@abs-engineer.ru
+        - generic [ref=e14]:
+          - link "АБС, главная" [ref=e15] [cursor=pointer]:
+            - /url: /
+            - img "АБС" [ref=e16]
+          - generic [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - button "Водители" [ref=e20] [cursor=pointer]
+              - listitem [ref=e21]:
+                - button "Машинисты" [ref=e22] [cursor=pointer]
+              - listitem [ref=e23]:
+                - link "О компании" [ref=e24] [cursor=pointer]:
+                  - /url: /o-kompanii/
+              - listitem [ref=e25]:
+                - link "Вопросы" [ref=e26] [cursor=pointer]:
+                  - /url: /#faq
+              - listitem [ref=e27]:
+                - link "Контакты" [ref=e28] [cursor=pointer]:
+                  - /url: /kontakty/
+            - link "Оставить заявку" [ref=e30] [cursor=pointer]:
+              - /url: /request/
+  - main [ref=e31]:
+    - region [ref=e32]:
+      - img "Строительные специалисты согласуют работы с руководителем на площадке" [ref=e33]
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: Аутстаффинг строительного персонала
+        - heading "Предоставим строительный персонал для вашего объекта" [level=1] [ref=e38]
+        - paragraph [ref=e39]: "АБС — готовое решение для строительных компаний: укомплектуем объект специалистами под ваши работы, график и регион, проверим требования и организуем выход на площадку"
+        - link "Подобрать персонал на объект" [ref=e40] [cursor=pointer]:
+          - /url: "#request"
+    - region "Условия предоставления персонала" [ref=e41]:
+      - generic [ref=e43]:
+        - article [ref=e45]:
+          - heading "Под задачи объекта" [level=3] [ref=e47]
+          - paragraph [ref=e48]: Учитываем виды работ, специальности и требования к опыту
+        - article [ref=e50]:
+          - heading "Под график работ" [level=3] [ref=e52]
+          - paragraph [ref=e53]: Согласуем сменность, вахту, срок проекта и дату выхода
+        - article [ref=e55]:
+          - heading "По всей России" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Работаем с заявками на разные и удалённые площадки
+    - region [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - paragraph [ref=e63]: Начинаем с вашей задачи
+            - heading "Какую задачу по персоналу нужно решить?" [level=2] [ref=e64]
+          - paragraph [ref=e66]: "Нехватка специалистов задерживает отдельные работы и влияет на общий график. Расскажите о задаче: определим, какой строительный персонал и в каком составе нужно вывести на объект"
+        - generic [ref=e68]:
+          - tablist "Задачи объекта" [ref=e70]:
+            - tab "Не хватает рабочих и специалистов" [selected] [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]:
+                - generic [aria-hidden] [ref=e74]: "01"
+                - generic [ref=e75]: Не хватает рабочих и специалистов
+                - generic [aria-hidden] [ref=e76]: →
+            - tab "Новый этап или рост объёма" [ref=e78] [cursor=pointer]:
+              - generic [ref=e79]:
+                - generic [aria-hidden] [ref=e80]: "02"
+                - generic [ref=e81]: Новый этап или рост объёма
+                - generic [aria-hidden] [ref=e82]: →
+            - tab "Вахта или удалённая площадка" [ref=e84] [cursor=pointer]:
+              - generic [ref=e85]:
+                - generic [aria-hidden] [ref=e86]: "03"
+                - generic [ref=e87]: Вахта или удалённая площадка
+                - generic [aria-hidden] [ref=e88]: →
+          - tabpanel "Не хватает рабочих и специалистов" [ref=e94]:
+            - heading "Укомплектуем объект строительным персоналом" [level=3] [ref=e95]
+            - paragraph [ref=e96]: Уточним, какие работы предстоят, сколько людей нужно и какой опыт требуется. Подберём специалистов и согласуем условия их выхода на ваш объект
+            - paragraph [ref=e97]: Команда под ваши работы. Выход — по согласованному графику
+            - link "Подобрать персонал под задачу" [ref=e98] [cursor=pointer]:
+              - /url: "#request"
+    - region [ref=e101]:
+      - generic [ref=e102]:
+        - generic [ref=e104]:
+          - paragraph [ref=e105]: Готовое решение для строителей
+          - 'heading "Предоставление строительного персонала: от заявки до выхода на объект" [level=2] [ref=e106]'
+          - paragraph [ref=e107]: АБС предоставляет строительный персонал под запрос заказчика. Вы обозначаете работы и условия объекта, а мы согласуем состав специалистов, требования и порядок выхода
+        - generic [ref=e108]:
+          - figure [ref=e110]:
+            - img "Бригадир согласует план работ со строительной бригадой на российской стройке" [ref=e112]
+            - generic [ref=e113]:
+              - paragraph [ref=e114]: Результат
+              - heading "Объект укомплектован под ваши работы" [level=3] [ref=e115]
+              - paragraph [ref=e116]: Состав специалистов согласован с видами работ и графиком. Требования проверены, условия выхода определены. Вы можете готовить площадку и планировать выполнение производственных задач
+          - list [ref=e118]:
+            - listitem [ref=e119]:
+              - generic [ref=e120]: "01"
+              - generic [ref=e121]:
+                - heading "Разбираемся в задаче" [level=3] [ref=e122]
+                - paragraph [ref=e123]: Уточняем виды работ, специальности, количество людей, регион и срок проекта. На этой основе согласуем требования к персоналу
+            - listitem [ref=e124]:
+              - generic [ref=e125]: "02"
+              - generic [ref=e126]:
+                - heading "Сверяем готовность специалистов" [level=3] [ref=e127]
+                - paragraph [ref=e128]: Проверяем профильный опыт, квалификацию, удостоверения и необходимые допуски. Учитываем готовность к графику и условиям площадки
+            - listitem [ref=e129]:
+              - generic [ref=e130]: "03"
+              - generic [ref=e131]:
+                - heading "Организуем выход" [level=3] [ref=e132]
+                - paragraph [ref=e133]: Согласуем состав, стоимость, дату выхода и организационные условия предоставления персонала. Заказчик понимает, что требуется от площадки до начала работ
+    - region [ref=e134]:
+      - generic [ref=e135]:
+        - generic [ref=e137]:
+          - paragraph [ref=e138]: Доступные специальности
+          - heading "Строительный персонал под задачи объекта" [level=2] [ref=e139]
+        - region [ref=e140]:
+          - heading "Водители" [level=3] [ref=e141]
+          - generic [ref=e142]:
+            - article [ref=e144]:
+              - generic [ref=e146]:
+                - strong [ref=e147]: Водители грузового автомобиля
+                - generic [ref=e148]: Для строительных и производственных перевозок
+              - link "Водители грузового автомобиля":
+                - /url: /voditel-spetstehnika/voditel-gruzovogo-avtomobilya/
+            - article [ref=e151]:
+              - generic [ref=e153]:
+                - strong [ref=e154]: Водители погрузчика
+                - generic [ref=e155]: Для вилочных и фронтальных погрузчиков с учетом техники и сменности
+              - link "Водители погрузчика":
+                - /url: /voditel-spetstehnika/voditel-pogruzchika/
+            - article [ref=e158]:
+              - generic [ref=e160]:
+                - strong [ref=e161]: Водители самосвала
+                - generic [ref=e162]: Для перевозки грунта, инертных материалов и работ на площадке
+              - link "Водители самосвала":
+                - /url: /voditel-spetstehnika/voditel-samosvala/
+            - article [ref=e165]:
+              - generic [ref=e167]:
+                - strong [ref=e168]: Водители тягача
+                - generic [ref=e169]: Для работы с тягачами и специализированных перевозок
+              - link "Водители тягача":
+                - /url: /voditel-spetstehnika/voditel-tyagacha/
+            - article [ref=e172]:
+              - generic [ref=e174]:
+                - strong [ref=e175]: Водители топливозаправщика
+                - generic [ref=e176]: Для топливозаправочной техники с учетом требуемых документов
+              - link "Водители топливозаправщика":
+                - /url: /voditel-spetstehnika/voditel-toplivozapravshchika/
+            - article [ref=e179]:
+              - generic [ref=e181]:
+                - strong [ref=e182]: Водители трала
+                - generic [ref=e183]: Для перевозки крупногабаритной строительной и специальной техники
+              - link "Водители трала":
+                - /url: /voditel-spetstehnika/voditel-trala/
+            - article [ref=e186]:
+              - generic [ref=e188]:
+                - strong [ref=e189]: Водители вездехода
+                - generic [ref=e190]: Для удаленных объектов и сложных маршрутов
+              - link "Водители вездехода":
+                - /url: /voditel-spetstehnika/voditel-vezdehoda/
+            - article [ref=e193]:
+              - generic [ref=e195]:
+                - strong [ref=e196]: Водители ломовоза
+                - generic [ref=e197]: Для ломовозной техники и перевозки металлолома
+              - link "Водители ломовоза":
+                - /url: /voditel-spetstehnika/voditel-lomovoza/
+        - region [ref=e199]:
+          - heading "Машинисты и операторы" [level=3] [ref=e200]
+          - generic [ref=e201]:
+            - article [ref=e203]:
+              - generic [ref=e205]:
+                - strong [ref=e206]: Машинисты бульдозера
+                - generic [ref=e207]: Для планировки, перемещения грунта и подготовки строительной площадки
+              - link "Машинисты бульдозера":
+                - /url: /mashinisty-spetstehniki/buldozeristy/
+            - article [ref=e210]:
+              - generic [ref=e212]:
+                - strong [ref=e213]: Машинисты трубоукладчика
+                - generic [ref=e214]: Для линейного строительства и укладки трубопроводов
+              - link "Машинисты трубоукладчика":
+                - /url: /mashinisty-spetstehniki/mashinist-truboukladchika/
+            - article [ref=e217]:
+              - generic [ref=e219]:
+                - strong [ref=e220]: Машинисты экскаватора
+                - generic [ref=e221]: Для работ на экскаваторах и экскаваторах-погрузчиках
+              - link "Машинисты экскаватора":
+                - /url: /mashinisty-spetstehniki/ekskavatorschik/
+            - article [ref=e224]:
+              - generic [ref=e226]:
+                - strong [ref=e227]: Машинисты автокрана
+                - generic [ref=e228]: Для грузоподъемных работ с учетом типа техники и условий объекта
+              - link "Машинисты автокрана":
+                - /url: /mashinisty-spetstehniki/mashinisty-avtokrana/
+            - article [ref=e231]:
+              - generic [ref=e233]:
+                - strong [ref=e234]: Машинисты автовышки и автогидроподъемников
+                - generic [ref=e235]: Для работ на высоте с учетом необходимых допусков
+              - link "Машинисты автовышки и автогидроподъемников":
+                - /url: /mashinisty-spetstehniki/mashinist-avtovyshki/
+        - generic [ref=e238]:
+          - paragraph [ref=e240]: Нужны разные специалисты на одну площадку? Объедините позиции в одной заявке — рассмотрим потребность объекта целиком
+          - link "Подобрать персонал на объект" [ref=e242] [cursor=pointer]:
+            - /url: "#request"
+    - region [ref=e243]:
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - generic [ref=e246]:
+            - paragraph [ref=e247]: До начала работ
+            - heading "Проверяем опыт и документы строительного персонала" [level=2] [ref=e248]
+          - paragraph [ref=e250]: "Одна и та же профессия — не гарантия одинаковых навыков. У разных Компаний свои стандарты, задачи и ожидания. Мы это учитываем: подбираем специалистов не по названию должности, а по реальным требованиям вашего проекта. Так вы получаете именно того сотрудника, который нужен именно вам на данный момент."
+        - generic [ref=e251]:
+          - generic [ref=e253]:
+            - img "Сверка документов и требований к опыту специалиста" [ref=e254]
+            - list [ref=e255]:
+              - listitem [ref=e256]:
+                - generic [ref=e257]: Профильный опыт по видам работ
+              - listitem [ref=e260]:
+                - generic [ref=e261]: Удостоверения и документы по специальности
+              - listitem [ref=e264]:
+                - generic [ref=e265]: Квалификация и допуски, необходимые на площадке
+              - listitem [ref=e268]:
+                - generic [ref=e269]: Готовность к региону, сменности и вахтовому графику
+          - article [ref=e273]:
+            - generic [ref=e274]:
+              - generic [ref=e275]:
+                - paragraph [ref=e276]: Официальный статус
+                - heading "Аккредитация Федеральной службой по труду и занятости РФ" [level=3] [ref=e277]
+                - paragraph [ref=e278]: АБС ИНЖИНИРИНГ — аккредитованное частное агентство занятости. Уведомление государственной инспекции труда размещено на сайте
+              - link "Уведомление об аккредитации АБС ИНЖИНИРИНГ Открыть уведомление об аккредитации" [ref=e280] [cursor=pointer]:
+                - /url: /assets/images/about-accreditation.jpg
+                - img "Уведомление об аккредитации АБС ИНЖИНИРИНГ" [ref=e281]
+                - generic [ref=e282]: Открыть уведомление об аккредитации ↗
+    - region [ref=e283]:
+      - generic [ref=e284]:
+        - generic [ref=e286]:
+          - paragraph [ref=e287]: Порядок работы
+          - heading "Как предоставляем персонал на строительный объект" [level=2] [ref=e288]
+        - list [ref=e289]:
+          - listitem [ref=e290]:
+            - article [ref=e291]:
+              - generic [ref=e292]: "01"
+              - generic [ref=e293]:
+                - heading "Обсуждаем объект" [level=3] [ref=e294]
+                - paragraph [ref=e295]: Вы описываете работы, специальности, потребность в людях и планируемую дату начала
+          - listitem [ref=e296]:
+            - article [ref=e297]:
+              - generic [ref=e298]: "02"
+              - generic [ref=e299]:
+                - heading "Предлагаем состав" [level=3] [ref=e300]
+                - paragraph [ref=e301]: Подбор строительного персонала ведём по согласованным специальностям, опыту и требованиям объекта
+          - listitem [ref=e302]:
+            - article [ref=e303]:
+              - generic [ref=e304]: "03"
+              - generic [ref=e305]:
+                - heading "Согласуем условия" [level=3] [ref=e306]
+                - paragraph [ref=e307]: Обсуждаем стоимость, график, срок проекта и организационные детали выхода
+          - listitem [ref=e308]:
+            - article [ref=e309]:
+              - generic [ref=e310]: "04"
+              - generic [ref=e311]:
+                - heading "Организуем выход" [level=3] [ref=e312]
+                - paragraph [ref=e313]: Фиксируем дату и согласуем с заказчиком необходимые условия допуска персонала на площадку
+        - paragraph [ref=e314]: "Сроки и стоимость определяем по вашей заявке: они зависят от состава специалистов, региона, графика и требований объекта"
+    - region [ref=e315]:
+      - generic [ref=e317]:
+        - generic [ref=e318]:
+          - generic [ref=e319]:
+            - paragraph [ref=e320]: Обсудим ваш объект
+            - heading "Получите необходимый персонал на объект" [level=2] [ref=e321]
+          - paragraph [ref=e323]: Укажите виды работ, специальности, число людей, регион и желаемую дату выхода. Уточним требования и обсудим решение для вашего объекта
+        - generic [ref=e324]:
+          - generic [ref=e325]:
+            - img "Координатор обсуждает заявку и записывает условия объекта" [ref=e326]
+            - paragraph [ref=e327]: Пока нет точного состава? Опишите задачи и график работ — начнём с этого
+            - link "+7 917 400-10-59" [ref=e328] [cursor=pointer]:
+              - /url: tel:+79174001059
+          - generic [ref=e331]:
+            - generic [ref=e332]:
+              - generic [ref=e333]: Имя *
+              - textbox "Имя" [ref=e334]
+            - generic [ref=e335]:
+              - generic [ref=e336]: Телефон *
+              - textbox "Телефон" [ref=e337]
+            - generic [ref=e338]:
+              - generic [ref=e339]: Регион
+              - textbox "Регион" [ref=e340]
+            - generic [ref=e341]:
+              - generic [ref=e342]: Комментарий
+              - textbox "Комментарий" [ref=e343]:
+                - /placeholder: "Например: водитель самосвала, 3 человека, объект в Красноярском крае, вахтовый график, требуется опыт на технике определенного типа"
+            - button "Оставить заявку" [ref=e345] [cursor=pointer]
+            - generic [ref=e347]:
+              - checkbox "Отправляя форму, вы соглашаетесь на обработку персональных данных" [ref=e348]
+              - generic [ref=e349]: Отправляя форму, вы соглашаетесь на обработку персональных данных
+    - region [ref=e350]:
+      - generic [ref=e351]:
+        - generic [ref=e352]:
+          - heading "Что важно знать до заявки" [level=2] [ref=e354]
+          - link "+7 917 400-10-59" [ref=e356] [cursor=pointer]:
+            - /url: tel:+79174001059
+        - generic [ref=e358]:
+          - generic [ref=e359]:
+            - heading [level=3] [ref=e360]:
+              - button "Вы предоставляете персонал или только ищете кандидатов?" [expanded] [ref=e361] [cursor=pointer]
+            - generic [ref=e362]: АБС предоставляет строительный персонал для работы на объекте в формате аутстаффинга. Мы согласуем состав специалистов и условия выхода, а не передаём заказчику список кандидатов
+          - heading [level=3] [ref=e365]:
+            - button "Можно ли запросить несколько специальностей сразу?" [ref=e366] [cursor=pointer]
+          - heading [level=3] [ref=e368]:
+            - button "Работаете ли вы с вахтовыми объектами?" [ref=e369] [cursor=pointer]
+          - heading [level=3] [ref=e371]:
+            - button "Как быстро специалисты смогут выйти?" [ref=e372] [cursor=pointer]
+          - heading [level=3] [ref=e374]:
+            - button "От чего зависит стоимость?" [ref=e375] [cursor=pointer]
+  - contentinfo [ref=e376]:
+    - generic [ref=e377]:
+      - generic [ref=e378]:
+        - img "АБС" [ref=e380]
+        - navigation "Навигация в подвале" [ref=e382]:
+          - list [ref=e383]:
+            - listitem [ref=e384]:
+              - link "Водители" [ref=e385] [cursor=pointer]:
+                - /url: /voditel-spetstehnika/
+            - listitem [ref=e386]:
+              - link "Машинисты" [ref=e387] [cursor=pointer]:
+                - /url: /mashinisty-spetstehniki/
+            - listitem [ref=e388]:
+              - link "О компании" [ref=e389] [cursor=pointer]:
+                - /url: /o-kompanii/
+            - listitem [ref=e390]:
+              - link "Вопросы" [ref=e391] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=e392]:
+              - link "Контакты" [ref=e393] [cursor=pointer]:
+                - /url: /kontakty/
+        - generic [ref=e394]:
+          - link "+7 917 400-10-59" [ref=e395] [cursor=pointer]:
+            - /url: tel:+79174001059
+          - link "info@abs-engineer.ru" [ref=e396] [cursor=pointer]:
+            - /url: mailto:info@abs-engineer.ru
+          - generic [ref=e397]: "Политика обработки персональных данных: ссылка будет добавлена после утверждения URL."
+      - generic [ref=e398]: © АБС, 2026.
