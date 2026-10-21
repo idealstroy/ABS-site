@@ -241,7 +241,7 @@ const renderProcessSteps = (items = []) => items.map((item, index) => `<li class
 
 const renderCategoryForm = (form, title) => {
   if (!form) return "";
-  const safeTitle = escapeHtml(title || "Оставьте заявку на подбор водителей");
+  const safeTitle = escapeHtml(title || "Оставьте заявку");
   return `<section class="request-section section-space" id="request" aria-labelledby="request-title">
   <div class="container"><div class="row justify-content-center"><div class="col-12 col-xl-10">
     <div class="request-shell"><div class="row justify-content-center"><div class="col-12 col-lg-10">
@@ -263,7 +263,7 @@ const renderCategoryForm = (form, title) => {
 </div>`;
 };
 
-const renderForm = async (page, region, { idSuffix = "", includeValidationModal = true } = {}) => {
+const renderForm = async (page, region) => {
   const template = await readText("components/form.html");
   let form = renderTokens(template, {
     source: escapeHtml(page.seo.title),
@@ -273,18 +273,8 @@ const renderForm = async (page, region, { idSuffix = "", includeValidationModal 
     regionSlug: escapeHtml(region.region_slug),
   });
 
-  if (!includeValidationModal) {
-    form = form.replace(/\n<div class="modal fade request-validation-modal"[\s\S]*$/, "");
-  }
-
   if (page.template === "home") {
     form = form.replace(/\.(?=<|"|\s*<)/g, "");
-  }
-
-  if (idSuffix) {
-    ["company-site", "request-name", "request-phone", "request-region", "request-comment", "request-consent"].forEach((id) => {
-      form = form.replaceAll(id, `${id}-${idSuffix}`);
-    });
   }
 
   return form;
@@ -616,7 +606,6 @@ export const build = async () => {
       specialistObjections: renderSpecialistObjections(specialist),
       specialistFormText: escapeHtml(specialist.formText || ""),
       specialistFormTitle: escapeHtml(specialist.formTitle || "Оставьте заявку"),
-      specialistFinalForm: page.template === "specialist" ? await renderForm(page, region, { idSuffix: "final", includeValidationModal: false }) : "",
       specialistHeroAlt: escapeHtml(specialist.heroAlt || ""),
       specialistHeroHeight: String(specialist.heroHeight || 821),
       specialistHeroImage: escapeHtml(specialist.heroImage || ""),
