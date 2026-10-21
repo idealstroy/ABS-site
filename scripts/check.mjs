@@ -84,7 +84,8 @@ export const check = async () => {
     assert(/<meta charset="utf-8"/.test(html), `${relative}: missing UTF-8 charset`, errors);
     assert(/name="viewport"/.test(html), `${relative}: missing viewport`, errors);
     const head = html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1] ?? "";
-    assert((head.match(/<meta name="yandex-verification" content="4af3edb4f96f2c09"\s*\/?>/g) ?? []).length === 1, `${relative}: expected one Yandex verification tag in head`, errors);
+    const verificationTags = head.match(/<meta\b(?=[^>]*\bname=["']yandex-verification["'])[^>]*>/gi) ?? [];
+    assert(verificationTags.length === 1 && /content="4af3edb4f96f2c09"/.test(verificationTags[0]), `${relative}: expected exactly one Yandex verification tag with code 4af3edb4f96f2c09 in head`, errors);
     assert(/bootstrap@5\.3\.3/.test(html), `${relative}: Bootstrap 5.3.3 is not connected`, errors);
     assert(/class="skip-link"/.test(html), `${relative}: missing skip link`, errors);
     assert(/<header[\s>]/.test(html), `${relative}: missing header`, errors);
