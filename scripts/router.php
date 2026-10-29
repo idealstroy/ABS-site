@@ -20,6 +20,16 @@ if (is_dir($target)) {
 }
 
 if (is_file($target)) {
+    // Match the production Apache rule without redirecting or removing tracking.
+    if (str_ends_with($target, ".html")
+        && preg_match('/(^|&)utm_[^=&]+(=|&|$)/i', $_SERVER["QUERY_STRING"] ?? "")) {
+        header("X-Robots-Tag: noindex, follow");
+        header("Content-Type: text/html; charset=utf-8");
+        if (($_SERVER["REQUEST_METHOD"] ?? "GET") !== "HEAD") {
+            readfile($target);
+        }
+        return true;
+    }
     return false;
 }
 

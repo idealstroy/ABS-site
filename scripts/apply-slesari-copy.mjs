@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+const pageFile=new URL('../src/data/pages/slesari.json',import.meta.url);
+const copy=JSON.parse(await fs.readFile(new URL('../seo-research/slesari-category-2026-10-29/category-copy.json',import.meta.url),'utf8'));
+const page=JSON.parse(await fs.readFile(pageFile,'utf8'));
+page.seo={...page.seo,...copy.seo};
+page.h1=copy.h1;
+page.category={...page.category,...copy.category};
+page.cards.forEach((card,i)=>{card.description=copy.cardDescriptions[i];});
+page.faq=copy.faq;
+await fs.writeFile(pageFile,JSON.stringify(page,null,2)+'\n','utf8');
+const c=page.category;
+const lines=['# Текст страницы Слесари','',`URL: ${page.path}`,'Шаблон 2 — страница категории. Рабочая редакция от 29 октября 2026 года.','',`Title: ${page.seo.title}`,`Description: ${page.seo.description}`,'',`# ${page.h1}`,'',c.heroLead,'','Кнопка: Оставить заявку','',`## ${c.introTitle}`,'',c.intro,'',`### ${c.requirementsTitle}`,'',...c.requirements.map(x=>`- ${x.label}`),'',`## ${c.listTitle}`,'',...page.cards.flatMap(x=>[`### ${x.title}`,'',x.description,`Адрес публикации: ${x.productionHref}`,'']),`## ${c.processTitle}`,'',...c.process.flatMap(x=>[`### ${x.title}`,'',x.text,'']),`## ${c.checksTitle}`,'',...c.checks.map(x=>`- ${x}`),'',`## ${c.formTitle}`,'','Поля: Имя, Телефон, Регион, Комментарий.','Кнопка: Оставить заявку.','','## Частые вопросы','',...page.faq.flatMap(x=>[`### ${x.question}`,'',x.answer,''])];
+await fs.writeFile(new URL('../Textes/Текст страницы - Слесари.md',import.meta.url),lines.join('\n'),'utf8');
+console.log('Updated category copy and working text');

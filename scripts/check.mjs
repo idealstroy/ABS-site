@@ -1,6 +1,7 @@
 import { access, readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { parseRobots, canCrawl } from "./robots-policy.mjs";
 
 const scriptPath = fileURLToPath(import.meta.url);
 const root = path.resolve(path.dirname(scriptPath), "..");
@@ -71,6 +72,29 @@ export const check = async () => {
   const pageModels = await Promise.all(pageDataFiles.map(async (file) => JSON.parse(await readFile(path.join(root, "src", "data", "pages", file), "utf8"))));
   const pageByOutput = new Map(pageModels.map((page) => [page.output.replaceAll("/", path.sep), page]));
   const indexableCanonicals = new Set(pageModels.filter((page) => robotsFor(page) === "index, follow").map((page) => page.seo.canonical));
+  const planned = JSON.parse(await readFile(path.join(root, "src/data/planned-specialties.json"), "utf8"));
+  const releaseRoutes = [...planned.pages.map((page) => page.path), "/slesari/"];
+  for (const route of releaseRoutes) {
+    const model = pageModels.find((page) => page.path === route);
+    assert(Boolean(model), `${route}: missing production page model`, errors);
+    if (!model) continue;
+    assert(model.status === "ready", `${route}: production page must be ready`, errors);
+    const canonical = `https://abs-engineer.ru${route}`;
+    assert(model.seo.canonical === canonical, `${route}: canonical must match assigned URL`, errors);
+    const service = model.schema.find((entry) => entry["@type"] === "Service");
+    assert(service?.url === canonical && service?.["@id"] === `${canonical}#service`, `${route}: Service must describe this page's own URL`, errors);
+    const html = await readFile(path.join(dist, model.output), "utf8");
+    assert(!/href="\/_prototype\//.test(html), `${route}: production links must not point to previews`, errors);
+    const types = parseSchemaTypes(html, model.output, errors);
+    for (const type of ["Service", "WebPage", "BreadcrumbList"]) assert(types.includes(type), `${route}: missing ${type}`, errors);
+    const schema = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi)].map((match) => JSON.parse(match[1]));
+    const graph = schema.flatMap((entry) => entry["@graph"] || [entry]);
+    const ids = graph.map((entry) => entry["@id"]).filter(Boolean);
+    assert(ids.length === new Set(ids).size, `${route}: duplicate JSON-LD entity IDs`, errors);
+    const breadcrumb = graph.find((entry) => entry["@type"] === "BreadcrumbList");
+    assert(breadcrumb?.itemListElement?.at(-1)?.item === canonical, `${route}: breadcrumb must end at this page`, errors);
+    if (model.faqSchema === false) assert(!types.includes("FAQPage"), `${route}: declarative accordion must not emit FAQPage`, errors);
+  }
   assert(htmlFiles.length === pageDataFiles.length, `Expected ${pageDataFiles.length} HTML pages, found ${htmlFiles.length}`, errors);
 
   for (const file of htmlFiles) {
@@ -101,7 +125,7 @@ export const check = async () => {
       const schemaTypes = parseSchemaTypes(html, relative, errors);
       assert(schemaTypes.includes("WebPage"), `${relative}: missing automatic WebPage JSON-LD`, errors);
       assert(schemaTypes.includes("BreadcrumbList"), `${relative}: missing BreadcrumbList JSON-LD`, errors);
-      if (page.faq.length) assert(schemaTypes.includes("FAQPage"), `${relative}: missing FAQPage JSON-LD`, errors);
+      if (page.faq.length && page.faqSchema !== false) assert(schemaTypes.includes("FAQPage"), `${relative}: missing FAQPage JSON-LD`, errors);
       assert(/property="og:image" content="https:\/\/abs-engineer\.ru\/assets\/images\//.test(html), `${relative}: missing absolute og:image`, errors);
       assert(/name="twitter:card" content="summary_large_image"/.test(html), `${relative}: missing Twitter image card`, errors);
     }
@@ -156,14 +180,33 @@ export const check = async () => {
 
   const robots = await readFile(path.join(dist, "robots.txt"), "utf8");
   assert(!/^Disallow:\s*\/\s*$/m.test(robots), "robots.txt must not block the public site", errors);
-  ["/_prototype/", "/request/", "/thanks/", "/404.html"].forEach((route) => {
-    assert(robots.includes(`Disallow: ${route}`), `robots.txt must block technical route ${route}`, errors);
-  });
+  const robotsPolicy = parseRobots(robots);
+  errors.push(...robotsPolicy.errors);
+  for (const agent of ['googlebot', 'yandex', '*']) {
+    assert(robotsPolicy.groups.filter(group => group.agents.includes(agent)).length === 1, `robots.txt must have one explicit ${agent} group`, errors);
+  }
+  for (const agent of ['Googlebot', 'Googlebot-Image', 'YandexBot', 'YandexImages', 'Bingbot']) {
+    for (const page of pageModels.filter(page => robotsFor(page) === 'index, follow')) {
+      for (const suffix of ['', '?utm_source=seo-check', '?gclid=test&utm_campaign=seo-check']) {
+        assert(canCrawl(robotsPolicy, agent, page.path + suffix), `robots.txt blocks ${agent} from public page ${page.path}${suffix}`, errors);
+      }
+    }
+    for (const route of ['/_prototype/slesar-po-remontu-am/', '/actions/send-request.php', '/var/submissions.log', '/release-manifest.sha256', '/abs-deploy-version.txt?check=test']) {
+      assert(!canCrawl(robotsPolicy, agent, route), `robots.txt must block ${agent} from technical URL ${route}`, errors);
+    }
+    for (const route of ['/request/', '/request/?status=error', '/thanks/', '/404.html', '/assets/css/site.css', '/assets/js/site.js', '/assets/images/logo-full.svg', '/sitemap.xml']) {
+      assert(canCrawl(robotsPolicy, agent, route), `robots.txt must allow ${agent} to read resources/noindex: ${route}`, errors);
+    }
+  }
+  assert(!robotsPolicy.groups.some(group => group.agents.includes('googlebot') && group.cleanParams.length), 'Googlebot group must not contain Yandex Clean-param', errors);
   assert(/Sitemap:\s+https:\/\/abs-engineer\.ru\/sitemap\.xml/.test(robots), "robots.txt must declare sitemap", errors);
   const sitemap = await readFile(path.join(dist, "sitemap.xml"), "utf8");
   const sitemapCanonicals = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]));
   assert(sitemapCanonicals.size === indexableCanonicals.size, "sitemap.xml must contain every and only indexable canonical URL", errors);
   for (const canonical of indexableCanonicals) assert(sitemapCanonicals.has(canonical), `sitemap.xml missing ${canonical}`, errors);
+  for (const canonical of sitemapCanonicals) {
+    for (const agent of ['Googlebot', 'YandexBot', 'Bingbot']) assert(canCrawl(robotsPolicy, agent, canonical), `sitemap URL blocked for ${agent}: ${canonical}`, errors);
+  }
 
   if (errors.length) {
     throw new Error(`Technical checks failed:\n- ${errors.join("\n- ")}`);

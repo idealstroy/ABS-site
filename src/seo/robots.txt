@@ -1,7 +1,30 @@
-User-agent: *
+# Google Search. Public pages and rendering resources are crawlable.
+User-agent: Googlebot
+Allow: /
 Disallow: /_prototype/
-Disallow: /request/
-Disallow: /thanks/
-Disallow: /404.html
+Disallow: /actions/
+Disallow: /var/
+Disallow: /release-manifest.sha256
+Disallow: /abs-deploy-version.txt
 
+# Yandex. Tracking parameters do not change the public page content.
+User-agent: Yandex
+Allow: /
+Disallow: /_prototype/
+Disallow: /actions/
+Disallow: /var/
+Disallow: /release-manifest.sha256
+Disallow: /abs-deploy-version.txt
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&utm_id&utm_source_platform&utm_creative_format&utm_marketing_tactic&yclid&ysclid&gclid&dclid&fbclid&msclkid&_openstat /
+
+# Other compliant crawlers use the same public/technical boundary.
+User-agent: *
+Allow: /
+Disallow: /_prototype/
+Disallow: /actions/
+Disallow: /var/
+Disallow: /release-manifest.sha256
+Disallow: /abs-deploy-version.txt
+
+# Global sitemap declaration applies to all crawlers.
 Sitemap: https://abs-engineer.ru/sitemap.xml

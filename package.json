@@ -8,6 +8,7 @@
     "start": "node scripts/start.mjs",
     "check": "node scripts/check.mjs",
     "test:form": "node scripts/test-form.mjs",
+    "test:utm": "node scripts/test-utm.mjs",
     "test": "node scripts/test.mjs",
     "test:deploy": "powershell -ExecutionPolicy Bypass -File scripts/deploy-ssh.ps1 -ValidateOnly",
     "deploy": "powershell -ExecutionPolicy Bypass -File scripts/deploy-ssh.ps1"

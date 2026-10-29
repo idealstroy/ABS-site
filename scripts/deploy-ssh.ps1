@@ -22,6 +22,7 @@ function Assert-Release {
     $required = @(
         'index.html',
         'robots.txt',
+        '.htaccess',
         'sitemap.xml',
         'assets/css/site.css',
         'assets/js/site.js',
@@ -30,7 +31,13 @@ function Assert-Release {
         'voditel-spetstehnika/index.html',
         'mashinisty-spetstehniki/index.html',
         'o-kompanii/index.html',
-        'kontakty/index.html'
+        'kontakty/index.html',
+        'slesari/index.html',
+        'slesari/slesar-po-remontu-dst/index.html',
+        'slesari/slesar-po-remontu-am/index.html',
+        'mashinisty-spetstehniki/motorist-tsementirovochnogo-agregata/index.html',
+        'politika-konfidencialnosti/index.html',
+        'soglasie-na-obrabotku-personalnyh-dannyh/index.html'
     )
     foreach ($file in $required) {
         $path = Join-Path $Root ($file.Replace('/', [IO.Path]::DirectorySeparatorChar))
@@ -73,16 +80,9 @@ function Invoke-Remote {
 $remotePrepared = $false
 $activated = $false
 try {
-    if (-not $ValidateOnly -and -not $UploadOnly) {
-        Write-Host 'Copying the current server site to backup...' -ForegroundColor Cyan
-        Invoke-Native 'ssh.exe' ($sshArgs + @($remote, "mkdir -m 755 '$stage'"))
-        $remotePrepared = $true
-        Invoke-Native 'scp.exe' ($scpArgs + @((Join-Path $PSScriptRoot 'deploy-remote.sh'), "${remote}:$stage/deploy-remote.sh"))
-        Invoke-Remote 'backup'
-    }
-
     Write-Host 'Building and checking the release...' -ForegroundColor Cyan
     Invoke-Native 'npm.cmd' @('run', 'build')
+    Invoke-Native 'npm.cmd' @('run', 'check')
     Assert-Release $buildPath
     Invoke-Native 'node.exe' @((Join-Path $PSScriptRoot 'validate-release.mjs'), $buildDir)
     Invoke-Native 'tar.exe' @('-czf', $archive, '--exclude=./_prototype', '--exclude=./var', '--exclude=.gitkeep', '-C', $buildPath, '.')
@@ -93,6 +93,13 @@ try {
         return
     }
 
+    if (-not $UploadOnly) {
+        Write-Host 'Copying the current server site to backup...' -ForegroundColor Cyan
+        Invoke-Native 'ssh.exe' ($sshArgs + @($remote, "mkdir -m 755 '$stage'"))
+        $remotePrepared = $true
+        Invoke-Native 'scp.exe' ($scpArgs + @((Join-Path $PSScriptRoot 'deploy-remote.sh'), "${remote}:$stage/deploy-remote.sh"))
+        Invoke-Remote 'backup'
+    }
     Write-Host 'Uploading the checked release...' -ForegroundColor Cyan
     if ($UploadOnly) {
         Invoke-Native 'ssh.exe' ($sshArgs + @($remote, "mkdir -m 755 '$stage'"))
@@ -124,7 +131,13 @@ try {
         '/voditel-spetstehnika/voditel-tyagacha/',
         '/mashinisty-spetstehniki/',
         '/o-kompanii/',
-        '/kontakty/'
+        '/kontakty/',
+        '/slesari/',
+        '/slesari/slesar-po-remontu-dst/',
+        '/slesari/slesar-po-remontu-am/',
+        '/mashinisty-spetstehniki/motorist-tsementirovochnogo-agregata/',
+        '/politika-konfidencialnosti/',
+        '/soglasie-na-obrabotku-personalnyh-dannyh/'
     )
     $marker = (Invoke-WebRequest -Uri "$siteUrl/abs-deploy-version.txt?check=$releaseId" -UseBasicParsing -TimeoutSec 25).Content.Trim()
     if ($marker -ne $releaseId) { throw 'The public site did not serve this release' }
@@ -137,6 +150,8 @@ try {
         $response = Invoke-WebRequest -Uri "$siteUrl/$file`?check=$releaseId" -UseBasicParsing -TimeoutSec 25
         Assert-DeployResponse $response (Join-Path $buildPath $file) "/$file"
     }
+    # Verify the hosting configuration, not just the local PHP router.
+    Invoke-Native 'node' @('scripts/test-utm.mjs', $siteUrl)
     # A cleanup failure must not roll back a release that already passed HTTP checks.
     $activated = $false
     Invoke-Remote 'finalize'

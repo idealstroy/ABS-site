@@ -1,0 +1,13 @@
+{
+  "masks": 22,
+  "checked_masks": 22,
+  "raw": 128,
+  "unique": 113,
+  "accepted": 7,
+  "rejected": 106,
+  "zero_exact": 82,
+  "source": "Bukvarix",
+  "region": "Весь мир",
+  "date": "2026-10-29",
+  "cache_date": null
+}

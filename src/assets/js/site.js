@@ -38,7 +38,7 @@ const hideProjectModal = (modal) => {
 const siteHeader = document.querySelector(".site-header");
 const headerShell = siteHeader?.querySelector(".header-shell");
 if (siteHeader && headerShell) {
-  const compactNavigation = new Set(["Водители", "Машинисты", "О компании", "Контакты"]);
+  const compactNavigation = new Set(["Водители", "Машинисты", "Слесари", "О компании"]);
   const secondaryItems = [...siteHeader.querySelectorAll(".navbar-nav > .nav-item")]
     .filter((item) => !compactNavigation.has(item.querySelector(":scope > .nav-link")?.textContent.trim()));
   secondaryItems.forEach((item) => item.classList.add("header-secondary-item"));

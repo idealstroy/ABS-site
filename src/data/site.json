@@ -28,6 +28,22 @@
     { "label": "Вопросы", "href": "/#faq" },
     { "label": "Контакты", "href": "/kontakty/" }
   ],
+  "headerGroups": [
+    {
+      "label": "Слесари",
+      "href": "/slesari/",
+      "before": "/o-kompanii/",
+      "children": [
+        { "label": "Слесари спецтехники", "href": "/slesari/" },
+        { "label": "Слесарь по ремонту ДСТ", "href": "/slesari/slesar-po-remontu-dst/" },
+        { "label": "Слесарь по ремонту АМ", "href": "/slesari/slesar-po-remontu-am/" }
+      ]
+    },
+    {
+      "href": "/o-kompanii/",
+      "childrenFromNavigation": ["/#faq", "/kontakty/"]
+    }
+  ],
   "defaultRegion": {
     "city": "",
     "city_genitive": "",

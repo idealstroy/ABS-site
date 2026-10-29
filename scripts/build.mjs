@@ -60,7 +60,26 @@ const navigationGroupForPath = (pagePath) => {
 
 const navigationLabelForPage = (page) => page.navigationLabel || page.h1.replace(/^Подбор\s+/iu, "");
 
-const buildHeaderNavigation = (items, homePage, pages, readyRoutes) => items.map((item) => {
+const buildHeaderNavigation = (items, homePage, pages, readyRoutes, groups = []) => {
+  let headerItems = [...items];
+  for (const config of groups) {
+    if (config.childrenFromNavigation) {
+      const parent = items.find((item) => item.href === config.href);
+      if (!parent) throw new Error(`Missing header group: ${config.href}`);
+      const moved = config.childrenFromNavigation.map((href) => {
+        const child = items.find((item) => item.href === href);
+        if (!child) throw new Error(`Missing header link: ${href}`);
+        return { label: child.label, href: child.href };
+      });
+      headerItems = headerItems
+        .filter((item) => !config.childrenFromNavigation.includes(item.href))
+        .map((item) => item.href === config.href ? { ...parent, children: [{ label: parent.label, href: parent.href }, ...moved] } : item);
+    } else {
+      const index = headerItems.findIndex((item) => item.href === config.before);
+      headerItems.splice(index < 0 ? headerItems.length : index, 0, config);
+    }
+  }
+  return headerItems.map((item) => {
   if (!item.group) return item;
 
   const homeGroup = homePage.specialistGroups.find((group) => group.title === item.homeGroup);
@@ -80,7 +99,8 @@ const buildHeaderNavigation = (items, homePage, pages, readyRoutes) => items.map
   }
 
   return { ...item, children };
-});
+  });
+};
 
 const renderBreadcrumbs = async (items) => {
   if (!items.length) return "";
@@ -220,7 +240,9 @@ const renderSpecialistMetricsPanel = (specialist = {}) => {
 const renderSpecialistTeam = (specialist = {}) => {
   if (!specialist.teamTitle) return "";
   const stats = (specialist.teamStats || []).map((item) => `<li class="col-12 col-md-6"><article class="specialist-team__stat h-100"><span class="specialist-team__stat-value">${escapeHtml(item.value)}</span><p class="mb-0">${escapeHtml(item.label)}</p></article></li>`).join("\n");
-  return `<section class="specialist-team" aria-labelledby="specialist-team-title"><div class="container"><div class="specialist-team__shell"><div class="row g-4 g-lg-5 align-items-center"><div class="col-12 col-lg-4"><div class="specialist-team__lead"><span class="specialist-team__eyebrow">Команда подбора</span><h2 id="specialist-team-title">${escapeHtml(specialist.teamTitle)}</h2><p class="mb-0">${escapeHtml(specialist.teamText || "")}</p></div></div><div class="col-12 col-lg-8"><ul class="row g-3 mx-0 list-unstyled mb-0">${stats}</ul></div></div></div></div></section>`;
+  const leadColumns = stats ? "col-12 col-lg-4" : "col-12 col-lg-10";
+  const statsColumn = stats ? `<div class="col-12 col-lg-8"><ul class="row g-3 mx-0 list-unstyled mb-0">${stats}</ul></div>` : "";
+  return `<section class="specialist-team" aria-labelledby="specialist-team-title"><div class="container"><div class="specialist-team__shell"><div class="row g-4 g-lg-5 align-items-center"><div class="${leadColumns}"><div class="specialist-team__lead"><span class="specialist-team__eyebrow">Команда подбора</span><h2 id="specialist-team-title">${escapeHtml(specialist.teamTitle)}</h2><p class="mb-0">${escapeHtml(specialist.teamText || "")}</p></div></div>${statsColumn}</div></div></div></section>`;
 };
 
 const renderSpecialistObjections = (specialist = {}) => {
@@ -314,6 +336,7 @@ const robotsFor = (page) => isTechnicalPage(page) || page.status !== "ready"
 const isIndexable = (page) => robotsFor(page) === "index, follow";
 
 const getPageVisual = (page) => {
+  if (page.seo.image) return page.seo.image;
   if (page.template === "home") {
     return { src: page.solution.heroImage, width: page.solution.heroWidth, height: page.solution.heroHeight, alt: page.solution.heroAlt };
   }
@@ -382,7 +405,7 @@ const createAutoSchema = (page, site) => {
     },
   ];
 
-  if (page.faq?.length) {
+  if (page.faq?.length && page.faqSchema !== false) {
     graph.push({
       "@type": "FAQPage",
       "@id": `${pageUrl}#faq`,
@@ -497,7 +520,7 @@ export const build = async () => {
   const pageFiles = (await readdir(path.join(src, "data/pages"))).filter((name) => name.endsWith(".json")).sort();
   const pages = await Promise.all(pageFiles.map((file) => readJson(`data/pages/${file}`)));
   const readyRoutes = new Set(pages.filter((page) => page.status === "ready").map((page) => page.path));
-  const navigation = buildHeaderNavigation(site.navigation, homePage, pages, readyRoutes);
+  const navigation = buildHeaderNavigation(site.navigation, homePage, pages, readyRoutes, site.headerGroups);
   const header = await renderHeader({ ...site, navigation }, readyRoutes);
   const homeHeader = await renderHeader({ ...site, navigation }, readyRoutes, "Нужен персонал на объект?");
   const footer = await renderFooter(site, readyRoutes);
@@ -519,7 +542,7 @@ export const build = async () => {
       solutionHeroAlt: escapeHtml(page.solution?.heroAlt || ""),
       licenseSegments: await renderLicenseSegments(page.licenseSegments),
       breadcrumbs: await renderBreadcrumbs(page.breadcrumbs),
-      cards: await renderCards(page.cards, readyRoutes),
+      cards: await renderCards(page.cards, page.status === "draft" ? new Set(pages.map((candidate) => candidate.path)) : readyRoutes),
       categoryChecks: renderCategoryChecks(category.checks),
       categoryChecksAlt: escapeHtml(category.checksImageAlt || ""),
       categoryChecksHeight: String(category.checksImageHeight || 1024),
@@ -538,6 +561,7 @@ export const build = async () => {
       categoryOverviewImage: escapeHtml(category.overviewImage || ""),
       categoryIntroTitle: escapeHtml(category.introTitle || ""),
       categoryListTitle: escapeHtml(category.listTitle || ""),
+      documentSections: (page.document?.sections || []).map((section, index) => `<section class="mb-5" aria-labelledby="document-section-${index + 1}"><h2 class="mb-3" id="document-section-${index + 1}">${escapeHtml(section.title)}</h2>${section.paragraphs.map((text) => `<p>${escapeHtml(text)}</p>`).join("")}</section>`).join("\n"),
       categoryOverviewWidth: String(category.overviewImageWidth || 1122),
       categoryProcess: renderProcessSteps(category.process),
       categoryProcessTitle: escapeHtml(category.processTitle || ""),
@@ -699,6 +723,7 @@ export const build = async () => {
   await cp(path.join(src, "server", "form-lib.php"), path.join(dist, "actions", "form-lib.php"));
   await cp(path.join(src, "server", "send-request.php"), path.join(dist, "actions", "send-request.php"));
   await cp(path.join(src, "seo", "robots.txt"), path.join(dist, "robots.txt"));
+  await cp(path.join(src, "seo", ".htaccess"), path.join(dist, ".htaccess"));
   await writeFile(path.join(dist, "sitemap.xml"), renderSitemap(pages), "utf8");
 
   return { dist, pages: pageFiles.length };

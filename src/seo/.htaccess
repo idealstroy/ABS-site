@@ -1,0 +1,5 @@
+# Keep UTM parameters available to analytics, but exclude these URL variants
+# from search results. Do not block crawling: bots must read this header.
+<IfModule mod_headers.c>
+    Header always set X-Robots-Tag "noindex, follow" "expr=%{QUERY_STRING} =~ m#(^|&)utm_[^=&]+(=|&|$)#i"
+</IfModule>

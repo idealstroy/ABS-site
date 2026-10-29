@@ -172,6 +172,27 @@
           "description": "Для работ на высоте с учетом необходимых допусков",
           "href": "/mashinisty-spetstehniki/mashinist-avtovyshki/",
           "icon": "equipment-boom-lift.svg"
+        },
+        {
+          "title": "Мотористы цементировочного агрегата",
+          "href": "/mashinisty-spetstehniki/motorist-tsementirovochnogo-agregata/",
+          "icon": "gear.svg"
+        }
+      ]
+    },
+    {
+      "title": "Слесари",
+      "description": "Для обслуживания и ремонта техники на объектах и ремонтных базах",
+      "items": [
+        {
+          "title": "Слесарь по ремонту ДСТ",
+          "href": "/slesari/slesar-po-remontu-dst/",
+          "icon": "tools.svg"
+        },
+        {
+          "title": "Слесарь по ремонту автомобилей",
+          "href": "/slesari/slesar-po-remontu-am/",
+          "icon": "gear.svg"
         }
       ]
     }

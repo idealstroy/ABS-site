@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-29",
+  "html_files": 32,
+  "sitemap_urls": 24,
+  "new_pages": [
+    {
+      "path": "/slesari/",
+      "file_exists": true,
+      "in_sitemap": true,
+      "title": "Слесари по ремонту спецтехники и автомобилей — отбор | АБС",
+      "description": [
+        "АБС предоставляет слесарей по ремонту спецтехники и автомобилей для объектов и ремонтных баз. Отбираем сотрудников под вашу технику и график. Оставьте заявку."
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://abs-engineer.ru/slesari/"
+      ],
+      "open_graph": [
+        "https://abs-engineer.ru/slesari/"
+      ],
+      "twitter": [
+        "summary_large_image"
+      ],
+      "h1_count": 1,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Service",
+        "Country",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ],
+      "schema_errors": [],
+      "verification": [
+        "4af3edb4f96f2c09"
+      ],
+      "old_verification_present": false,
+      "metrika_init_count": 1,
+      "metrika_noscript": true,
+      "prototype_links": [],
+      "broken_links": [],
+      "missing_alt": 0,
+      "header_count": 1,
+      "request_sections": 1,
+      "policy_placeholder": false,
+      "template_claims": []
+    },
+    {
+      "path": "/slesari/slesar-po-remontu-dst/",
+      "file_exists": true,
+      "in_sitemap": true,
+      "title": "Отбор слесарей по ремонту ДСТ для объектов | АБС",
+      "description": [
+        "Отбор слесарей по ремонту ДСТ для объектов по России. Учитываем дорожно-строительную технику, узлы, виды ремонта, опыт и график. Оставьте заявку."
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://abs-engineer.ru/slesari/slesar-po-remontu-dst/"
+      ],
+      "open_graph": [
+        "https://abs-engineer.ru/slesari/slesar-po-remontu-dst/"
+      ],
+      "twitter": [
+        "summary_large_image"
+      ],
+      "h1_count": 1,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Service",
+        "Country",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer"
+      ],
+      "schema_errors": [],
+      "verification": [
+        "4af3edb4f96f2c09"
+      ],
+      "old_verification_present": false,
+      "metrika_init_count": 1,
+      "metrika_noscript": true,
+      "prototype_links": [],
+      "broken_links": [],
+      "missing_alt": 0,
+      "header_count": 1,
+      "request_sections": 1,
+      "policy_placeholder": false,
+      "template_claims": []
+    },
+    {
+      "path": "/slesari/slesar-po-remontu-am/",
+      "file_exists": true,
+      "in_sitemap": true,
+      "title": "Отбор слесарей по ремонту автомобилей для объектов | АБС",
+      "description": [
+        "Отбор слесарей по ремонту автомобилей для объектов по России. Учитываем технику, виды ремонта, опыт и график. Оставьте заявку."
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://abs-engineer.ru/slesari/slesar-po-remontu-am/"
+      ],
+      "open_graph": [
+        "https://abs-engineer.ru/slesari/slesar-po-remontu-am/"
+      ],
+      "twitter": [
+        "summary_large_image"
+      ],
+      "h1_count": 1,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Service",
+        "Country",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer"
+      ],
+      "schema_errors": [],
+      "verification": [
+        "4af3edb4f96f2c09"
+      ],
+      "old_verification_present": false,
+      "metrika_init_count": 1,
+      "metrika_noscript": true,
+      "prototype_links": [],
+      "broken_links": [],
+      "missing_alt": 0,
+      "header_count": 1,
+      "request_sections": 1,
+      "policy_placeholder": false,
+      "template_claims": []
+    },
+    {
+      "path": "/mashinisty-spetstehniki/motorist-tsementirovochnogo-agregata/",
+      "file_exists": true,
+      "in_sitemap": true,
+      "title": "Отбор мотористов цементировочного агрегата | АБС",
+      "description": [
+        "Отбор мотористов цементировочного агрегата для нефтегазовых объектов по России. Учитываем тип ЦА, задачи, опыт, документы и график. Оставьте заявку."
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://abs-engineer.ru/mashinisty-spetstehniki/motorist-tsementirovochnogo-agregata/"
+      ],
+      "open_graph": [
+        "https://abs-engineer.ru/mashinisty-spetstehniki/motorist-tsementirovochnogo-agregata/"
+      ],
+      "twitter": [
+        "summary_large_image"
+      ],
+      "h1_count": 1,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Service",
+        "Country",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer"
+      ],
+      "schema_errors": [],
+      "verification": [
+        "4af3edb4f96f2c09"
+      ],
+      "old_verification_present": false,
+      "metrika_init_count": 1,
+      "metrika_noscript": true,
+      "prototype_links": [],
+      "broken_links": [],
+      "missing_alt": 0,
+      "header_count": 1,
+      "request_sections": 1,
+      "policy_placeholder": false,
+      "template_claims": []
+    }
+  ],
+  "source_schema_not_emitted": [
+    {
+      "slug": "motorist-tsementirovochnogo-agregata",
+      "status": "draft",
+      "source_schema": []
+    },
+    {
+      "slug": "slesar-po-remontu-dst",
+      "status": "draft",
+      "source_schema": []
+    },
+    {
+      "slug": "slesar-po-remontu-am",
+      "status": "draft",
+      "source_schema": []
+    }
+  ],
+  "json_ld_syntax_errors": [],
+  "missing_internal_resources": [],
+  "scope": "Local dist only; no production changes or third-party validator submission"
+}
